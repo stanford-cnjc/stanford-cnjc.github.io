@@ -1,39 +1,11 @@
 {
     "sessions": [
         {
-            "date": "2017-05-02",
-            "speaker": "Tucker Fisher",
-            "title": "Linear Dynamical Systems",
-            "location": "Alway M105",
-            "time": "5:30PM"
-        },
-        {
-            "date": "2013-06-12",
-            "speaker": "Eshed Margalit",
-            "title": "React-Redux",
-            "location": "MSOB X303",
-            "time": "5:30PM"
-        },
-        {
-            "date": "2018-11-30",
-            "speaker": "Chris Stock",
-            "title": "Meeting Management",
-            "location": "Alway M105",
-            "time": "5:30PM"
-        },
-        {
-            "date": "2016-04-01",
-            "speaker": "Saurabh Vyas",
-            "title": "Monkey Business: Perspectives on Motor Control",
-            "location": "LKSC 301",
-            "time": "5:30PM"
-        },
-        {
-            "date": "2020-10-31",
-            "speaker": "Jay McClelland",
-            "title": "Spooky Spiking Networks",
-            "location": "MSOB X303",
-            "time": "5:30PM"
+            "date": "2018-12-10",
+            "speakers": ["Tucker Fisher", "Eshed Margalit"],
+            "title": "CNJC Welcome",
+            "location": "TBD",
+            "time": "TBD"
         }
     ]
   }

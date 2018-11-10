@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Container, Row, Col, ListGroup, ListGroupItem, } from 'reactstrap';
 import moment from 'moment';
 
@@ -12,7 +12,7 @@ class SessionGroup extends Component {
     }
 
     render_sessions = sessions => {
-        if (sessions.length === 0){
+        if (sessions.length === 0) {
             return (
                 <div>No sessions to display.</div>
             )
@@ -23,13 +23,13 @@ class SessionGroup extends Component {
                     <div>
                         <h5>{session.title}</h5>
                         {moment(session.date).format('MM/DD/YYYY')}
-                        <p>Presented by {session.speaker}</p>
+                        <p>Presented by {session.speakers}</p>
                         {session.location}, {session.time}
                     </div>
                 </ListGroupItem>
             );
         });
-    };
+    }
 
     render() {
         return (
