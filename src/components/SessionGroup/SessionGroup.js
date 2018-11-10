@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
-import { FaEnvelope, FaGlobeAmericas, FaLinkedin } from 'react-icons/fa';
+import {
+  FaImage,
+  FaEnvelope,
+  FaGlobeAmericas,
+  FaLinkedin,
+  FaFilePowerpoint,
+  FaFile,
+  FaFilePdf,
+} from 'react-icons/fa';
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import moment from 'moment';
 
@@ -93,6 +101,45 @@ class SessionGroup extends Component {
     });
   };
 
+  render_file = file => {
+    const size = '2em';
+    let icon = <FaFile size={size} />;
+    if (
+      file.endsWith('.ppt') ||
+      file.endsWith('.pptx') ||
+      file.endsWith('.key')
+    ) {
+      icon = <FaFilePowerpoint size={size} />;
+    } else if (file.endsWith('.pdf')) {
+      icon = <FaFilePdf size={size} />;
+    } else if (
+      file.endsWith('.png') ||
+      file.endsWith('.jpg') ||
+      file.endsWith('.jpeg')
+    ) {
+      icon = <FaImage size={size} />;
+    }
+
+    // parse filename
+    var fileparts = file.split('/');
+    var filename = fileparts[fileparts.length - 1];
+
+    return (
+      <span>
+        <a href={file} download="">
+          {icon}
+        </a>
+        {filename}
+      </span>
+    );
+  };
+
+  render_files = files => {
+    return files.map(file => {
+      return <span key={file}>{this.render_file(file)}</span>;
+    });
+  };
+
   render_sessions = sessions => {
     if (sessions.length === 0) {
       return <div>No sessions to display.</div>;
@@ -106,6 +153,9 @@ class SessionGroup extends Component {
             <hr />
             {this.render_speakers(session.speakers)}
             {session.location}, {session.time}
+            <br />
+            <br />
+            {this.render_files(session.files)}
           </div>
         </ListGroupItem>
       );
