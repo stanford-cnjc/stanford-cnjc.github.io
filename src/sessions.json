@@ -2,10 +2,21 @@
     "sessions": [
         {
             "date": "2018-12-10",
-            "speakers": ["Tucker Fisher", "Eshed Margalit"],
+            "speakers": [
+                {
+                    "name": "Tucker Fisher",
+                    "email": "tgfisher@stanford.edu",
+                    "url": ""
+                },
+                {
+                    "name": "Eshed Margalit",
+                    "email": "eshedm@stanford.edu",
+                    "url": "http://www.eshedmargalit.com"
+                }
+            ],
             "title": "CNJC Welcome",
-            "location": "TBD",
-            "time": "TBD"
+            "location": "LKSC 301",
+            "time": "5:30PM"
         }
     ]
   }
