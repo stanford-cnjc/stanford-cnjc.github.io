@@ -7,14 +7,14 @@ class Home extends Component {
   render() {
     return (
       <Fragment>
-       <br/>
-       <Intro className="left-align"/>
-       <br />
-       <br />
-       <SessionsList />
-       <br/>
-       <Footer />
-       <br />
+        <br />
+        <Intro className="left-align" />
+        <br />
+        <br />
+        <SessionsList />
+        <br />
+        <Footer />
+        <br />
       </Fragment>
     );
   }

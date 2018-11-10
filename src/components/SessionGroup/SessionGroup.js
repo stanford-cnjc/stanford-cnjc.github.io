@@ -1,21 +1,21 @@
-import React, { Component } from "react";
-import { FaEnvelope, FaGlobeAmericas, FaLinkedin } from "react-icons/fa";
-import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-import moment from "moment";
+import React, { Component } from 'react';
+import { FaEnvelope, FaGlobeAmericas, FaLinkedin } from 'react-icons/fa';
+import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
+import moment from 'moment';
 
 class SessionGroup extends Component {
   constructor(props) {
     super(props);
     this.state = {
       title: props.title,
-      sessions: props.sessions
+      sessions: props.sessions,
     };
   }
 
   renderEmail = speaker => {
     if (speaker.email) {
       return (
-        <a href={"mailto:" + speaker.email}>
+        <a href={'mailto:' + speaker.email}>
           &nbsp;
           <FaEnvelope color="#8c1515" />
         </a>
@@ -24,7 +24,7 @@ class SessionGroup extends Component {
   };
 
   renderURL = speaker => {
-    var icon = speaker.url.includes("linkedin") ? (
+    var icon = speaker.url.includes('linkedin') ? (
       <FaLinkedin color="#4d4f53" />
     ) : (
       <FaGlobeAmericas color="#4d4f53" />
@@ -93,7 +93,7 @@ class SessionGroup extends Component {
         <ListGroupItem key={session.date}>
           <div>
             <h4>{session.title}</h4>
-            {moment(session.date).format("MM/DD/YYYY")}
+            {moment(session.date).format('MM/DD/YYYY')}
             <hr />
             {this.render_speakers(session.speakers)}
             {session.location}, {session.time}

@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 class Discussions extends Component {
   render() {
     return (
-        <Container>
+      <Container>
         <Row className="vertical-align">
           <Col xs="12" lg="12">
             <h4>Fancy a chat?</h4>
@@ -16,4 +16,3 @@ class Discussions extends Component {
 }
 
 export default Discussions;
-

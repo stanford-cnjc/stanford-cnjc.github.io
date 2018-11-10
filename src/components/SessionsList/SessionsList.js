@@ -7,52 +7,43 @@ import './SessionsList.css';
 import session_data from '../../sessions.json'; // in future, load from S3 or similar
 
 class SessionsList extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            sessions: session_data.sessions
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      sessions: session_data.sessions,
+    };
+  }
 
-    render_SessionGroups() {
-        // sort sessions
-        var is_upcoming = this.state.sessions.map((sess) => {
-            if (moment().isBefore(sess.date)) {
-                return true
-            }
-            else {
-                return false
-            }
-        });
+  render_SessionGroups() {
+    // sort sessions
+    var is_upcoming = this.state.sessions.map(sess => {
+      if (moment().isBefore(sess.date)) {
+        return true;
+      } else {
+        return false;
+      }
+    });
 
-        var upcoming_sessions = this.state.sessions.filter((_, i) => is_upcoming[i]);
-        var past_sessions = this.state.sessions.filter((_, i) => !is_upcoming[i]);
+    var upcoming_sessions = this.state.sessions.filter(
+      (_, i) => is_upcoming[i]
+    );
+    var past_sessions = this.state.sessions.filter((_, i) => !is_upcoming[i]);
 
-        upcoming_sessions.sort((a,b) => moment(a.date).diff(moment(b.date))); // ascending sort
-        past_sessions.sort((a,b) => -moment(a.date).diff(moment(b.date)));
+    upcoming_sessions.sort((a, b) => moment(a.date).diff(moment(b.date))); // ascending sort
+    past_sessions.sort((a, b) => -moment(a.date).diff(moment(b.date)));
 
-        return (
-            <Fragment>
-                <SessionGroup
-                    title="Upcoming Meetings"
-                    sessions={upcoming_sessions}>
-                </SessionGroup>
-                <br />
-                <SessionGroup
-                    title="Past Meetings"
-                    sessions={past_sessions}>
-                </SessionGroup>
-            </Fragment>
-        )
-    }
+    return (
+      <Fragment>
+        <SessionGroup title="Upcoming Meetings" sessions={upcoming_sessions} />
+        <br />
+        <SessionGroup title="Past Meetings" sessions={past_sessions} />
+      </Fragment>
+    );
+  }
 
-    render() {
-        return (
-            <div>
-                {this.render_SessionGroups()}
-            </div>
-        );
-    }
+  render() {
+    return <div>{this.render_SessionGroups()}</div>;
+  }
 }
 
 export default SessionsList;
