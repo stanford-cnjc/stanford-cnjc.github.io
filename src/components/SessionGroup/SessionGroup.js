@@ -57,12 +57,21 @@ class SessionGroup extends Component {
 
       if (i === speakers.length - 1) {
         // last
-        to_render = (
-          <span>
-            and {speaker_info}
-            <br />
-          </span>
-        );
+        if (speakers.length === 1) {
+          to_render = (
+            <span>
+              {speaker_info}
+              <br />
+            </span>
+          );
+        } else {
+          to_render = (
+            <span>
+              and {speaker_info}
+              <br />
+            </span>
+          );
+        }
       } else if (i === speakers.length - 2) {
         // penultimate
         to_render = (
