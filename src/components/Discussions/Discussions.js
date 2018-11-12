@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import Iframe from 'react-iframe';
 
 class Discussions extends Component {
   render() {
