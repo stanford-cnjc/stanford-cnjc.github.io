@@ -10,6 +10,7 @@ import {
 } from 'react-icons/fa';
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import moment from 'moment';
+import './SessionGroup.css';
 
 class SessionGroup extends Component {
   constructor(props) {
@@ -125,12 +126,12 @@ class SessionGroup extends Component {
     var filename = fileparts[fileparts.length - 1];
 
     return (
-      <span>
+      <ListGroupItem className="file_download_link">
         <a href={file} download="">
           {icon}
+          {filename}
         </a>
-        {filename}
-      </span>
+      </ListGroupItem>
     );
   };
 
@@ -155,7 +156,7 @@ class SessionGroup extends Component {
             {session.location}, {session.time}
             <br />
             <br />
-            {this.render_files(session.files)}
+            <ListGroup>{this.render_files(session.files)}</ListGroup>
           </div>
         </ListGroupItem>
       );
