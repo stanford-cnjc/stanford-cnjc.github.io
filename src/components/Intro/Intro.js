@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './Intro.css';
 import mbc_logo from './mbct-logo.png';
-import wtn_logo from './wtn-logo.jpeg';
+import wtn_logo from './wt_400x400.jpg';
 
 class Intro extends Component {
   render() {
@@ -27,10 +27,10 @@ class Intro extends Component {
             </div>
           </Col>
           <Col xs="6" lg={{ size: 3 }}>
-            <img src={mbc_logo} alt="MBCT Logo" />
+            <img className="logo" src={mbc_logo} alt="MBCT Logo" />
           </Col>
           <Col xs="6" lg={{ size: 3 }}>
-            <img src={wtn_logo} alt="Wu Tsai Neuro Logo" />
+            <img className="logo" src={wtn_logo} alt="Wu Tsai Neuro Logo" />
           </Col>
         </Row>
       </Container>
