@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Intro from '../Intro/Intro';
 import SessionsList from '../SessionsList/SessionsList';
-import Footer from '../Footer/Footer';
 
 class Home extends Component {
   render() {
@@ -12,9 +11,6 @@ class Home extends Component {
         <br />
         <br />
         <SessionsList />
-        <br />
-        <Footer />
-        <br />
       </Fragment>
     );
   }

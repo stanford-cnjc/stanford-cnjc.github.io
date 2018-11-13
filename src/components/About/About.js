@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { FaGoogle } from 'react-icons/fa';
 
 class About extends Component {
   render() {
@@ -42,7 +43,14 @@ class About extends Component {
             <p>To-do</p>
 
             <h6>Google Group</h6>
-            <p>To-do</p>
+            <p>
+              We have a Google Group dedicated to discussions about meetings and
+              CNJC at large. Check it out{' '}
+              <a href="https://groups.google.com/forum/#!forum/stanford-cnjc">
+                here!{` `}
+                <FaGoogle />
+              </a>
+            </p>
 
             <hr />
             <h3>What kind of topics does CNJC cover?</h3>

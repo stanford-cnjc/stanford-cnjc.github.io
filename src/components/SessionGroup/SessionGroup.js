@@ -25,7 +25,7 @@ class SessionGroup extends Component {
     if (speaker.email) {
       return (
         <a href={'mailto:' + speaker.email}>
-          &nbsp;
+          {` `}
           <FaEnvelope color="#8c1515" />
         </a>
       );
@@ -42,7 +42,7 @@ class SessionGroup extends Component {
     if (speaker.url) {
       return (
         <a href={speaker.url}>
-          &nbsp;
+          {` `}
           {icon}
         </a>
       );
@@ -86,15 +86,14 @@ class SessionGroup extends Component {
         to_render = (
           <span>
             {speaker_info}
-            &nbsp;
+            {` `}
           </span>
         );
       } else {
         //all others
         to_render = (
           <span>
-            {speaker_info}
-            ,&nbsp;
+            {speaker_info},{` `}
           </span>
         );
       }
