@@ -5,12 +5,14 @@
       "speakers": [
         {
           "name": "Tucker Fisher",
-          "email": "tgfisher@stanford.edu",
+          "handle": "tgfisher",
+          "domain": "stanford.edu",
           "url": ""
         },
         {
           "name": "Eshed Margalit",
-          "email": "eshedm@stanford.edu",
+          "handle": "eshedm",
+          "domain": "stanford.edu",
           "url": "http://www.eshedmargalit.com"
         }
       ],
