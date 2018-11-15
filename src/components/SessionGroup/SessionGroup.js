@@ -8,11 +8,19 @@ import {
   FaFile,
   FaFilePdf,
 } from 'react-icons/fa';
-import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
+import { GoClippy } from 'react-icons/go';
+import {
+  Container,
+  Row,
+  Col,
+  ListGroup,
+  ListGroupItem,
+  Button,
+  UncontrolledTooltip,
+} from 'reactstrap';
 import moment from 'moment';
 import './SessionGroup.css';
 import Clipboard from 'clipboard';
-import { UncontrolledTooltip } from 'reactstrap';
 
 class SessionGroup extends Component {
   constructor(props) {
@@ -25,18 +33,27 @@ class SessionGroup extends Component {
 
   renderEmail = speaker => {
     if (speaker.handle && speaker.domain) {
-      new Clipboard('.btn');
+      const address = speaker.handle + '@' + speaker.domain;
+      new Clipboard('.copy-src');
       return (
-        <button
-          class="btn"
-          data-clipboard-text={speaker.handle + '@' + speaker.domain}
-          id={speaker.handle}
-        >
-          <FaEnvelope color="#8c1313" />
-          <UncontrolledTooltip placement="top-end" target={speaker.handle}>
-            copy email
+        <span>
+          <FaEnvelope color="#8c1313" id={speaker.handle} />
+          <UncontrolledTooltip
+            autohide={false}
+            placement="top-end"
+            target={speaker.handle}
+          >
+            {speaker.handle + '@' + speaker.domain}
+            {` `}
+            <Button color="link" size="sm">
+              <GoClippy
+                className="copy-src"
+                data-clipboard-text={address}
+                size="1em"
+              />
+            </Button>{' '}
           </UncontrolledTooltip>
-        </button>
+        </span>
       );
     }
   };
@@ -62,6 +79,7 @@ class SessionGroup extends Component {
     return (
       <span>
         <strong>{speaker.name}</strong>
+        {` `}
         {this.renderEmail(speaker)}
         {this.renderURL(speaker)}
       </span>
