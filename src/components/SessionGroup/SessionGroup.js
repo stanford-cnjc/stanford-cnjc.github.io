@@ -11,6 +11,8 @@ import {
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import moment from 'moment';
 import './SessionGroup.css';
+import Clipboard from 'clipboard';
+import { UncontrolledTooltip } from 'reactstrap';
 
 class SessionGroup extends Component {
   constructor(props) {
@@ -23,11 +25,15 @@ class SessionGroup extends Component {
 
   renderEmail = speaker => {
     if (speaker.handle && speaker.domain) {
+      new Clipboard('.btn');
       return (
-        <a href={'mailto:' + speaker.handle + '@' + speaker.domain}>
-          {` `}
-          <FaEnvelope color="#8c1515" />
-        </a>
+        <button
+          class="btn"
+          data-clipboard-text={speaker.handle + '@' + speaker.domain}
+          id={speaker.handle}
+        >
+          <FaEnvelope color="#8c1313" />
+        </button>
       );
     }
   };
