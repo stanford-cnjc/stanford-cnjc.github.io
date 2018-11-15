@@ -33,6 +33,9 @@ class SessionGroup extends Component {
           id={speaker.handle}
         >
           <FaEnvelope color="#8c1313" />
+          <UncontrolledTooltip placement="top-end" target={speaker.handle}>
+            copy email
+          </UncontrolledTooltip>
         </button>
       );
     }
