@@ -32,7 +32,6 @@ class SessionGroup extends Component {
   }
 
   renderEmail = speaker => {
-    console.log(speaker.date);
     if (speaker.handle && speaker.domain) {
       const address = speaker.handle + '@' + speaker.domain;
       new Clipboard('.copy-src');
