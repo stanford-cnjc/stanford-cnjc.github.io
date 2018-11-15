@@ -32,16 +32,17 @@ class SessionGroup extends Component {
   }
 
   renderEmail = speaker => {
+    console.log(speaker.date);
     if (speaker.handle && speaker.domain) {
       const address = speaker.handle + '@' + speaker.domain;
       new Clipboard('.copy-src');
       return (
         <span>
-          <FaEnvelope color="#8c1313" id={speaker.handle} />
+          <FaEnvelope color="#8c1313" id={speaker.handle + speaker.date} />
           <UncontrolledTooltip
             autohide={false}
             placement="top-end"
-            target={speaker.handle}
+            target={speaker.handle + speaker.date}
           >
             {speaker.handle + '@' + speaker.domain}
             {` `}
@@ -88,6 +89,7 @@ class SessionGroup extends Component {
 
   render_speakers = speakers => {
     return speakers.map((speaker, i) => {
+      speaker.date = speakers.date;
       var speaker_info = this.render_speaker(speaker);
       let to_render;
 
@@ -172,6 +174,7 @@ class SessionGroup extends Component {
       return <div>No sessions to display.</div>;
     }
     return sessions.map(session => {
+      session.speakers.date = session.date;
       return (
         <ListGroupItem key={session.date}>
           <div>
