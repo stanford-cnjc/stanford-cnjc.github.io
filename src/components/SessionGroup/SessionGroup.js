@@ -22,9 +22,9 @@ class SessionGroup extends Component {
   }
 
   renderEmail = speaker => {
-    if (speaker.email) {
+    if (speaker.handle && speaker.domain) {
       return (
-        <a href={'mailto:' + speaker.email}>
+        <a href={'mailto:' + speaker.handle + '@' + speaker.domain}>
           {` `}
           <FaEnvelope color="#8c1515" />
         </a>
