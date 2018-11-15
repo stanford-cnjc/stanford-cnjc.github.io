@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container, Row, Col, UncontrolledTooltip, Button } from 'reactstrap';
 import { FaEnvelope } from 'react-icons/fa';
 import { GoClippy } from 'react-icons/go';
-import Clipboard from 'clipboard';
 
 class Footer extends Component {
   render() {

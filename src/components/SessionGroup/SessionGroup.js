@@ -20,7 +20,6 @@ import {
 } from 'reactstrap';
 import moment from 'moment';
 import './SessionGroup.css';
-import Clipboard from 'clipboard';
 
 class SessionGroup extends Component {
   constructor(props) {
@@ -35,7 +34,7 @@ class SessionGroup extends Component {
     if (speaker.handle && speaker.domain) {
       const address = speaker.handle + '@' + speaker.domain;
       const targId = speaker.handle + speaker.date;
-      new Clipboard('.copy-src');
+
       return (
         <span>
           <FaEnvelope color="#8c1313" id={targId} />

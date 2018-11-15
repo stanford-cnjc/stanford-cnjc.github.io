@@ -6,8 +6,13 @@ import About from './components/About/About';
 import MenuBar from './components/MenuBar/MenuBar';
 import Discussions from './components/Discussions/Discussions';
 import Footer from './components/Footer/Footer';
+import Clipboard from 'clipboard';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    new Clipboard('.copy-src');
+  }
   render() {
     return (
       <Router>
