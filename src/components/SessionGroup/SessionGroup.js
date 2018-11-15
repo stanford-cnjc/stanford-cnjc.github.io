@@ -34,16 +34,17 @@ class SessionGroup extends Component {
   renderEmail = speaker => {
     if (speaker.handle && speaker.domain) {
       const address = speaker.handle + '@' + speaker.domain;
+      const targId = speaker.handle + speaker.date;
       new Clipboard('.copy-src');
       return (
         <span>
-          <FaEnvelope color="#8c1313" id={speaker.handle + speaker.date} />
+          <FaEnvelope color="#8c1313" id={targId} />
           <UncontrolledTooltip
             autohide={false}
             placement="top-end"
-            target={speaker.handle + speaker.date}
+            target={targId}
           >
-            {speaker.handle + '@' + speaker.domain}
+            {address}
             {` `}
             <Button color="link" size="sm">
               <GoClippy
