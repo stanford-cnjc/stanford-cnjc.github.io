@@ -8,9 +8,19 @@ import {
   FaFile,
   FaFilePdf,
 } from 'react-icons/fa';
-import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
+import { GoClippy } from 'react-icons/go';
+import {
+  Container,
+  Row,
+  Col,
+  ListGroup,
+  ListGroupItem,
+  Button,
+  UncontrolledTooltip,
+} from 'reactstrap';
 import moment from 'moment';
 import './SessionGroup.css';
+import Clipboard from 'clipboard';
 
 class SessionGroup extends Component {
   constructor(props) {
@@ -23,11 +33,28 @@ class SessionGroup extends Component {
 
   renderEmail = speaker => {
     if (speaker.handle && speaker.domain) {
+      const address = speaker.handle + '@' + speaker.domain;
+      const targId = speaker.handle + speaker.date;
+      new Clipboard('.copy-src');
       return (
-        <a href={'mailto:' + speaker.handle + '@' + speaker.domain}>
-          {` `}
-          <FaEnvelope color="#8c1515" />
-        </a>
+        <span>
+          <FaEnvelope color="#8c1313" id={targId} />
+          <UncontrolledTooltip
+            autohide={false}
+            placement="top-end"
+            target={targId}
+          >
+            {address}
+            {` `}
+            <Button color="link" size="sm">
+              <GoClippy
+                className="copy-src"
+                data-clipboard-text={address}
+                size="1em"
+              />
+            </Button>{' '}
+          </UncontrolledTooltip>
+        </span>
       );
     }
   };
@@ -53,6 +80,7 @@ class SessionGroup extends Component {
     return (
       <span>
         <strong>{speaker.name}</strong>
+        {` `}
         {this.renderEmail(speaker)}
         {this.renderURL(speaker)}
       </span>
@@ -61,6 +89,7 @@ class SessionGroup extends Component {
 
   render_speakers = speakers => {
     return speakers.map((speaker, i) => {
+      speaker.date = speakers.date;
       var speaker_info = this.render_speaker(speaker);
       let to_render;
 
@@ -145,6 +174,7 @@ class SessionGroup extends Component {
       return <div>No sessions to display.</div>;
     }
     return sessions.map(session => {
+      session.speakers.date = session.date;
       return (
         <ListGroupItem key={session.date}>
           <div>

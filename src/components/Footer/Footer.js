@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, UncontrolledTooltip, Button } from 'reactstrap';
 import { FaEnvelope } from 'react-icons/fa';
+import { GoClippy } from 'react-icons/go';
+import Clipboard from 'clipboard';
 
 class Footer extends Component {
   render() {
+    const grouphandle = 'stanford-cnjc';
+    const groupdomain = 'gmail.com';
     return (
       <Container>
         <Row className="vertical-align">
@@ -21,9 +25,25 @@ class Footer extends Component {
               </a>
               {` `}
               or{` `}
-              <a href="mailto:stanford-cnjc@gmail.com">
-                drop us an email <FaEnvelope color="#8c1515" />
-              </a>
+              <span>
+                drop us an email{' '}
+                <FaEnvelope color="#8c1313" id={'EmailLelandStanford'} />
+                <UncontrolledTooltip
+                  autohide={false}
+                  placement="top-end"
+                  target={'EmailLelandStanford'}
+                >
+                  {grouphandle + '@' + groupdomain}
+                  {` `}
+                  <Button color="link" size="sm">
+                    <GoClippy
+                      className="copy-src"
+                      data-clipboard-text={grouphandle + '@' + groupdomain}
+                      size="1em"
+                    />
+                  </Button>{' '}
+                </UncontrolledTooltip>
+              </span>
               !
             </p>
           </Col>
