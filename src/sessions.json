@@ -1,7 +1,7 @@
 {
   "sessions": [
     {
-      "date": "2018-12-10",
+      "date": "2018-12-06",
       "speakers": [
         {
           "name": "Tucker Fisher",
@@ -16,37 +16,10 @@
           "url": "http://www.eshedmargalit.com"
         }
       ],
-      "title": "CNJC Welcome",
-      "location": "LKSC 301",
+      "title": "CNJC Welcome and Introduction",
+      "location": "LKSC 308",
       "time": "5:30PM",
-      "files": [
-        "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2018/dec/session_01/test_doc.pdf",
-        "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2018/dec/session_01/test_pres.pptx",
-        "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2018/dec/session_01/test_key_pres.key"
-      ]
-    },
-    {
-      "date": "2019-1-16",
-      "speakers": [
-        {
-          "name": "Tucker Fisher",
-          "handle": "tgfisher",
-          "domain": "stanford.edu",
-          "url": ""
-        },
-        {
-          "name": "Avery Krieger",
-          "handle": "krave",
-          "domain": "stanford.edu",
-          "url": "https://www.linkedin.com/in/avery-krieger-a784ab51"
-        }
-      ],
-      "title": "LDS",
-      "location": "LKSC 301",
-      "time": "5:30PM",
-      "files": [
-        "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2018/dec/session_01/test_doc.pdf"
-      ]
+      "files": []
     }
   ]
 }
