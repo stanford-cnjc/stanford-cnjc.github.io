@@ -47,7 +47,7 @@ class PresentationGuidelines extends Component {
       anythingElse: '&entry.581861638=' + values.extra.split(' ').join('+'),
     };
     const base =
-      'https://docs.google.com/forms/d/e/1FAIpQLScc_LMMmYn85kK6KZahvMnRmspgwrbOcmfge2BrGXbsa9vgdg/viewform?usp=pp_url';
+      'https://docs.google.com/forms/d/e/1FAIpQLScc_LMMmYn85kK6KZahvMnRmspgwrbOcmfge2BrGXbsa9vgdg/formResponse?usp=pp_url';
     const url =
       base +
       parts.name +
