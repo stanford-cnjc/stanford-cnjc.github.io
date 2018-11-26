@@ -15,7 +15,6 @@ import { AvField, AvForm } from 'availity-reactstrap-validation';
 import { Link } from 'react-router-dom';
 import sessions_file from '../../sessions.json';
 import moment from 'moment';
-import axios from 'axios';
 
 class PresentationGuidelines extends Component {
   constructor(props) {
@@ -56,15 +55,14 @@ class PresentationGuidelines extends Component {
       parts.dates +
       parts.anythingElse;
 
-    axios({
-      method: 'post',
-      url: url,
-    })
-      .then(data => {
-        console.log(data);
-        this.setState({ valuesSubmitted: true });
-      })
-      .catch(err => console.log(err));
+    fetch(url, {
+      method: 'POST',
+      body: '',
+      mode: 'no-cors',
+    }).then(data => {
+      console.log(data);
+      this.setState({ valuesSubmitted: true });
+    });
   }
 
   handleInvalidSubmit(event, errors, values) {
