@@ -3,19 +3,42 @@ import {
   Container,
   Row,
   Col,
-  FormGroup,
-  Form,
-  Label,
-  Input,
   Button,
   Card,
   CardBody,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
 } from 'reactstrap';
+import { AvField, AvForm } from 'availity-reactstrap-validation';
 import { Link } from 'react-router-dom';
 import sessions_file from '../../sessions.json';
 import moment from 'moment';
 
 class PresentationGuidelines extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleValidSubmit = this.handleValidSubmit.bind(this);
+    this.handleInvalidSubmit = this.handleInvalidSubmit.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.state = { email: false, valuesSubmitted: false };
+  }
+
+  closeModal() {
+    this.setState({ valuesSubmitted: false, error: false });
+  }
+
+  handleValidSubmit(event, values) {
+    this.setState({ email: values.email, error: false });
+    this.setState({ valuesSubmitted: true });
+  }
+
+  handleInvalidSubmit(event, errors, values) {
+    this.setState({ email: values.email, error: true });
+  }
+
   render_valid_dates() {
     const sessions = sessions_file.sessions;
     return sessions
@@ -30,63 +53,88 @@ class PresentationGuidelines extends Component {
         );
       });
   }
+
   render_form() {
+    let modal_render;
+    if (!this.state.error) {
+      modal_render = (
+        <Modal
+          isOpen={this.state.valuesSubmitted !== false}
+          toggle={this.closeModal}
+        >
+          <ModalHeader toggle={this.closeModal}>Form is valid</ModalHeader>
+          <ModalBody>Form submitted, thanks!</ModalBody>
+          <ModalFooter>
+            <Button color="primary" onClick={this.closeModal}>
+              Ok, got it
+            </Button>
+          </ModalFooter>
+        </Modal>
+      );
+    } else {
+      modal_render = null;
+    }
     return (
-      <Form>
-        <Row form>
-          <Col lg="6">
-            <FormGroup>
-              <Label for="presenter-names">Your names</Label>
-              <Input
-                type="textarea"
+      <div>
+        <AvForm
+          onValidSubmit={this.handleValidSubmit}
+          onInvalidSubmit={this.handleInvalidSubmit}
+        >
+          <Row form>
+            <Col lg="6">
+              <AvField
                 name="presenter-names"
-                id="presenter-names"
-                placeholder="Sally Stanford, Carl Cardinal, Terry Tree"
-              />
-            </FormGroup>
-          </Col>
-          <Col lg="6">
-            <FormGroup>
-              <Label for="presenter-email">An email to reach you at</Label>
-              <Input
-                type="email"
-                name="presenter-email"
-                id="presenter-email"
-                placeholder="sally@stanford.edu"
-              />
-            </FormGroup>
-          </Col>
-        </Row>
-        <Row form>
-          <Col lg="6">
-            <FormGroup>
-              <Label for="topic">Topic you'd like to present on</Label>
-              <Input
+                label="Your names"
                 type="textarea"
-                name="topic"
-                id="topic"
-                placeholder="e.g., linear dynamical systems"
+                placeholder="Sally Stanford, Carl Cardinal, Terry Tree"
+                errorMessage="Names are required"
+                required
               />
-            </FormGroup>
-          </Col>
-          <Col lg="6">
-            <FormGroup>
-              <Label for="presentation-date">
-                Which date do you want to present on? (Select all that work)
-              </Label>
-              <Input
-                type="select"
+            </Col>
+            <Col lg="6">
+              <AvField
+                name="presenter-email"
+                label="An email to reach you at"
+                type="email"
+                placeholder="sally@stanford.edu"
+                errorMessage="Please enter a valid email"
+                required
+              />
+            </Col>
+          </Row>
+          <Row form>
+            <Col lg="6">
+              <AvField
+                name="topic"
+                label="Topic you'd like to present on"
+                type="textarea"
+                placeholder="e.g., Linear dynamical systems"
+                errorMessage="Topic is required"
+                required
+              />
+            </Col>
+            <Col lg="6">
+              <AvField
                 name="date-select"
-                id="presentation-date"
+                label="Which date do you want to present on? (Select all that work)"
+                type="select"
+                errorMessage="Please choose at least one"
+                required
                 multiple
               >
                 {this.render_valid_dates()}
-              </Input>
-            </FormGroup>
-          </Col>
-        </Row>
-        <Button>Submit</Button>
-      </Form>
+              </AvField>
+            </Col>
+          </Row>
+          <Row form>
+            <Col lg="12">
+              <AvField name="extra" label="Anything else?" type="textarea" />
+            </Col>
+          </Row>
+          <Button>Submit Sign-up Request</Button>
+        </AvForm>
+        {modal_render}
+      </div>
     );
   }
   render() {
