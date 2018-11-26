@@ -18,19 +18,17 @@ import moment from 'moment';
 class PresentationGuidelines extends Component {
   render_valid_dates() {
     const sessions = sessions_file.sessions;
-    return sessions.map(session => {
-      const day_of_week = moment(session.date).format('dddd');
-      const date_str = moment(session.date).format('MMMM Do YYYY');
-      if (session.title === 'TBD') {
+    return sessions
+      .filter(session => session.title === 'TBD')
+      .map(session => {
+        const day_of_week = moment(session.date).format('dddd');
+        const date_str = moment(session.date).format('MMMM Do YYYY');
         return (
           <option key={session.date}>
             {day_of_week}, {date_str}
           </option>
         );
-      } else {
-        return;
-      }
-    });
+      });
   }
   render_form() {
     return (
