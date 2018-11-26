@@ -180,11 +180,14 @@ class SessionGroup extends Component {
       } else {
         font_color = 'black';
       }
+
+      const day_of_week = moment(session.date).format('dddd');
+      const date_str = moment(session.date).format('MMMM Do YYYY');
       return (
         <ListGroupItem key={session.date}>
           <div className={font_color}>
             <h4>{session.title}</h4>
-            {moment(session.date).format('MM/DD/YYYY')}
+            {day_of_week}, {date_str}
             <hr />
             {this.render_speakers(session.speakers)}
             {session.location}, {session.time}
