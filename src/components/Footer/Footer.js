@@ -13,20 +13,22 @@ class Footer extends Component {
           <Col xs="12" lg="12">
             <hr />
             <p>
-              <strong>
-                <em>Questions? Comments? Ideas?</em>
-              </strong>
+              <strong>Questions? Comments? Ideas?</strong>
             </p>
             <p>
-              Check out the designated{` `}
+              Check out the{` `}
               <a href="https://groups.google.com/forum/#!forum/stanford-cnjc">
                 Google Group
               </a>
               {` `}
               or{` `}
               <span>
-                drop us an email{' '}
-                <FaEnvelope color="#8c1313" id={'EmailLelandStanford'} />
+                drop us an email!{' '}
+                <FaEnvelope
+                  color="#8c1313"
+                  size="1.5em"
+                  id={'EmailLelandStanford'}
+                />
                 <UncontrolledTooltip
                   autohide={false}
                   placement="top-end"
@@ -43,7 +45,6 @@ class Footer extends Component {
                   </Button>{' '}
                 </UncontrolledTooltip>
               </span>
-              !
             </p>
           </Col>
         </Row>

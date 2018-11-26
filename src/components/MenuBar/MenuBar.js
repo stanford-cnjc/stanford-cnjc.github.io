@@ -38,8 +38,8 @@ class MenuBar extends Component {
               <LinkContainer to="/About">
                 <NavLink>About</NavLink>
               </LinkContainer>
-              <LinkContainer to="/Discussions">
-                <NavLink>Discussions</NavLink>
+              <LinkContainer to="/PresentationGuidelines">
+                <NavLink>Presentation Guidelines</NavLink>
               </LinkContainer>
             </Nav>
           </Collapse>
