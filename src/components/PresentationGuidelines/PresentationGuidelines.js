@@ -60,10 +60,11 @@ class PresentationGuidelines extends Component {
       method: 'post',
       url: url,
     })
-      .then(data => console.log(data))
+      .then(data => {
+        console.log(data);
+        this.setState({ valuesSubmitted: true });
+      })
       .catch(err => console.log(err));
-
-    this.setState({ valuesSubmitted: true });
   }
 
   handleInvalidSubmit(event, errors, values) {
