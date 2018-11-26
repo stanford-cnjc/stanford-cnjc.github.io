@@ -15,6 +15,7 @@ import { AvField, AvForm } from 'availity-reactstrap-validation';
 import { Link } from 'react-router-dom';
 import sessions_file from '../../sessions.json';
 import moment from 'moment';
+import axios from 'axios';
 
 class PresentationGuidelines extends Component {
   constructor(props) {
@@ -32,6 +33,36 @@ class PresentationGuidelines extends Component {
 
   handleValidSubmit(event, values) {
     this.setState({ email: values.email, error: false });
+
+    const parts = {
+      name: '&entry.1312122491=' + values.presenterNames.split(' ').join('+'),
+      email: '&entry.683825261=' + values.presenterEmail,
+      topic: '&entry.571595974=' + values.topic.split(' ').join('+'),
+      dates:
+        '&entry.1239080828=' +
+        values.dateSelect
+          .join(',+')
+          .split(' ')
+          .join('+'),
+      anythingElse: '&entry.581861638=' + values.extra.split(' ').join('+'),
+    };
+    const base =
+      'https://docs.google.com/forms/d/e/1FAIpQLScc_LMMmYn85kK6KZahvMnRmspgwrbOcmfge2BrGXbsa9vgdg/viewform?usp=pp_url';
+    const url =
+      base +
+      parts.name +
+      parts.email +
+      parts.topic +
+      parts.dates +
+      parts.anythingElse;
+
+    axios({
+      method: 'post',
+      url: url,
+    })
+      .then(data => console.log(data))
+      .catch(err => console.log(err));
+
     this.setState({ valuesSubmitted: true });
   }
 
@@ -83,7 +114,7 @@ class PresentationGuidelines extends Component {
           <Row form>
             <Col lg="6">
               <AvField
-                name="presenter-names"
+                name="presenterNames"
                 label="Your names"
                 type="textarea"
                 placeholder="Sally Stanford, Carl Cardinal, Terry Tree"
@@ -93,7 +124,7 @@ class PresentationGuidelines extends Component {
             </Col>
             <Col lg="6">
               <AvField
-                name="presenter-email"
+                name="presenterEmail"
                 label="An email to reach you at"
                 type="email"
                 placeholder="sally@stanford.edu"
@@ -115,7 +146,7 @@ class PresentationGuidelines extends Component {
             </Col>
             <Col lg="6">
               <AvField
-                name="date-select"
+                name="dateSelect"
                 label="Which date do you want to present on? (Select all that work)"
                 type="select"
                 errorMessage="Please choose at least one"
