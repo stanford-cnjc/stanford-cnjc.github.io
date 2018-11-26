@@ -174,9 +174,15 @@ class SessionGroup extends Component {
     }
     return sessions.map(session => {
       session.speakers.date = session.date;
+      let font_color;
+      if (session.title === 'TBD') {
+        font_color = 'gray';
+      } else {
+        font_color = 'black';
+      }
       return (
         <ListGroupItem key={session.date}>
-          <div>
+          <div className={font_color}>
             <h4>{session.title}</h4>
             {moment(session.date).format('MM/DD/YYYY')}
             <hr />
