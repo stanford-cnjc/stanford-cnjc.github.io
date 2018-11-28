@@ -16,15 +16,16 @@ class Intro extends Component {
               <h6>Stanford Computational Neuroscience Journal Club</h6>
               <br />
               <p>
-                CNJC organizes (mostly) bi-weekly meetings open to the Stanford
-                community. We foster interactions between students, post-docs,
-                and faculty to encourage a deeper understanding of core
-                techniques in computational neuroscience and their applications
-                in the wild. CNJC is proudly supported by the{' '}
+                CNJC organizes regular meetings open to the Stanford community.
+                We foster interactions between students, post-docs, and faculty
+                to encourage a deeper understanding of core techniques in
+                computational neuroscience and their applications in the wild.
+                CNJC is proudly supported by the{' '}
                 <a href="http://neuroscience.stanford.edu">
                   Wu Tsai Neurosciences Institute
-                </a>{' '}
-                and the{' '}
+                </a>
+                {` `}
+                and the{` `}
                 <a href="https://neuroscience.stanford.edu/mbct/training-programs/mbct-training-program">
                   Center for Mind, Brain, Computation, and Technology.
                 </a>
