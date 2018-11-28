@@ -31,11 +31,11 @@ class Intro extends Component {
               </p>
               <h5>
                 <Link to="/About">
-                  <Button>Learn more</Button>
+                  <Button color="secondary">Learn more</Button>
                 </Link>
-                {'  '}
+                {` `}
                 <Link to="/PresentationGuidelines">
-                  <Button>Sign up to present</Button>
+                  <Button color="primary">Sign up to present</Button>
                 </Link>
               </h5>
 
