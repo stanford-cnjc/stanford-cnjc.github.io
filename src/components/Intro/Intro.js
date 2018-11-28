@@ -29,11 +29,15 @@ class Intro extends Component {
                   Center for Mind, Brain, Computation, and Technology.
                 </a>
               </p>
-              <Link to="/About">
-                <h5>
+              <h5>
+                <Link to="/About">
                   <Button>Learn more</Button>
-                </h5>
-              </Link>
+                </Link>
+                {'  '}
+                <Link to="/PresentationGuidelines">
+                  <Button>Sign up to present</Button>
+                </Link>
+              </h5>
 
               <br />
             </div>
