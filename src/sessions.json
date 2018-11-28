@@ -1,0 +1,103 @@
+{
+  "sessions": [
+    {
+      "date": "2018-12-06",
+      "speakers": [
+        {
+          "name": "Tucker Fisher",
+          "handle": "tgfisher",
+          "domain": "stanford.edu",
+          "url": ""
+        },
+        {
+          "name": "Eshed Margalit",
+          "handle": "eshedm",
+          "domain": "stanford.edu",
+          "url": "http://www.eshedmargalit.com"
+        }
+      ],
+      "title": "CNJC Welcome and Introduction",
+      "location": "LKSC 308",
+      "time": "5:30PM",
+      "files": []
+    },
+    {
+      "date": "2019-01-09",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-01-23",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-02-06",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-02-20",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-03-06",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-03-20",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 203/204",
+      "time": "6:00PM",
+      "files": []
+    }
+  ]
+}
