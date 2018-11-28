@@ -21,6 +21,6 @@ $ yarn start
 ### Deployment
 
 ```bash
-git checkout dev
-yarn deploy
+$ git checkout dev
+$ yarn deploy
 ```
