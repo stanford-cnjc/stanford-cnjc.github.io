@@ -2,6 +2,7 @@
   "name": "cnjc-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://stanford-cnjc.github.io/",
   "dependencies": {
     "availity-reactstrap-validation": "^2.3.3",
     "axios": "^0.18.0",
@@ -25,7 +26,9 @@
     "start": "PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "devDependencies": {
     "husky": "^1.0.0-rc.15",
