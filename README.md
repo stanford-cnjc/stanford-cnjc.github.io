@@ -1,4 +1,5 @@
 ## Stanford CNJC Website
+
 Website repository for the Stanford Computational Neuroscience Journal Club
 
 Built with React, React Router, and Bootstrap (via [reactstrap](https://reactstrap.github.io/))
@@ -15,4 +16,11 @@ $ yarn install
 
 ```bash
 $ yarn start
+```
+
+### Deployment
+
+```bash
+git checkout dev
+yarn deploy
 ```
