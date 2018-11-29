@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/static/media/wt_400x400.496c3ff7.jpg"
   },
   {
-    "revision": "45a59cf6330f18c7a81516314bf17edd",
+    "revision": "727e54e1aac5cbb5d7e8671699ca0784",
     "url": "/index.html"
   }
 ];
