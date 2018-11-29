@@ -92,8 +92,10 @@ class PresentationGuidelines extends Component {
           isOpen={this.state.valuesSubmitted !== false}
           toggle={this.closeModal}
         >
-          <ModalHeader toggle={this.closeModal}>Form is valid</ModalHeader>
-          <ModalBody>Form submitted, thanks!</ModalBody>
+          <ModalHeader toggle={this.closeModal}>
+            Form validated successfully.
+          </ModalHeader>
+          <ModalBody>Your response has been submitted, thanks!</ModalBody>
           <ModalFooter>
             <Button color="primary" onClick={this.closeModal}>
               Ok, got it
@@ -125,10 +127,23 @@ class PresentationGuidelines extends Component {
               <AvField
                 name="presenterEmail"
                 label="An email to reach you at"
-                type="email"
+                type="text"
                 placeholder="sally@stanford.edu"
-                errorMessage="Please enter a valid email"
-                required
+                validate={{
+                  required: {
+                    value: true,
+                    errorMessage: 'A valid email is required',
+                  },
+                  email: {
+                    value: true,
+                    errorMessage: 'A valid email is required',
+                  },
+                  pattern: {
+                    value: '^[A-Za-z0-9]+@stanford.edu$',
+                    errorMessage:
+                      'Only stanford.edu email addressess are allowed',
+                  },
+                }}
               />
             </Col>
           </Row>
