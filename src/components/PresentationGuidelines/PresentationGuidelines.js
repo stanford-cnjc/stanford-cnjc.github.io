@@ -139,7 +139,7 @@ class PresentationGuidelines extends Component {
                     errorMessage: 'A valid email is required',
                   },
                   pattern: {
-                    value: '^[A-Za-z0-9]+@stanford.edu$',
+                    value: '^[A-Za-z0-9._]+@stanford.edu$',
                     errorMessage:
                       'Only stanford.edu email addressess are allowed',
                   },
