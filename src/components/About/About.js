@@ -50,7 +50,7 @@ class About extends Component {
             <p>
               We have a Google Group dedicated to discussions about meetings and
               CNJC at large. Check it out{' '}
-              <a href="https://groups.google.com/forum/#!forum/stanford-cnjc">
+              <a href="https://groups.google.com/forum/#!forum/stanfordcompneuro">
                 here!{` `}
                 <FaGoogle />
               </a>
