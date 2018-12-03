@@ -173,7 +173,11 @@ class PresentationGuidelines extends Component {
           </Row>
           <Row form>
             <Col lg="12">
-              <AvField name="extra" label="Anything else?" type="textarea" />
+              <AvField
+                name="extra"
+                label="Anything else? If you selected multiple dates, please rank your preferences here!"
+                type="textarea"
+              />
             </Col>
           </Row>
           <Button>Submit Sign-up Request</Button>
