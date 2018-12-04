@@ -5,7 +5,7 @@ import { GoClippy } from 'react-icons/go';
 
 class Footer extends Component {
   render() {
-    const grouphandle = 'stanford-cnjc';
+    const grouphandle = 'stanford.cnjc';
     const groupdomain = 'gmail.com';
     return (
       <Container>
