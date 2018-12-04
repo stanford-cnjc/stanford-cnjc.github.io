@@ -25,14 +25,27 @@
       "date": "2019-01-23",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "Eshed Margalit",
+          "handle": "eshedm",
+          "domain": "stanford.edu",
+          "url": "http://www.eshedmargalit.com"
+        },
+        {
+          "name": "Tucker Fisher",
+          "handle": "tgfisher",
+          "domain": "stanford.edu",
           "url": ""
         }
       ],
-      "title": "TBD",
+      "title": "Visualizing High-Dimensional Data with t-SNE",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2018/jan/session_01/JMLR_2008.pdf",
+          "name": "t-SNE Paper (van der Maaten et al., 2008)"
+        }
+      ]
     },
     {
       "date": "2019-02-06",
@@ -85,6 +98,37 @@
       "location": "LKSC 203/204",
       "time": "6:00PM",
       "files": []
+    },
+    {
+      "date": "2018-06-26",
+      "speakers": [
+        {
+          "name": "Jay Bhasin",
+          "url": ""
+        }
+      ],
+      "title": "Systems Consolidation and Attractor Dynamics in Cerebellar Learning",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2018-05-23",
+      "speakers": [
+        {
+          "name": "Kevin Feigelis",
+          "url": ""
+        }
+      ],
+      "title": "Modular Continual Learning in a Unified Visual Environment",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": [
+        {
+          "url": "https://arxiv.org/abs/1711.07425",
+          "name": "arXiv Link"
+        }
+      ]
     }
   ]
 }
