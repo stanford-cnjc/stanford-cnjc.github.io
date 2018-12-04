@@ -17,7 +17,12 @@ class SessionsList extends Component {
   render_SessionGroups() {
     // sort sessions
     var is_upcoming = this.state.sessions.map(sess => {
-      if (moment().isBefore(sess.date)) {
+      const sess_time = moment(
+        sess.date + ' ' + sess.time,
+        'YYYY-MM-DD h:mm a'
+      );
+
+      if (moment().isBefore(sess_time)) {
         return true;
       } else {
         return false;
