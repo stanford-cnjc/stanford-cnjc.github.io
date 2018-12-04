@@ -7,6 +7,7 @@ import {
   FaFilePowerpoint,
   FaFile,
   FaFilePdf,
+  FaLink,
 } from 'react-icons/fa';
 import { GoClippy } from 'react-icons/go';
 import {
@@ -130,33 +131,31 @@ class SessionGroup extends Component {
   };
 
   render_file = file => {
+    const url = file.url;
+
     const size = '2em';
     let icon = <FaFile size={size} />;
-    if (
-      file.endsWith('.ppt') ||
-      file.endsWith('.pptx') ||
-      file.endsWith('.key')
-    ) {
+
+    if (url.endsWith('.ppt') || url.endsWith('.pptx') || url.endsWith('.key')) {
       icon = <FaFilePowerpoint size={size} />;
-    } else if (file.endsWith('.pdf')) {
+    } else if (url.endsWith('.pdf')) {
       icon = <FaFilePdf size={size} />;
     } else if (
-      file.endsWith('.png') ||
-      file.endsWith('.jpg') ||
-      file.endsWith('.jpeg')
+      url.endsWith('.png') ||
+      url.endsWith('.jpg') ||
+      url.endsWith('.jpeg')
     ) {
       icon = <FaImage size={size} />;
+    } else if (url.startsWith('http')) {
+      icon = <FaLink size={size} />;
     }
-
-    // parse filename
-    var fileparts = file.split('/');
-    var filename = fileparts[fileparts.length - 1];
 
     return (
       <ListGroupItem className="file_download_link">
-        <a href={file} download="">
+        <a href={url} download="">
           {icon}
-          {filename}
+          {` `}
+          {file.name}
         </a>
       </ListGroupItem>
     );
@@ -184,18 +183,21 @@ class SessionGroup extends Component {
       const day_of_week = moment(session.date).format('dddd');
       const date_str = moment(session.date).format('MMMM Do YYYY');
       return (
-        <ListGroupItem key={session.date}>
-          <div className={font_color}>
-            <h4>{session.title}</h4>
-            {day_of_week}, {date_str}
-            <hr />
-            {this.render_speakers(session.speakers)}
-            {session.location}, {session.time}
-            <br />
-            <br />
-            <ListGroup>{this.render_files(session.files)}</ListGroup>
-          </div>
-        </ListGroupItem>
+        <span key={session.date}>
+          <ListGroupItem>
+            <div className={font_color}>
+              <h4>{session.title}</h4>
+              {day_of_week}, {date_str}
+              <hr />
+              {this.render_speakers(session.speakers)}
+              {session.location}, {session.time}
+              <br />
+              <br />
+              <ListGroup>{this.render_files(session.files)}</ListGroup>
+            </div>
+          </ListGroupItem>
+          <br />
+        </span>
       );
     });
   };
