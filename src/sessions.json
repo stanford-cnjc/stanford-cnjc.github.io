@@ -19,7 +19,12 @@
       "title": "CNJC Welcome and Introduction",
       "location": "LKSC 308",
       "time": "5:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://docs.google.com/presentation/d/1vknVYQqJathSat6PnTUZcEWOQQOxnDSFTPMcEvObSq0/edit?usp=sharing",
+          "name": "Slide Deck"
+        }
+      ]
     },
     {
       "date": "2019-01-23",
@@ -96,6 +101,32 @@
       ],
       "title": "TBD",
       "location": "LKSC 203/204",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-04-03",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 208",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-04-17",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 208",
       "time": "6:00PM",
       "files": []
     },
