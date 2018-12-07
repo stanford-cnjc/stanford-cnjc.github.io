@@ -17,6 +17,7 @@ import {
   ListGroup,
   ListGroupItem,
   Button,
+  Badge,
   UncontrolledTooltip,
 } from 'reactstrap';
 import moment from 'moment';
@@ -182,11 +183,32 @@ class SessionGroup extends Component {
 
       const day_of_week = moment(session.date).format('dddd');
       const date_str = moment(session.date).format('MMMM Do YYYY');
+
+      // add a badge if the current date is today and the session is upcoming
+      let today_badge = null;
+      const sess_time = moment(
+        session.date + ' ' + session.time,
+        'YYYY-MM-DD h:mm a'
+      );
+      const diff = sess_time.fromNow();
+      if (
+        moment(session.date).format('YYYY-MM-DD') ===
+          moment().format('YYYY-MM-DD') &&
+        diff.startsWith('in')
+      ) {
+        let color = 'danger';
+        if (diff.endsWith('hours')) {
+          color = 'warning';
+        }
+        today_badge = <Reminder session_time={sess_time} color={color} />;
+      }
       return (
         <span key={session.date}>
           <ListGroupItem>
             <div className={font_color}>
-              <h4>{session.title}</h4>
+              <h4>
+                {session.title} {today_badge}
+              </h4>
               {day_of_week}, {date_str}
               <hr />
               {this.render_speakers(session.speakers)}
@@ -214,6 +236,36 @@ class SessionGroup extends Component {
           </Col>
         </Row>
       </Container>
+    );
+  }
+}
+
+class Reminder extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      time: moment(this.props.session_time, 'YYYY-MM-DD h:mm a').fromNow(),
+    };
+  }
+  componentDidMount() {
+    this.interval = setInterval(this.updateTime.bind(this), 30000); // every 30s
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  updateTime() {
+    this.setState({
+      time: moment(this.props.session_time, 'YYYY-MM-DD h:mm a').fromNow(),
+    });
+  }
+
+  render() {
+    return (
+      <Badge pill color={this.props.color}>
+        Happening {this.state.time}!
+      </Badge>
     );
   }
 }
