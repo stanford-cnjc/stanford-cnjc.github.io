@@ -48,7 +48,19 @@
       "files": [
         {
           "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2018/jan/session_01/JMLR_2008.pdf",
-          "name": "t-SNE Paper (van der Maaten et al., 2008)"
+          "name": "Visualizing High-Dimensional Data Using t-SNE (van der Maaten et al., 2008)"
+        },
+        {
+          "url": "https://distill.pub/2016/misread-tsne/",
+          "name": "How to Use t-SNE Effectively (distill.pub)"
+        },
+        {
+          "url": "https://elifesciences.org/articles/34275",
+          "name": "Optogenetic dissection of descending behavioral control in Drosophila (Cande et al. 2018)"
+        },
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/jan/session_01/Zeisel_et_al_2015.pdf",
+          "name": "Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq (Zeisel et al., 2015)"
         }
       ]
     },
