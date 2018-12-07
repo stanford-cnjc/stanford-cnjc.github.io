@@ -12,18 +12,17 @@ class About extends Component {
             <br />
             <h3>What is CNJC?</h3>
             <p>
-              CNJC is a <strong>community</strong> of Stanford students and
-              postdocs with a shared interest in computational neuroscience and
-              techniques. We advocate for an inclusive, multidisciplinary
-              approach to building an understanding of core concepts in
-              computational neuroscience and aim to help each other master
-              techniques in our research.
+              CNJC is a <strong>community</strong> of students and postdocs with
+              a shared interest in computational neuroscience and techniques. We
+              advocate for an inclusive, multidisciplinary approach to building
+              an understanding of core concepts in computational neuroscience
+              and aim to help each other master techniques in our research.
             </p>
 
             <p>
               CNJC is a <strong>workshop series</strong> held on a biweekly
-              schedule. CNJC members work in small teams to lead sessions
-              affording an in-depth discussion of a given topic.
+              schedule. We work in small teams to lead sessions affording an
+              in-depth discussion of a given topic.
             </p>
 
             <p>
@@ -35,15 +34,15 @@ class About extends Component {
               <a href="https://neuroscience.stanford.edu/mbct/training-programs/mbct-training-program">
                 Center for Mind, Brain, Computation, and Technology
               </a>
-              . We encourage members to get involved in these great
+              . We encourage CNJC attendees to also get involved in these great
               organizations to enrich their experience and learning!
             </p>
             <hr />
-            <h3>Who can join CNJC?</h3>
+            <h3>How do I join?</h3>
             <p>
-              If you're a student or post-doc at Stanford, we'd love to see you
-              at a meeting! Please check the <Link to="/">Homepage</Link> for a
-              listing of meeting dates and locations.
+              Just start coming to meetings! We'd love to see you there. Please
+              check the <Link to="/">Homepage</Link> for a listing of meeting
+              dates and locations.
             </p>
 
             <h6>Google Group</h6>
@@ -63,8 +62,9 @@ class About extends Component {
               the <Link to="/">Homepage</Link>. While that page is relatively
               empty for the time being, please see this incomplete list of
               topics as a good starting point. Meetings topics are meant to
-              reflect the interests of CNJC members. The best way to see a topic
-              represented is to sign up to present!
+              reflect the interests of the CNJC community. The best way to see a
+              topic represented is to{' '}
+              <Link to="/PresentationGuidelines">sign up to present</Link>!
             </p>
             <ul>
               <li>Linear dynamical systems</li>
