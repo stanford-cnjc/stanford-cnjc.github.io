@@ -17,7 +17,11 @@ class Footer extends Component {
             </p>
             <p>
               Check out the{` `}
-              <a href="https://groups.google.com/forum/#!forum/stanfordcompneuro">
+              <a
+                href="https://groups.google.com/forum/#!forum/stanfordcompneuro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Google Group
               </a>
               {` `}

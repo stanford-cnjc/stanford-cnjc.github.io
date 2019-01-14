@@ -27,11 +27,19 @@ class About extends Component {
 
             <p>
               CNJC is a <strong>proud affiliate</strong> of the{' '}
-              <a href="http://neuroscience.stanford.edu">
+              <a
+                href="http://neuroscience.stanford.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Wu Tsai Neurosciences Institute
               </a>{' '}
               and the{' '}
-              <a href="https://neuroscience.stanford.edu/mbct/training-programs/mbct-training-program">
+              <a
+                href="https://neuroscience.stanford.edu/mbct/training-programs/mbct-training-program"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Center for Mind, Brain, Computation, and Technology
               </a>
               . We encourage CNJC attendees to also get involved in these great
@@ -49,7 +57,11 @@ class About extends Component {
             <p>
               We have a Google Group dedicated to discussions about meetings and
               CNJC at large. Check it out{' '}
-              <a href="https://groups.google.com/forum/#!forum/stanfordcompneuro">
+              <a
+                href="https://groups.google.com/forum/#!forum/stanfordcompneuro"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 here!{` `}
                 <FaGoogle />
               </a>

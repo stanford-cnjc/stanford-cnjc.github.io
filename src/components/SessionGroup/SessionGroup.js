@@ -153,7 +153,7 @@ class SessionGroup extends Component {
 
     return (
       <ListGroupItem className="file_download_link">
-        <a href={url} download="">
+        <a href={url} target="_blank" rel="noopener noreferrer" download="">
           {icon}
           {` `}
           {file.name}
