@@ -68,11 +68,15 @@
       "date": "2019-02-06",
       "speakers": [
         {
-          "name": "Your name here!",
-          "url": ""
+          "name": "Blue Sheffer",
+          "url": "http://www.bluesheffer.com/"
+        },
+        {
+          "name": "Guy Wilson",
+          "url": "http://guyhwilson.com/"
         }
       ],
-      "title": "TBD",
+      "title": "A tutorial on linear dynamical systems and other linear gaussian models",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -81,11 +85,11 @@
       "date": "2019-02-20",
       "speakers": [
         {
-          "name": "Your name here!",
-          "url": ""
+          "name": "Arielle Keller",
+          "url": "https://arielleskeller.wixsite.com/attention"
         }
       ],
-      "title": "TBD",
+      "title": "Time-frequency transforms, topographies, and state transitions",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
