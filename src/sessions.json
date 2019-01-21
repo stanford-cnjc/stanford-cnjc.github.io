@@ -69,11 +69,15 @@
       "speakers": [
         {
           "name": "Blue Sheffer",
-          "url": "http://www.bluesheffer.com/"
+          "url": "http://www.bluesheffer.com/",
+          "handle": "bluesheffer",
+          "domain": "gmail.com"
         },
         {
           "name": "Guy Wilson",
-          "url": "http://guyhwilson.com/"
+          "url": "http://guyhwilson.com/",
+          "handle": "ghwilson",
+          "domain": "stanford.edu"
         }
       ],
       "title": "A tutorial on linear dynamical systems and other linear gaussian models",
@@ -86,7 +90,9 @@
       "speakers": [
         {
           "name": "Arielle Keller",
-          "url": "https://arielleskeller.wixsite.com/attention"
+          "url": "https://arielleskeller.wixsite.com/attention",
+          "handle": "askeller",
+          "domain": "stanford.edu"
         }
       ],
       "title": "Time-frequency transforms, topographies, and state transitions",
