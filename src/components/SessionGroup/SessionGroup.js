@@ -69,7 +69,7 @@ class SessionGroup extends Component {
 
     if (speaker.url) {
       return (
-        <a href={speaker.url}>
+        <a href={speaker.url} target="_blank" rel="noopener noreferrer">
           {` `}
           {icon}
         </a>
