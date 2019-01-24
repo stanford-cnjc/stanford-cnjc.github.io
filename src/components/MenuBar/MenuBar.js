@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
+import { FaGithub } from 'react-icons/fa';
 import './MenuBar.css';
 
 import {
@@ -41,6 +42,15 @@ class MenuBar extends Component {
               <LinkContainer to="/PresentationGuidelines">
                 <NavLink>Presentation Signup</NavLink>
               </LinkContainer>
+              <a
+                href="https://github.com/stanford-cnjc/cnjc-code"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <NavLink>
+                  <FaGithub /> Code
+                </NavLink>
+              </a>
             </Nav>
           </Collapse>
         </Navbar>

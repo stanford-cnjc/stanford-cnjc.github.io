@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { FaGithub } from 'react-icons/fa';
 import './Intro.css';
 import mbc_logo from './mbct-logo.png';
 import wtn_logo from './wt_400x400.jpg';
@@ -46,6 +47,16 @@ class Intro extends Component {
                 <Link to="/PresentationGuidelines">
                   <Button color="primary">Sign up to present</Button>
                 </Link>
+                {` `}
+                <a
+                  href="https://github.com/stanford-cnjc/cnjc-code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button color="primary">
+                    <FaGithub size="1.3rem" /> Code on GitHub
+                  </Button>
+                </a>
               </h5>
 
               <br />
