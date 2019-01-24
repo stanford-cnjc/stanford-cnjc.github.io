@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import {
   FaImage,
   FaEnvelope,
@@ -152,13 +152,17 @@ class SessionGroup extends Component {
     }
 
     return (
-      <ListGroupItem className="file_download_link">
-        <a href={url} target="_blank" rel="noopener noreferrer" download="">
-          {icon}
-          {` `}
-          {file.name}
-        </a>
-      </ListGroupItem>
+      <Fragment>
+        <span className="file_download_link">
+          <a href={url} target="_blank" rel="noopener noreferrer" download="">
+            {icon}
+            {` `}
+            {file.name}
+          </a>
+        </span>
+        <br />
+        <br />
+      </Fragment>
     );
   };
 
