@@ -44,7 +44,7 @@ class Intro extends Component {
                   <Button color="secondary">Learn more</Button>
                 </Link>
                 {` `}
-                <Link to="/PresentationGuidelines">
+                <Link to="/PresentationSignup">
                   <Button color="primary">Sign up to present</Button>
                 </Link>
                 {` `}

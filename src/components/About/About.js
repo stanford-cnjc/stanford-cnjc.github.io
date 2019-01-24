@@ -76,7 +76,7 @@ class About extends Component {
               topics as a good starting point. Meetings topics are meant to
               reflect the interests of the CNJC community. The best way to see a
               topic represented is to{' '}
-              <Link to="/PresentationGuidelines">sign up to present</Link>!
+              <Link to="/PresentationSignup">sign up to present</Link>!
             </p>
             <ul>
               <li>Linear dynamical systems</li>

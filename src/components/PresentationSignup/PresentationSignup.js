@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 import sessions_file from '../../sessions.json';
 import moment from 'moment';
 
-class PresentationGuidelines extends Component {
+class PresentationSignup extends Component {
   constructor(props) {
     super(props);
 
@@ -255,4 +255,4 @@ class PresentationGuidelines extends Component {
   }
 }
 
-export default PresentationGuidelines;
+export default PresentationSignup;

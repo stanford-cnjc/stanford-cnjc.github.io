@@ -4,7 +4,7 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import MenuBar from './components/MenuBar/MenuBar';
-import PresentationGuidelines from './components/PresentationGuidelines/PresentationGuidelines';
+import PresentationSignup from './components/PresentationSignup/PresentationSignup';
 import Footer from './components/Footer/Footer';
 import Clipboard from 'clipboard';
 
@@ -22,8 +22,8 @@ class App extends Component {
           <Route exact path="/About" component={About} />
           <Route
             exact
-            path="/PresentationGuidelines"
-            component={PresentationGuidelines}
+            path="/PresentationSignup"
+            component={PresentationSignup}
           />
           <Route path="/" component={Footer} />
         </div>

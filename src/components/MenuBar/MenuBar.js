@@ -39,7 +39,7 @@ class MenuBar extends Component {
               <LinkContainer to="/About">
                 <NavLink>About</NavLink>
               </LinkContainer>
-              <LinkContainer to="/PresentationGuidelines">
+              <LinkContainer to="/PresentationSignup">
                 <NavLink>Presentation Signup</NavLink>
               </LinkContainer>
               <a
