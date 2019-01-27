@@ -1,6 +1,8 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import SessionGroup from '../SessionGroup/SessionGroup';
 import moment from 'moment';
+
+import { Container, Row, Col } from 'reactstrap';
 
 import './SessionsList.css';
 
@@ -38,11 +40,19 @@ class SessionsList extends Component {
     past_sessions.sort((a, b) => -moment(a.date).diff(moment(b.date)));
 
     return (
-      <Fragment>
-        <SessionGroup title="Upcoming Meetings" sessions={upcoming_sessions} />
-        <br />
-        <SessionGroup title="Past Meetings" sessions={past_sessions} />
-      </Fragment>
+      <Container>
+        <Row>
+          <Col lg="6" xs="12">
+            <SessionGroup
+              title="Upcoming Meetings"
+              sessions={upcoming_sessions}
+            />
+          </Col>
+          <Col lg="6" xs="12">
+            <SessionGroup title="Past Meetings" sessions={past_sessions} />
+          </Col>
+        </Row>
+      </Container>
     );
   }
 

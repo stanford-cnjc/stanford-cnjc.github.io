@@ -8,6 +8,7 @@ import {
   FaFile,
   FaFilePdf,
   FaLink,
+  FaGithub,
 } from 'react-icons/fa';
 import { GoClippy } from 'react-icons/go';
 import {
@@ -134,7 +135,7 @@ class SessionGroup extends Component {
   render_file = file => {
     const url = file.url;
 
-    const size = '2em';
+    const size = '1.2em';
     let icon = <FaFile size={size} />;
 
     if (url.endsWith('.ppt') || url.endsWith('.pptx') || url.endsWith('.key')) {
@@ -147,6 +148,8 @@ class SessionGroup extends Component {
       url.endsWith('.jpeg')
     ) {
       icon = <FaImage size={size} />;
+    } else if (url.startsWith('https://github')) {
+      icon = <FaGithub size={size} />;
     } else if (url.startsWith('http')) {
       icon = <FaLink size={size} />;
     }
@@ -160,7 +163,6 @@ class SessionGroup extends Component {
             {file.name}
           </a>
         </span>
-        <br />
         <br />
       </Fragment>
     );
