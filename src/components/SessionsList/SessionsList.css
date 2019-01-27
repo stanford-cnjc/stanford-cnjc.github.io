@@ -1,4 +1,12 @@
 .left-align {
-    display: flex;
-    text-align: left;
+  display: flex;
+  text-align: left;
+}
+
+.gray {
+  color: gray;
+}
+
+.black {
+  color: black;
 }

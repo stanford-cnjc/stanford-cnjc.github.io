@@ -42,15 +42,13 @@ class MenuBar extends Component {
               <LinkContainer to="/PresentationSignup">
                 <NavLink>Presentation Signup</NavLink>
               </LinkContainer>
-              <a
-                href="https://github.com/stanford-cnjc/cnjc-code"
+              <NavLink
                 target="_blank"
                 rel="noopener noreferrer"
+                href="https://github.com/stanford-cnjc/cnjc-code"
               >
-                <NavLink>
-                  <FaGithub /> Code
-                </NavLink>
-              </a>
+                <FaGithub /> Code
+              </NavLink>
             </Nav>
           </Collapse>
         </Navbar>
