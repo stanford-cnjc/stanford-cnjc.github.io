@@ -54,7 +54,7 @@ class Intro extends Component {
                   rel="noopener noreferrer"
                 >
                   <Button color="primary">
-                    <FaGithub size="1.3rem" /> Code on GitHub
+                    <FaGithub /> Code on GitHub
                   </Button>
                 </a>
               </h5>
