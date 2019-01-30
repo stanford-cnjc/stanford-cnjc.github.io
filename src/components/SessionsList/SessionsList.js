@@ -238,6 +238,22 @@ class SessionsList extends Component {
         }
         today_badge = <Reminder session_time={sess_time} color={color} />;
       }
+
+      let resource_header = null;
+      if (session.files.length > 0) {
+        resource_header = <h6> Session Resources </h6>;
+      }
+
+      let session_description = null;
+      if (session.description) {
+        session_description = (
+          <span>
+            <p>{session.description}</p>
+            <hr />
+          </span>
+        );
+      }
+
       return (
         <span key={session.date}>
           <ListGroupItem>
@@ -247,10 +263,12 @@ class SessionsList extends Component {
               </h4>
               {day_of_week}, {date_str}
               <hr />
+              {session_description}
               {this.render_speakers(session.speakers)}
               {session.location}, {session.time}
               <br />
               <br />
+              {resource_header}
               <ListGroup>{this.render_files(session.files)}</ListGroup>
             </div>
           </ListGroupItem>

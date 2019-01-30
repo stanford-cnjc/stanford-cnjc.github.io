@@ -43,6 +43,7 @@
         }
       ],
       "title": "Visualizing High-Dimensional Data with t-SNE",
+      "description": "This meeting will explore and shed light on the t-SNE algorithm, an increasingly popular technique for visualization of high-dimensional data. We will discuss example cases from systems neuroscience, genetics and deep learning, while unpacking the algorithm and sharing practical tips to deploy t-SNE in your own work. Graduate students and postdocs are both encouraged to attend!",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": [
@@ -88,7 +89,8 @@
           "domain": "stanford.edu"
         }
       ],
-      "title": "A tutorial on linear dynamical systems and other linear gaussian models",
+      "title": "Linear Dynamical Systems for Time-Series Data Analysis",
+      "description": "This meeting will focus on using linear dynamical systems (LDS) for analyzing high-dimensional time-series data in neuroscience. We will go over the math behind LDS, discuss examples of their use in neuroscience, and get hands-on experience fitting and visualizing LDS using Jupyter Notebooks. Graduate students and postdocs are both encouraged to attend!",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -101,9 +103,15 @@
           "url": "https://arielleskeller.wixsite.com/attention",
           "handle": "askeller",
           "domain": "stanford.edu"
+        },
+        {
+          "name": "Anna Khazenzon",
+          "url": "",
+          "handle": "annakhaz",
+          "domain": "stanford.edu"
         }
       ],
-      "title": "Time-frequency transforms, topographies, and state transitions",
+      "title": "Functional Connectivity in the Brain",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -151,11 +159,19 @@
       "date": "2019-04-17",
       "speakers": [
         {
-          "name": "Your name here!",
-          "url": ""
+          "name": "Aran Nayebi",
+          "url": "https://sites.google.com/site/anayebihomepage/",
+          "handle": "anayebi",
+          "domain": "stanford.edu"
+        },
+        {
+          "name": "Josh Melander",
+          "url": "https://github.com/jbmelander",
+          "handle": "melander",
+          "domain": "stanford.edu"
         }
       ],
-      "title": "TBD",
+      "title": "Fitting Neural Network Models to Neural Data",
       "location": "LKSC 208",
       "time": "6:00PM",
       "files": []
