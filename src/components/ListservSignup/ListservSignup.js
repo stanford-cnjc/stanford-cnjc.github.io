@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
-import {
-  Container,
-  Button,
-  Row,
-  Col,
-  Card,
-  CardBody,
-  FormFeedback,
-} from 'reactstrap';
+import { Container, Button, Row, Col, Card, CardBody } from 'reactstrap';
 import './ListservSignup.css';
-import { AvField, AvForm, AvInput } from 'availity-reactstrap-validation';
+import { AvField, AvForm } from 'availity-reactstrap-validation';
 
 class ListservSignup extends Component {
   constructor(props) {
