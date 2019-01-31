@@ -111,7 +111,8 @@
           "domain": "stanford.edu"
         }
       ],
-      "title": "Functional Connectivity in the Brain",
+      "title": "Critical Evaluation of Dynamic Functional Connectivity and other Methods for Time-Series Analysis",
+      "description": "We will be discussing the promises and pitfalls of techniques such as sliding-window dynamic functional connectivity to assess brain dynamics. We will also touch on other methods for analysis of time series data in the context of human neuroimaging and electroencephalography. Graduate students and postdocs are both encouraged to attend!",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -171,8 +172,47 @@
           "domain": "stanford.edu"
         }
       ],
-      "title": "Fitting Neural Network Models to Neural Data",
+      "title": "Deep networks and the brain: simile or metaphor?",
       "location": "LKSC 208",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-05-01",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 208",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-05-15",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-05-29",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
     },
