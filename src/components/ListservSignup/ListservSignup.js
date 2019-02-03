@@ -3,15 +3,7 @@ import { Container, Button, Row, Col, Card, CardBody } from 'reactstrap';
 import './ListservSignup.css';
 import { AvField, AvForm } from 'availity-reactstrap-validation';
 import { FaCheck } from 'react-icons/fa';
-import {
-  PacmanLoader,
-  MoonLoader,
-  RingLoader,
-  ClimbingBoxLoader,
-  BounceLoader,
-  CircleLoader,
-  GridLoader,
-} from 'react-spinners';
+import { RingLoader } from 'react-spinners';
 
 class ListservSignup extends Component {
   constructor(props) {
