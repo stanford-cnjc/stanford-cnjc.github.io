@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import { Container, Button, Row, Col, Card, CardBody } from 'reactstrap';
 import './ListservSignup.css';
 import { AvField, AvForm } from 'availity-reactstrap-validation';
+import { FaCheck } from 'react-icons/fa';
+import {
+  PacmanLoader,
+  MoonLoader,
+  RingLoader,
+  ClimbingBoxLoader,
+  BounceLoader,
+  CircleLoader,
+  GridLoader,
+} from 'react-spinners';
 
 class ListservSignup extends Component {
   constructor(props) {
@@ -9,7 +19,13 @@ class ListservSignup extends Component {
 
     this.handleValidEmail = this.handleValidEmail.bind(this);
     this.handleInvalidEmail = this.handleInvalidEmail.bind(this);
-    this.state = { email: false, valuesSubmitted: false };
+    this.state = {
+      email: false,
+      valuesSubmitted: false,
+      button_content: 'Submit',
+      button_color: 'primary',
+      button_disable: false,
+    };
   }
   handleValidEmail(event, values) {
     this.setState({ email: values.address, error: false });
@@ -18,13 +34,24 @@ class ListservSignup extends Component {
       'https://docs.google.com/forms/d/e/1FAIpQLScwO2KzgGzU8ZN2Fqzoc36aL3ZdJguYjJbVLaYw7DEABSBblA/formResponse?usp=pp_url';
     const url = base + '&entry.899316489=' + values.newListservEmail;
 
+    this.setState({
+      button_color: 'primary',
+      button_content: <RingLoader size={25} color={'purple'} />,
+      button_color: 'secondary',
+      button_disable: true,
+    });
     fetch(url, {
       method: 'POST',
       body: '',
       mode: 'no-cors',
     }).then(data => {
       console.log(data);
-      this.setState({ valuesSubmitted: true });
+      this.setState({
+        valuesSubmitted: true,
+        button_color: 'success',
+        button_disable: true,
+        button_content: <FaCheck />,
+      });
     });
   }
 
@@ -43,7 +70,7 @@ class ListservSignup extends Component {
             <Col lg="6">
               <AvField
                 name="newListservEmail"
-                label="Add your Stanford email here:"
+                // label="Add your Stanford email here:"
                 type="text"
                 placeholder="junior@stanford.edu"
                 validate={{
@@ -63,8 +90,14 @@ class ListservSignup extends Component {
                 }}
               />
             </Col>
-            <Col className="seatbutton">
-              <Button>Submit</Button>
+            <Col>
+              <Button
+                type="submit"
+                color={this.state.button_color}
+                disabled={this.state.button_disable}
+              >
+                {this.state.button_content}
+              </Button>
             </Col>
           </Row>
         </AvForm>
@@ -76,11 +109,9 @@ class ListservSignup extends Component {
     return (
       <Container>
         <Row className="vertical-align">
-          <Col xs="12" lg="6">
+          <Col id="listserv_signup_nopad" xs="12" lg="6">
             <br />
-            <Card>
-              <CardBody>{this.render_ListserveField()}</CardBody>
-            </Card>
+            {this.render_ListserveField()}
           </Col>
         </Row>
       </Container>

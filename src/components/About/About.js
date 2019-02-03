@@ -70,7 +70,8 @@ class About extends Component {
 
             <h6>CNJC listserv</h6>
             <p>
-              Add your email to recieve reminders from us about upcoming events.
+              Submit your email to recieve reminders from us about upcoming
+              events:
               <ListservSignup />
             </p>
 
