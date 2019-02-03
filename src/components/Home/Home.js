@@ -9,7 +9,6 @@ class Home extends Component {
         <br />
         <Intro className="left-align" />
         <br />
-        <br />
         <SessionsList />
       </Fragment>
     );

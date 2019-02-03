@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { FaGoogle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import ListservSignup from '../ListservSignup/ListservSignup';
 
 class About extends Component {
   render() {
@@ -67,6 +68,13 @@ class About extends Component {
               </a>
             </p>
 
+            <h6>CNJC listserv</h6>
+            <p>
+              Submit your email to recieve reminders from us about upcoming
+              events:
+              <ListservSignup />
+            </p>
+
             <hr />
             <h3>What kind of topics does CNJC cover?</h3>
             <p>
@@ -89,6 +97,7 @@ class About extends Component {
               <li>Machine learning</li>
               <li>and much more!</li>
             </ul>
+            <hr />
           </Col>
         </Row>
       </Container>
