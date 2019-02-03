@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button, Row, Col, Card, CardBody } from 'reactstrap';
+import { Container, Button, Row, Col } from 'reactstrap';
 import './ListservSignup.css';
 import { AvField, AvForm } from 'availity-reactstrap-validation';
 import { FaCheck } from 'react-icons/fa';
@@ -27,7 +27,6 @@ class ListservSignup extends Component {
     const url = base + '&entry.899316489=' + values.newListservEmail;
 
     this.setState({
-      button_color: 'primary',
       button_content: <RingLoader size={25} color={'purple'} />,
       button_color: 'secondary',
       button_disable: true,
