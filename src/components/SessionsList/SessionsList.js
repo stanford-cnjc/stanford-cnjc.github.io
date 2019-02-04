@@ -241,7 +241,12 @@ class SessionsList extends Component {
 
       let resource_header = null;
       if (session.files.length > 0) {
-        resource_header = <h6> Session Resources </h6>;
+        resource_header = (
+          <span>
+            <br />
+            <h6> Session Resources </h6>
+          </span>
+        );
       }
 
       let session_description = null;
@@ -252,6 +257,33 @@ class SessionsList extends Component {
             <hr />
           </span>
         );
+      }
+
+      let food_signup = null;
+      if (session.rsvp_link) {
+        if (diff.startsWith('in')) {
+          food_signup = (
+            <span>
+              <hr />
+              <a
+                href={session.rsvp_link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button color="primary" outline>
+                  Food sign-up link for this session
+                </Button>
+              </a>
+              <p>
+                <em>
+                  Due to the nature of our funding, food is limited to Stanford
+                  affiliates. Sorry! However, everyone is welcome to attend and
+                  participate!
+                </em>
+              </p>
+            </span>
+          );
+        }
       }
 
       return (
@@ -267,9 +299,9 @@ class SessionsList extends Component {
               {this.render_speakers(session.speakers)}
               {session.location}, {session.time}
               <br />
-              <br />
               {resource_header}
               <ListGroup>{this.render_files(session.files)}</ListGroup>
+              {food_signup}
             </div>
           </ListGroupItem>
           <br />
