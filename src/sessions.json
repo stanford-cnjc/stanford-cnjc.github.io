@@ -115,11 +115,14 @@
           "url": "https://github.com/slinderman/ssm",
           "name": "SSM: Bayesian learning and inference for state space models (Scott Linderman)"
         },
-                {
+        {
           "url": "https://docs.google.com/presentation/d/1V6uyyHf6FUIuQQsv641_rPI9qkmGrNSgaUW10sQCjZM/edit?usp=sharing",
           "name": "Slide Deck"
-        }  
-
+        },
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/feb/session_01/N2+on+food+L_2010_04_08__11_25_23___8___1_featuresN.hdf5",
+          "name": "Raw worm movement data (30.6 MB)"
+        }
       ]
     },
     {
@@ -155,8 +158,7 @@
       "title": "TBD",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": [
-      ]
+      "files": []
     },
     {
       "date": "2019-03-20",
