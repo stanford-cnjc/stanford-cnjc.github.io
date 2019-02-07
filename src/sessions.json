@@ -94,7 +94,28 @@
       "location": "LKSC 209",
       "time": "6:00PM",
       "rsvp_link": "https://docs.google.com/forms/d/e/1FAIpQLScWN8xcLJeQQMosPLT601Crg3bxAU9vySZGgfPR8yIhYOGz1Q/viewform?usp=sf_link",
-      "files": []
+      "files": [
+        {
+          "url": "https://www.tinyurl.com/linear4lyfe",
+          "name": "Jupyter Notebook tutorial on linear dynamical systems"
+        },
+        {
+          "url": "http://mlg.eng.cam.ac.uk/zoubin/papers/lds.pdf",
+          "name": "A Unifying Review of Linear Gaussian Models"
+        },
+        {
+          "url": "https://www.nature.com/articles/ncomms8759",
+          "name": "Single-trial dynamics of motor cortex and their applications to brain-machine interfaces (Kao et al. 2015)"
+        },
+        {
+          "url": "https://www.frontiersin.org/articles/10.3389/fncir.2014.00020/full",
+          "name": "Dynamical criticality during induction of anesthesia in human ECoG recordings (Alonso et al. 2014)"
+        },
+        {
+          "url": "https://github.com/slinderman/ssm",
+          "name": "SSM: Bayesian learning and inference for state space models (Scott Linderman)"
+        }  
+      ]
     },
     {
       "date": "2019-02-20",
@@ -129,7 +150,8 @@
       "title": "TBD",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "files": [
+      ]
     },
     {
       "date": "2019-03-20",
