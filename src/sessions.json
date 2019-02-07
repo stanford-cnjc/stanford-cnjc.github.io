@@ -114,7 +114,12 @@
         {
           "url": "https://github.com/slinderman/ssm",
           "name": "SSM: Bayesian learning and inference for state space models (Scott Linderman)"
+        },
+                {
+          "url": "https://docs.google.com/presentation/d/1V6uyyHf6FUIuQQsv641_rPI9qkmGrNSgaUW10sQCjZM/edit?usp=sharing",
+          "name": "Slide Deck"
         }  
+
       ]
     },
     {
