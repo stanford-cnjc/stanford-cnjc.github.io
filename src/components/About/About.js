@@ -89,9 +89,14 @@ class About extends Component {
             <ul>
               <li>Linear dynamical systems</li>
               <li>Dimensionality reduction</li>
+              <li>Bootstrapping</li>
+              <li>Probabilistic programming</li>
               <li>Supervised classification</li>
+              <li>RNNs</li>
               <li>Graph theory</li>
+              <li>Hierarchical Bayesian Models</li>
               <li>Kalman filters</li>
+              <li>Hypothesis Testing</li>
               <li>Markov models</li>
               <li>Compressed sensing</li>
               <li>Machine learning</li>
