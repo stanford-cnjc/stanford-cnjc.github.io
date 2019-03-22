@@ -151,11 +151,12 @@
       "date": "2019-03-20",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "",
           "url": ""
         }
       ],
-      "title": "TBD",
+      "title": "Speed Friending",
+      "description": "Get to know your fellow CNJCitizens at this casual speed-friending event. Discuss science, argue over the best coffee shop on campus, and meet your future presentation partner in this fun format!",
       "location": "LKSC 203/204",
       "time": "6:00PM",
       "files": []
@@ -164,11 +165,19 @@
       "date": "2019-04-03",
       "speakers": [
         {
-          "name": "Your name here!",
-          "url": ""
+          "name": "Max Kanwal",
+          "url": "",
+          "handle": "kanwal",
+          "domain": "stanford.edu"
+        },
+        {
+          "name": "Saarthak Sarup",
+          "url": "",
+          "handle": "ssarup",
+          "domain": "stanford.edu"
         }
       ],
-      "title": "TBD",
+      "title": "Predictive Coding",
       "location": "LKSC 208",
       "time": "6:00PM",
       "files": []
