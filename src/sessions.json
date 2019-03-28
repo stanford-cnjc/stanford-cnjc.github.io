@@ -208,11 +208,19 @@
       "date": "2019-05-01",
       "speakers": [
         {
-          "name": "Your name here!",
-          "url": ""
+          "name": "Isabel Low",
+          "url": "",
+          "handle": "ilow",
+          "domain": "stanford.edu"
+        },
+        {
+          "name": "Arielle Keller",
+          "url": "https://arielleskeller.wixsite.com/attention",
+          "handle": "askeller",
+          "domain": "stanford.edu"
         }
       ],
-      "title": "TBD",
+      "title": "NeuWrite/CNJC Crossover Event",
       "location": "LKSC 208",
       "time": "6:00PM",
       "files": []
