@@ -27,8 +27,7 @@ class SessionsListGroup extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sessions: props.sessions,
-      max_sessions: 10,
+      max_sessions: 5,
     };
   }
 
@@ -281,7 +280,11 @@ class SessionsListGroup extends Component {
     const n_sessions = session_render_list.length;
     let session_render_wrapper = <div>{session_render_list}</div>;
     if (n_sessions > this.state.max_sessions) {
-      console.log('uh oh');
+      var n_hidden = this.props.sessions.length - this.state.max_sessions;
+      session_render_list = session_render_list.slice(
+        0,
+        this.state.max_sessions
+      );
       session_render_wrapper = (
         <div>
           {session_render_list}
@@ -294,7 +297,7 @@ class SessionsListGroup extends Component {
             }}
           >
             {' '}
-            Show More{' '}
+            Show More ({n_hidden} Hidden){' '}
           </Button>
         </div>
       );
@@ -303,7 +306,7 @@ class SessionsListGroup extends Component {
   };
 
   render() {
-    return <ListGroup>{this.render_sessions(this.state.sessions)}</ListGroup>;
+    return <ListGroup>{this.render_sessions(this.props.sessions)}</ListGroup>;
   }
 }
 
