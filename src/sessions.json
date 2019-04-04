@@ -182,7 +182,32 @@
       "location": "LKSC 208",
       "time": "6:00PM",
       "rsvp_link": "https://forms.gle/3Dudb1q88V5AvZK58",
-      "files": []
+      "files": [
+        {
+          "url": "https://docs.google.com/presentation/d/185M5JKIBP9X_kkQCfH7Oh0PKRzk6lMja_YTxR44yEjo/edit?usp=sharing",
+          "name": "Slide Deck"
+        },
+        {
+          "url": "https://github.com/saarthaks/PredictiveCodingESF",
+          "name": "Github Repository"
+        },
+        {
+          "url": "https://mybinder.org/v2/gh/saarthaks/PredictiveCodingESF/master",
+          "name": "Jupyter Notebook Tutorial"
+        },
+        {
+          "url": "http://machenslab.org/wp-content/uploads/2017/11/Boerlin_etal_2013.pdf",
+          "name": "Predictive coding of dynamical variables in balanced spiking networks (Boerlin, Machens, and Denéve - 2013)"
+        },
+        {
+          "url": "https://arxiv.org/pdf/1703.03777.pdf",
+          "name": "Learning to represent signals spike by spike (Brendel et al. - 2017)"
+        },
+        {
+          "url": "https://arxiv.org/pdf/1705.08026.pdf",
+          "name": "Learning arbitrary dynamics in efficient, balanced spiking networks using local plasticity rules (Alemi and Machens - 2017)"
+        }
+      ]
     },
     {
       "date": "2019-04-17",
