@@ -146,7 +146,12 @@
       "location": "LKSC 209",
       "time": "6:00PM",
       "rsvp_link": "https://docs.google.com/forms/d/e/1FAIpQLSdNGGLM9lTIHuZZWkzvU0E8JifUrM3mz_ZxCk-9Oetm75fA1w/viewform?usp=sf_link",
-      "files": []
+      "files": [
+        {
+          "url": "https://docs.google.com/presentation/d/1SA4-AO0tzT4e8LebgYN9QnBkJCPSW5TVVwqXEk4ppmo/edit?usp=sharing",
+          "name": "Slide Deck"
+        }
+      ]
     },
     {
       "date": "2019-03-20",
