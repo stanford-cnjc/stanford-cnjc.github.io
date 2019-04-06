@@ -233,7 +233,17 @@
       "title": "Deep networks and the brain: simile or metaphor?",
       "location": "LKSC 208",
       "time": "6:00PM",
-      "files": []
+      "description": "Deep neural networks have emerged as a powerful and flexible class of models for brain activity and behavior. But what is the objective of these modeling efforts? Do we intend to reproduce the brain in a 1-to-1 manner, or could more abstract models serve a purpose? This session will spark discussion of the history of brain modeling, current practices, and implications for future research.",
+      "files": [
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/apr/session_02/Chichilnisky_2001.pdf",
+          "name": "A simple white noise analysis of neuronal light responses (Chichilnisky 2001)"
+        },
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/apr/session_02/Yamins_DiCarlo_2016.pdf",
+          "name": "Using goal-driven deep learning models to understand sensory cortex (Yamins and DiCarlo, 2016)"
+        }
+      ]
     },
     {
       "date": "2019-05-01",
