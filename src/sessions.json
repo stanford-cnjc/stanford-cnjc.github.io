@@ -240,8 +240,12 @@
           "name": "A simple white noise analysis of neuronal light responses (Chichilnisky 2001)"
         },
         {
-          "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/apr/session_02/Yamins_DiCarlo_2016.pdf",
+          "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/apr/session_02/yamins_dicarlo_2016.pdf",
           "name": "Using goal-driven deep learning models to understand sensory cortex (Yamins and DiCarlo, 2016)"
+        },
+        {
+          "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/apr/session_02/simile_or_metaphor_slides.pdf",
+          "name": "Slide Deck"
         }
       ]
     },
@@ -303,11 +307,17 @@
       "date": "2019-07-10",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "Tyler Benster",
+          "url": "https://www.tylerbenster.com",
+          "handle": "tbenst",
+          "domain": "stanford.edu"
+        },
+        {
+          "name": "Aaron Andalman",
           "url": ""
         }
       ],
-      "title": "TBD",
+      "title": "Variational Bayesian Methods",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
