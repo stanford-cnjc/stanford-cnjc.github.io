@@ -282,15 +282,16 @@
       ]
     },
     {
-      "date": "2019-05-15",
+      "date": "2019-05-22",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "MBCT Program",
           "url": ""
         }
       ],
-      "title": "TBD",
-      "location": "LKSC 209",
+      "title": "CNJC hosts 'MBCT Happy Hour!'",
+      "description": "Come and meet others in the MBCT community. Thanks to MBCT for providing all sorts of drinks and snacks!",
+      "location": "TBD",
       "time": "6:00PM",
       "files": []
     },
