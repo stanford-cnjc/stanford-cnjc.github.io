@@ -299,14 +299,26 @@
       "date": "2019-06-12",
       "speakers": [
         {
-          "name": "Your name here!",
-          "url": ""
+          "name": "Eshed Margalit",
+          "handle": "eshedm",
+          "domain": "stanford.edu",
+          "url": "http://www.eshedmargalit.com"
         }
       ],
-      "title": "TBD",
+      "title": "Feature Visualization in Artificial and Biological Neural Networks",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "description": "The use of neural networks in neuroscience is often met with two criticisms: that neural networks are 'black boxes' that defy interpretation, and that they have not proven useful for studying their biological counterparts. In this session, we will discuss and play with gradient-based methods for synthesizing images that maximally drive neurons, both in artificial neural networks and in the primate brain.",
+      "files": [
+        {
+          "url": "https://science.sciencemag.org/content/364/6439/eaav9436/tab-article-info",
+          "name": "Neural population control via deep image synthesis (Bashivan et al., 2019)"
+        },
+        {
+          "url": "https://distill.pub/2017/feature-visualization/",
+          "name": "distill.pub Post: Feature Visualization"
+        }
+      ]
     },
     {
       "date": "2019-07-10",
@@ -337,6 +349,58 @@
       ],
       "title": "TBD",
       "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-09-04",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "TBD",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-09-18",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "TBD",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-10-02",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "TBD",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-10-16",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "TBD",
       "time": "6:00PM",
       "files": []
     },
