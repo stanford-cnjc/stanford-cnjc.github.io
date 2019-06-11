@@ -311,7 +311,7 @@
       "description": "The use of neural networks in neuroscience is often met with two criticisms: that neural networks are 'black boxes' that defy interpretation, and that they have not proven useful for studying their biological counterparts. In this session, we will discuss and play with gradient-based methods for synthesizing images that maximally drive neurons, both in artificial neural networks and in the primate brain.",
       "files": [
         {
-          "url": "https://science.sciencemag.org/content/364/6439/eaav9436/tab-article-info",
+          "url": "https://science.sciencemag.org/content/sci/364/6439/eaav9436.full.pdf?ijkey=iBRdlniG7iYuA&keytype=ref&siteid=sci",
           "name": "Neural population control via deep image synthesis (Bashivan et al., 2019)"
         },
         {
