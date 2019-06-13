@@ -277,7 +277,7 @@
         },
         {
           "url": "https://docs.google.com/presentation/d/1QFcyF3h36DGNYHwqswDIfIt18HIRJVhst9YFasQmEcU/edit?usp=sharing",
-          "name": "Side Deck"
+          "name": "Slide Deck"
         }
       ]
     },
@@ -315,8 +315,20 @@
           "name": "Neural population control via deep image synthesis (Bashivan et al., 2019)"
         },
         {
+          "url": "https://www.cell.com/cell/pdf/S0092-8674(19)30391-5.pdf",
+          "name": "Evolving Images for Visual Neurons Using a Deep Generative Network Reveals Coding Principles and Neuronal Preferences (Ponce et al., 2019)"
+        },
+        {
           "url": "https://distill.pub/2017/feature-visualization/",
           "name": "distill.pub Post: Feature Visualization"
+        },
+        {
+          "url": "https://docs.google.com/presentation/d/1Uig912uS0PBdah-UWTXmwMMMfJLmA09ZnwkvpGN-z2Y/edit?usp=sharing",
+          "name": "Meeting Slides"
+        },
+        {
+          "url": "https://github.com/stanford-cnjc/cnjc-code/tree/master/meetings/2019_06_imageopt",
+          "name": "Link to Notebooks on GitHub"
         }
       ]
     },
