@@ -350,7 +350,16 @@
       "location": "LKSC 209",
       "time": "6:00PM",
       "description": "Neuroscience data is partially observed, only including certain regions at a particular scale, and statistically dependent, as a single neuron synapses onto thousands of other neurons. Since this violates the assumptions for commonly used statistical tools, we turn to Bayesian methods. As exact Bayesian inference is often computationally intractable, this talk will cover exciting recent results for approximating Bayesian inference as a deep learning optimization problem.",
-      "files": []
+      "files": [
+        {
+          "url": "https://github.com/stanford-cnjc/cnjc-code/tree/master/meetings/2019_07_variational_bayesian",
+          "name": "Link to GitHub repository (notebook and slides)"
+        },
+        {
+          "url": "https://github.com/tbenst/cnjc-vae/blob/30dfc59193c892d26bc1b6f947a27f84bae4ec7e/main.pdf",
+          "name": "Direct link to slide deck"
+        }
+      ]
     },
     {
       "date": "2019-08-21",
