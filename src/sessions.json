@@ -366,13 +366,13 @@
       "speakers": [
         {
           "name": "Eshed Margalit",
-          "url": "www.eshedmargalit.com",
+          "url": "http://www.eshedmargalit.com",
           "domain": "stanford.edu",
           "handle": "eshedm"
         },
         {
           "name": "Tucker Fisher",
-          "url": "tgfisher.github.io",
+          "url": "http://tgfisher.github.io",
           "domain": "stanford.edu",
           "handle": "tgfisher"
         }
