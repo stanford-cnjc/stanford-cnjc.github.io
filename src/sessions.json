@@ -428,6 +428,19 @@
       "date": "2019-10-30",
       "speakers": [
         {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-11-13",
+      "speakers": [
+        {
           "name": "Minseung Choi",
           "url": "https://minseung.people.stanford.edu/",
           "domain": "stanford.edu",
