@@ -384,19 +384,6 @@
       "files": []
     },
     {
-      "date": "2019-09-18",
-      "speakers": [
-        {
-          "name": "Your name here!",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "location": "LKSC 209",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
       "date": "2019-10-02",
       "speakers": [
         {
@@ -415,11 +402,13 @@
       "date": "2019-10-16",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "Xi Jia (Laura) Zhou",
+          "domain": "stanford.edu",
+          "handle": "xijiazho",
           "url": ""
         }
       ],
-      "title": "TBD",
+      "title": "TBA",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -448,6 +437,84 @@
         }
       ],
       "title": "TBA",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2019-12-11",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-01-8",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-01-22",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-02-05",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-02-19",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "location": "LKSC 209",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-04-01",
+      "speakers": [
+        {
+          "name": "Your name here!",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
