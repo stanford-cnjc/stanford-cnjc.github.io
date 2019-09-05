@@ -381,7 +381,16 @@
       "description": "Please join us for a casual welcome back get-together to celebrate the start of the academic year. In addition to giving a recap of last year's events, we'll discuss plans for the coming year and brainstorm topics of interest for future sessions. Oh, and there'll be dinner provided!",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://docs.google.com/presentation/d/1SVOdBAVtqfT5h03sUljNKr-f-Ct551qIZEDIwN_24Uo/edit?usp=sharing",
+          "name": "Slide Deck"
+        },
+        {
+          "url": "https://bit.ly/2m09sIt",
+          "name": "Sign-up Spreadsheet"
+        }
+      ]
     },
     {
       "date": "2019-10-02",
