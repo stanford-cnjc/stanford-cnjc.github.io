@@ -400,6 +400,10 @@
           "url": "",
           "domain": "stanford.edu",
           "handle": "kochalka"
+        },
+        {
+          "name": "YoungJu Jo",
+          "url": ""
         }
       ],
       "title": "Chaos in Recurrent Neural Networks",
@@ -493,11 +497,13 @@
       "date": "2020-02-05",
       "speakers": [
         {
-          "name": "Your name here!",
-          "url": ""
+          "name": "Dawn Finzi",
+          "url": "",
+          "handle": "dfinzi",
+          "domain": "stanford.edu"
         }
       ],
-      "title": "TBD",
+      "title": "To be Announced",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
