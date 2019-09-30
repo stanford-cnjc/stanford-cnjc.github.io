@@ -407,6 +407,8 @@
         }
       ],
       "title": "Chaos in Recurrent Neural Networks",
+      "description": "The brain is spontaneously active and many behaviors rely on complex, time-varying patterns of neural activity. This session will focus on random recurrent networks, a powerful class of nonlinear dynamical systems models whose intrinsic chaotic activity can be leveraged towards diverse tasks such as telling time or producing motor outputs. We will elucidate the basic mathematical concepts underlying these networks and explore some fun examples from the literature with interactive demos.",
+      "rsvp_link": "https://docs.google.com/forms/d/e/1FAIpQLSfRiXkBBd7doBePixJ0UfpjIVIRDXXOhNRBJqzPQyNj3JSRRg/viewform?usp=sf_link",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
