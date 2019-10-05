@@ -82,28 +82,24 @@ class SessionsList extends Component {
         </Row>
         <Row>
           <Col lg="6" xs="12">
-            <Container>
-              <Row className="vertical-align">
-                <Col xs="12" lg="12">
-                  <div>
-                    <h2>Upcoming Meetings</h2>
-                    <SessionListGroup sessions={upcoming_sessions} />
-                  </div>
-                </Col>
-              </Row>
-            </Container>
+            <Row className="vertical-align">
+              <Col xs="12" lg="12">
+                <div>
+                  <h2>Upcoming Meetings</h2>
+                  <SessionListGroup sessions={upcoming_sessions} />
+                </div>
+              </Col>
+            </Row>
           </Col>
           <Col lg="6" xs="12">
-            <Container>
-              <Row className="vertical-align">
-                <Col xs="12" lg="12">
-                  <div>
-                    <h2>Past Meetings</h2>
-                    <SessionListGroup sessions={past_sessions} />
-                  </div>
-                </Col>
-              </Row>
-            </Container>
+            <Row className="vertical-align">
+              <Col xs="12" lg="12">
+                <div>
+                  <h2>Past Meetings</h2>
+                  <SessionListGroup sessions={past_sessions} />
+                </div>
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>
