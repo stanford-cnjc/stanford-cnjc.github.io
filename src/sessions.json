@@ -423,7 +423,7 @@
           "url": ""
         }
       ],
-      "title": "To be Announced",
+      "title": "Markov Models for Timeseries Data",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -432,11 +432,15 @@
       "date": "2019-10-30",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "Gabe Mel",
+          "url": ""
+        },
+        {
+          "name": "Ben Sorscher",
           "url": ""
         }
       ],
-      "title": "TBD",
+      "title": "Grid Cells in Recurrent Neural Networks",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -449,6 +453,10 @@
           "url": "https://minseung.people.stanford.edu/",
           "domain": "stanford.edu",
           "handle": "minseung"
+        },
+        {
+          "name": "John Wen",
+          "url": ""
         }
       ],
       "title": "To be Announced",
