@@ -22,7 +22,7 @@
       "files": [
         {
           "url": "https://docs.google.com/presentation/d/1vknVYQqJathSat6PnTUZcEWOQQOxnDSFTPMcEvObSq0/edit?usp=sharing",
-          "name": "Slide Deck"
+          "name": "Meeting Slides"
         }
       ]
     },
@@ -65,7 +65,7 @@
         },
         {
           "url": "https://docs.google.com/presentation/d/1Cs82iV2hya07nIFiSSOJbL7yZ6UTfMsFdK9fpfu3Lwg/edit?usp=sharing",
-          "name": "Slide Deck"
+          "name": "Meeting Slides"
         },
         {
           "url": "https://github.com/stanford-cnjc/cnjc-code/tree/master/meetings/2019_01_tSNE",
@@ -117,7 +117,7 @@
         },
         {
           "url": "https://docs.google.com/presentation/d/1V6uyyHf6FUIuQQsv641_rPI9qkmGrNSgaUW10sQCjZM/edit?usp=sharing",
-          "name": "Slide Deck"
+          "name": "Meeting Slides"
         },
         {
           "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/feb/session_01/N2+on+food+L_2010_04_08__11_25_23___8___1_featuresN.hdf5",
@@ -149,7 +149,7 @@
       "files": [
         {
           "url": "https://docs.google.com/presentation/d/1SA4-AO0tzT4e8LebgYN9QnBkJCPSW5TVVwqXEk4ppmo/edit?usp=sharing",
-          "name": "Slide Deck"
+          "name": "Meeting Slides"
         }
       ]
     },
@@ -190,7 +190,7 @@
       "files": [
         {
           "url": "https://docs.google.com/presentation/d/185M5JKIBP9X_kkQCfH7Oh0PKRzk6lMja_YTxR44yEjo/edit?usp=sharing",
-          "name": "Slide Deck"
+          "name": "Meeting Slides"
         },
         {
           "url": "https://github.com/saarthaks/PredictiveCodingESF",
@@ -245,7 +245,7 @@
         },
         {
           "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/apr/session_02/simile_or_metaphor_slides.pdf",
-          "name": "Slide Deck"
+          "name": "Meeting Slides"
         }
       ]
     },
@@ -277,7 +277,7 @@
         },
         {
           "url": "https://docs.google.com/presentation/d/1QFcyF3h36DGNYHwqswDIfIt18HIRJVhst9YFasQmEcU/edit?usp=sharing",
-          "name": "Slide Deck"
+          "name": "Meeting Slides"
         }
       ]
     },
@@ -384,7 +384,7 @@
       "files": [
         {
           "url": "https://docs.google.com/presentation/d/1SVOdBAVtqfT5h03sUljNKr-f-Ct551qIZEDIwN_24Uo/edit?usp=sharing",
-          "name": "Slide Deck"
+          "name": "Meeting Slides"
         },
         {
           "url": "https://bit.ly/2m09sIt",
@@ -411,7 +411,28 @@
       "rsvp_link": "https://docs.google.com/forms/d/e/1FAIpQLSfRiXkBBd7doBePixJ0UfpjIVIRDXXOhNRBJqzPQyNj3JSRRg/viewform?usp=sf_link",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://docs.google.com/presentation/d/1XzOjFi2bikPjnbTZRPjMuH0ex42KQiucogD6XmJsDo0/edit#slide=id.p",
+          "name": "Meeting Slides"
+        },
+        {
+          "url": "https://colab.research.google.com/drive/1BEEZgksOl7hc7TGIrWq3GB_4orV6zee6?usp=drive_open",
+          "name": "Colab Notebook: Visualizations (Static)"
+        },
+        {
+          "url": "https://colab.research.google.com/drive/1XZPb9l598cV3s0q7Nl3GtOJCH_rnKsQf?usp=drive_open",
+          "name": "Colab Notebook: Visualizations (Dynamic)"
+        },
+        {
+          "url": "https://github.com/kochalka/CNJC_RNN",
+          "name": "Github Repo"
+        },
+        {
+          "url": "https://github.com/ReScience-Archives/Vitay-2016",
+          "name": "Python implementation of Laje and Buonomano, 2013"
+        }
+      ]
     },
     {
       "date": "2019-10-16",
