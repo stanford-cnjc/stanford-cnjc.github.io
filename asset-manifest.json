@@ -1,19 +1,17 @@
 {
-  "files": {
-    "main.css": "/static/css/main.c1dcefd6.chunk.css",
-    "main.js": "/static/js/main.de4dd755.chunk.js",
-    "main.js.map": "/static/js/main.de4dd755.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/css/2.1e66eaca.chunk.css": "/static/css/2.1e66eaca.chunk.css",
-    "static/js/2.08de16e5.chunk.js": "/static/js/2.08de16e5.chunk.js",
-    "static/js/2.08de16e5.chunk.js.map": "/static/js/2.08de16e5.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.eec81a538342f61a26151e1e48dd4e12.js": "/precache-manifest.eec81a538342f61a26151e1e48dd4e12.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.1e66eaca.chunk.css.map": "/static/css/2.1e66eaca.chunk.css.map",
-    "static/css/main.c1dcefd6.chunk.css.map": "/static/css/main.c1dcefd6.chunk.css.map",
-    "static/media/mbct-logo.png": "/static/media/mbct-logo.05342f4c.png",
-    "static/media/wt_400x400.jpg": "/static/media/wt_400x400.496c3ff7.jpg"
-  }
+  "main.css": "/static/css/main.d245fa6d.chunk.css",
+  "main.js": "/static/js/main.28a215bd.chunk.js",
+  "main.js.map": "/static/js/main.28a215bd.chunk.js.map",
+  "static/css/1.365984ca.chunk.css": "/static/css/1.365984ca.chunk.css",
+  "static/js/1.98d941e5.chunk.js": "/static/js/1.98d941e5.chunk.js",
+  "static/js/1.98d941e5.chunk.js.map": "/static/js/1.98d941e5.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/media/mbct-logo.png": "/static/media/mbct-logo.05342f4c.png",
+  "static/media/wt_400x400.jpg": "/static/media/wt_400x400.496c3ff7.jpg",
+  "static/css/main.d245fa6d.chunk.css.map": "/static/css/main.d245fa6d.chunk.css.map",
+  "static/css/1.365984ca.chunk.css.map": "/static/css/1.365984ca.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.0a51168227c608fe0a9928984a72bc3f.js": "/precache-manifest.0a51168227c608fe0a9928984a72bc3f.js",
+  "service-worker.js": "/service-worker.js"
 }
