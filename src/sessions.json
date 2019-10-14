@@ -438,16 +438,22 @@
       "date": "2019-10-16",
       "speakers": [
         {
-          "name": "Xi Jia (Laura) Zhou",
+          "name": "Tucker Fisher",
           "domain": "stanford.edu",
-          "handle": "xijiazho",
+          "handle": "tgfisher",
           "url": ""
         }
       ],
-      "title": "Markov Models for Timeseries Data",
+      "title": "Journal Club: Computational Neuroethology: A Call to Action",
+      "description": "We will be reading the following paper as a group. Please find the PDF attached and come prepared to discuss the contents. Paper abstract: \"The brain is worthy of study because it is in charge of behavior. A flurry of recent technical advances in measuring and quantifying naturalistic behaviors provide an important opportunity for advancing brain science. However, the problem of understanding unrestrained behavior in the context of neural recordings and manipulations remains unsolved, and developing approaches to addressing this challenge is critical. Here we discuss considerations in computational neuroethology—the science of quantifying naturalistic behaviors for understanding the brain—and propose strategies to evaluate progress. We point to open questions that require resolution and call upon the broader systems neuroscience community to further develop and leverage measures of naturalistic, unrestrained behavior, which will enable us to more effectively probe the richness and complexity of the brain.\"",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://stanford-cnjc-files.s3-us-west-1.amazonaws.com/2019/oct/session_02/Datta_2019.pdf",
+          "name": "Computational Neuroethology: A Call to Action (Datta et al., 2019)"
+        }
+      ]
     },
     {
       "date": "2019-10-30",
