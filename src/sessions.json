@@ -456,23 +456,6 @@
       ]
     },
     {
-      "date": "2019-10-30",
-      "speakers": [
-        {
-          "name": "Gabe Mel",
-          "url": ""
-        },
-        {
-          "name": "Ben Sorscher",
-          "url": ""
-        }
-      ],
-      "title": "Grid Cells in Recurrent Neural Networks",
-      "location": "LKSC 209",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
       "date": "2019-11-13",
       "speakers": [
         {
@@ -486,7 +469,8 @@
           "url": ""
         }
       ],
-      "title": "To be Announced",
+      "title": "HMM Smackdown: HMM-GLM vs. SLDS (HMM-LDS)",
+      "description": "Hidden Markov Models (HMMs) have become a popular tool in neuroscience, especially when paired with other powerful techniques such as linear dynamical systems (LDS) models and generalized linear models (GLMs). In this session, two approaches (HMM-GLM and HMM-LDS) will be explained, compared and contrasted.",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -505,14 +489,18 @@
       "files": []
     },
     {
-      "date": "2020-01-8",
+      "date": "2020-01-08",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "Gabe Mel",
+          "url": ""
+        },
+        {
+          "name": "Ben Sorscher",
           "url": ""
         }
       ],
-      "title": "TBD",
+      "title": "Grid Cells in Recurrent Neural Networks",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
