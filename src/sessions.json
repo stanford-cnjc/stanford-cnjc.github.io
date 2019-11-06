@@ -459,18 +459,19 @@
       "date": "2019-11-13",
       "speakers": [
         {
-          "name": "Minseung Choi",
-          "url": "https://minseung.people.stanford.edu/",
+          "name": "Gabe Mel",
+          "url": "",
           "domain": "stanford.edu",
-          "handle": "minseung"
+          "handle": "meldefon"
         },
         {
-          "name": "John Wen",
-          "url": ""
+          "name": "Ben Sorscher",
+          "url": "",
+          "domain": "gmail.com",
+          "handle": "bsorsch"
         }
       ],
-      "title": "HMM Smackdown: HMM-GLM vs. SLDS (HMM-LDS)",
-      "description": "Hidden Markov Models (HMMs) have become a popular tool in neuroscience, especially when paired with other powerful techniques such as linear dynamical systems (LDS) models and generalized linear models (GLMs). In this session, two approaches (HMM-GLM and HMM-LDS) will be explained, compared and contrasted.",
+      "title": "Grid Cells in Recurrent Neural Networks",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -492,15 +493,18 @@
       "date": "2020-01-08",
       "speakers": [
         {
-          "name": "Gabe Mel",
-          "url": ""
+          "name": "Minseung Choi",
+          "url": "https://minseung.people.stanford.edu/",
+          "domain": "stanford.edu",
+          "handle": "minseung"
         },
         {
-          "name": "Ben Sorscher",
+          "name": "John Wen",
           "url": ""
         }
       ],
-      "title": "Grid Cells in Recurrent Neural Networks",
+      "title": "HMM Smackdown: HMM-GLM vs. SLDS (HMM-LDS)",
+      "description": "Hidden Markov Models (HMMs) have become a popular tool in neuroscience, especially when paired with other powerful techniques such as linear dynamical systems (LDS) models and generalized linear models (GLMs). In this session, two approaches (HMM-GLM and HMM-LDS) will be explained, compared and contrasted.",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
