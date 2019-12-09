@@ -483,12 +483,22 @@
         {
           "name": "Jay Bhasin",
           "url": ""
+        },
+        {
+          "name": "Max Gagnon",
+          "url": ""
         }
       ],
-      "title": "To Be Announced",
+      "title": "The Eighty Five Percent Rule for optimal learning",
+      "description": "A common principle in learning new knowledge or acquiring a new skill is to start with something easy, and progressively challenge yourself with the harder stuff. While this might make sense intuitively, in a recent paper, Wilson et al. show mathematically that for classifier models, learning by gradient descent proceeds at an optimal rate when the difficulty of the task is such that the classifier is approximately 85% accurate. In this week's CNJC we will go through the approach used in the paper and discuss this result.",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://www.nature.com/articles/s41467-019-12552-4",
+          "name": "The Eighty Five Percent Rule for optimal learning. Wilson et al., 2019"
+        }
+      ]
     },
     {
       "date": "2020-01-08",
