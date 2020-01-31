@@ -518,7 +518,24 @@
       "description": "Hidden Markov Models (HMMs) have become a popular tool in neuroscience, especially when paired with other powerful techniques such as linear dynamical systems (LDS) models and generalized linear models (GLMs). In this session, two approaches (HMM-GLM and HMM-LDS) will be explained, compared and contrasted.",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://docs.google.com/presentation/d/1L4jdiE6c68mU73BnpbH44XhIAXTAcpgmIYF-U_ijv68/edit?usp=sharing",
+          "name": "Session Slide Deck"
+        },
+        {
+          "url": "https://stanford-cnjc-files.s3-us-west-1.amazonaws.com/2020/jan/session_01/CNJC.m",
+          "name": "MATLAB Code from Session"
+        },
+        {
+          "url": "https://stanford-cnjc-files.s3-us-west-1.amazonaws.com/2020/jan/session_01/Calhoun_et_al_2019.pdf",
+          "name": "Unsupervised identification of the internal states that shape natural behavior (Calhoun et al., 2019)"
+        },
+        {
+          "url": "https://stanford-cnjc-files.s3-us-west-1.amazonaws.com/2020/jan/session_01/Linderman_et_al_2017.pdf",
+          "name": "Bayesian Learning and Inference in Recurrent Switching Linear Dynamical Systems (Linderman et al., 2017)"
+        }
+      ]
     },
     {
       "date": "2020-01-22",
@@ -532,7 +549,16 @@
       "description": "The hippocampus is a medial temporal lobe brain structure that contains circuitry and neural representations capable of supporting declarative memory. Hippocampal place cells fire in one or few restricted spatial locations in a given environment. Between environmental contexts, place cell firing fields remap (turning on/off or moving to a new spatial location), providing a unique population-wide neural code for context specificity. However, the manner by which features associated with a given context combine to drive place cell remapping remains a matter of debate. Here we show that remapping of neural representations in region CA1 of the hippocampus is strongly driven by prior beliefs about the frequency of certain contexts, and that remapping is equivalent to an optimal estimate of the identity of the current context under that prior. This prior-driven remapping is learned early in training and remains robust to changes in behavioral task-demands. Furthermore, a network model that uses a simple associative learning mechanism is sufficient to reproduce these results. Our findings demonstrate that place cell remapping is a generalization of representing an animal’s location. Rather than simply representing location in physical space, the hippocampus represents an optimal estimate of location in a multi-dimensional stimulus space.",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://drive.google.com/file/d/1av6NaY7l99w9swFvQ_eVKe2IfBf6XsOz/view?usp=sharing",
+          "name": "Session Slide Deck"
+        },
+        {
+          "url": "https://github.com/GiocomoLab/PlittGiocomo_CA1Morph_2019",
+          "name": "Github Repository"
+        }
+      ]
     },
     {
       "date": "2020-02-05",
@@ -553,11 +579,11 @@
       "date": "2020-02-19",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "Libby Zhang",
           "url": ""
         }
       ],
-      "title": "TBD",
+      "title": "To be Announced",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
