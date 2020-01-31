@@ -26,9 +26,6 @@ import './SessionsList.css';
 class SessionsListGroup extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      max_sessions: 5,
-    };
   }
 
   renderEmail = speaker => {
@@ -279,28 +276,13 @@ class SessionsListGroup extends Component {
 
     const n_sessions = session_render_list.length;
     let session_render_wrapper = <div>{session_render_list}</div>;
-    if (n_sessions > this.state.max_sessions) {
-      var n_hidden = this.props.sessions.length - this.state.max_sessions;
+    if (n_sessions > this.props.max_sessions) {
+      var n_hidden = this.props.sessions.length - this.props.max_sessions;
       session_render_list = session_render_list.slice(
         0,
-        this.state.max_sessions
+        this.props.max_sessions
       );
-      session_render_wrapper = (
-        <div>
-          {session_render_list}
-          <Button
-            color="primary"
-            onClick={e => {
-              this.setState({
-                max_sessions: this.state.max_sessions + 5,
-              });
-            }}
-          >
-            {' '}
-            Show More ({n_hidden} Hidden){' '}
-          </Button>
-        </div>
-      );
+      session_render_wrapper = <div>{session_render_list}</div>;
     }
     return session_render_wrapper;
   };
