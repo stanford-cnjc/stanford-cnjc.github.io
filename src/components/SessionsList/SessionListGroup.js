@@ -24,10 +24,6 @@ import moment from 'moment';
 import './SessionsList.css';
 
 class SessionsListGroup extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   renderEmail = speaker => {
     if (speaker.handle && speaker.domain) {
       const address = speaker.handle + '@' + speaker.domain;
@@ -277,7 +273,6 @@ class SessionsListGroup extends Component {
     const n_sessions = session_render_list.length;
     let session_render_wrapper = <div>{session_render_list}</div>;
     if (n_sessions > this.props.max_sessions) {
-      var n_hidden = this.props.sessions.length - this.props.max_sessions;
       session_render_list = session_render_list.slice(
         0,
         this.props.max_sessions
