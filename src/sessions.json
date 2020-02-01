@@ -573,10 +573,24 @@
         }
       ],
       "title": "Receptive fields: representations of feature and space in visual cortex",
-      "description": "",
+      "description": "Receptive fields have been integral to the study of visual neuroscience since Hubel and Weisel. In this session we plan to discuss two approaches that leverage the concept of a 'receptive field' to probe representations in visual cortex: 1) population receptive models in fMRI and 2) CNNs with readout layers that factorize space and feature weights",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "rsvp_link": "https://forms.gle/JfEtQRBe2uoQZmvLA",
+      "files": [
+        {
+          "url": "http://cvnlab.net/papers/KayCurrentBiology2015.pdf",
+          "name": "Attention Reduces Spatial Uncertainty in Human Ventral Temporal Cortex (Kay et al., 2015)"
+        },
+        {
+          "url": "http://bethgelab.org/media/publications/6942-neural-system-identification-for-large-populations-separating-what-and-where.pdf",
+          "name": "Neural system identification for large populations separating 'what' and 'where' (Klindt et al., 2017)"
+        },
+        {
+          "url": "https://github.com/dawnfinzi/pRFdemo",
+          "name": "pRF Model Fitting Demo"
+        }
+      ]
     },
     {
       "date": "2020-02-19",
