@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Form, FormGroup, Label, Input } from 'reactstrap';
+import {
+  Button,
+  Container,
+  Row,
+  Col,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+} from 'reactstrap';
 import moment from 'moment';
 
 import Fuse from 'fuse.js';
 import './SessionsList.css';
 
-import session_data from '../../sessions.json'; // in future, load from S3 or similar
+import session_data from '../../sessions.json';
 import SessionListGroup from './SessionListGroup.js';
 
 class SessionsList extends Component {
@@ -13,7 +22,8 @@ class SessionsList extends Component {
     super(props);
     this.state = {
       sessions: session_data.sessions,
-      max_sessions: 10,
+      max_sessions_upcoming: 3,
+      max_sessions_past: 10,
     };
   }
 
@@ -63,6 +73,50 @@ class SessionsList extends Component {
     upcoming_sessions.sort((a, b) => moment(a.date).diff(moment(b.date))); // ascending sort
     past_sessions.sort((a, b) => -moment(a.date).diff(moment(b.date)));
 
+    const n_hidden_upcoming =
+      upcoming_sessions.length - this.state.max_sessions_upcoming;
+    const n_hidden_past = past_sessions.length - this.state.max_sessions_past;
+
+    let upcoming_more_button =
+      n_hidden_upcoming > 0 ? (
+        <Row>
+          <Col style={{ textAlign: 'center' }}>
+            <Button
+              style={{ margin: 'auto' }}
+              color="primary"
+              onClick={e => {
+                this.setState({
+                  max_sessions_upcoming: this.state.max_sessions_upcoming + 5,
+                });
+              }}
+            >
+              {' '}
+              Show More Upcoming Sessions ({n_hidden_upcoming} Hidden){' '}
+            </Button>
+          </Col>
+        </Row>
+      ) : null;
+
+    let past_more_button =
+      n_hidden_past > 0 ? (
+        <Row>
+          <Col style={{ textAlign: 'center' }}>
+            <Button
+              style={{ margin: 'auto' }}
+              color="primary"
+              onClick={e => {
+                this.setState({
+                  max_sessions_past: this.state.max_sessions_past + 5,
+                });
+              }}
+            >
+              {' '}
+              Show More Past Sessions ({n_hidden_past} Hidden){' '}
+            </Button>
+          </Col>
+        </Row>
+      ) : null;
+
     return (
       <Container>
         <Row>
@@ -80,26 +134,38 @@ class SessionsList extends Component {
             </Form>
           </Col>
         </Row>
+        <hr />
         <Row>
-          <Col lg="6" xs="12">
+          <Col lg="12" xs="12">
             <Row className="vertical-align">
               <Col xs="12" lg="12">
                 <div>
-                  <h2>Upcoming Meetings</h2>
-                  <SessionListGroup sessions={upcoming_sessions} />
+                  <h2 className="center-align">Upcoming Meetings</h2>
+                  <SessionListGroup
+                    sessions={upcoming_sessions}
+                    max_sessions={this.state.max_sessions_upcoming}
+                  />
                 </div>
               </Col>
             </Row>
+            {upcoming_more_button}
           </Col>
-          <Col lg="6" xs="12">
+        </Row>
+        <br />
+        <Row>
+          <Col lg="12" xs="12">
             <Row className="vertical-align">
               <Col xs="12" lg="12">
                 <div>
-                  <h2>Past Meetings</h2>
-                  <SessionListGroup sessions={past_sessions} />
+                  <h2 className="center-align">Past Meetings</h2>
+                  <SessionListGroup
+                    sessions={past_sessions}
+                    max_sessions={this.state.max_sessions_past}
+                  />
                 </div>
               </Col>
             </Row>
+            {past_more_button}
           </Col>
         </Row>
       </Container>
