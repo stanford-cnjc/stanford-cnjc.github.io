@@ -622,11 +622,15 @@
       "date": "2020-04-15",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "Anna Gillespie",
+          "url": ""
+        },
+        {
+          "name": "Eric Denovellis",
           "url": ""
         }
       ],
-      "title": "TBD",
+      "title": "To be Announced",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
