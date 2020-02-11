@@ -22,7 +22,7 @@
       "files": [
         {
           "url": "https://docs.google.com/presentation/d/1vknVYQqJathSat6PnTUZcEWOQQOxnDSFTPMcEvObSq0/edit?usp=sharing",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         }
       ]
     },
@@ -65,7 +65,7 @@
         },
         {
           "url": "https://docs.google.com/presentation/d/1Cs82iV2hya07nIFiSSOJbL7yZ6UTfMsFdK9fpfu3Lwg/edit?usp=sharing",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         },
         {
           "url": "https://github.com/stanford-cnjc/cnjc-code/tree/master/meetings/2019_01_tSNE",
@@ -117,7 +117,7 @@
         },
         {
           "url": "https://docs.google.com/presentation/d/1V6uyyHf6FUIuQQsv641_rPI9qkmGrNSgaUW10sQCjZM/edit?usp=sharing",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         },
         {
           "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/feb/session_01/N2+on+food+L_2010_04_08__11_25_23___8___1_featuresN.hdf5",
@@ -149,7 +149,7 @@
       "files": [
         {
           "url": "https://docs.google.com/presentation/d/1SA4-AO0tzT4e8LebgYN9QnBkJCPSW5TVVwqXEk4ppmo/edit?usp=sharing",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         }
       ]
     },
@@ -190,7 +190,7 @@
       "files": [
         {
           "url": "https://docs.google.com/presentation/d/185M5JKIBP9X_kkQCfH7Oh0PKRzk6lMja_YTxR44yEjo/edit?usp=sharing",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         },
         {
           "url": "https://github.com/saarthaks/PredictiveCodingESF",
@@ -245,7 +245,7 @@
         },
         {
           "url": "https://s3-us-west-1.amazonaws.com/stanford-cnjc-files/2019/apr/session_02/simile_or_metaphor_slides.pdf",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         }
       ]
     },
@@ -277,7 +277,7 @@
         },
         {
           "url": "https://docs.google.com/presentation/d/1QFcyF3h36DGNYHwqswDIfIt18HIRJVhst9YFasQmEcU/edit?usp=sharing",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         }
       ]
     },
@@ -324,7 +324,7 @@
         },
         {
           "url": "https://docs.google.com/presentation/d/1Uig912uS0PBdah-UWTXmwMMMfJLmA09ZnwkvpGN-z2Y/edit?usp=sharing",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         },
         {
           "url": "https://github.com/stanford-cnjc/cnjc-code/tree/master/meetings/2019_06_imageopt",
@@ -384,7 +384,7 @@
       "files": [
         {
           "url": "https://docs.google.com/presentation/d/1SVOdBAVtqfT5h03sUljNKr-f-Ct551qIZEDIwN_24Uo/edit?usp=sharing",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         },
         {
           "url": "https://bit.ly/2m09sIt",
@@ -414,7 +414,7 @@
       "files": [
         {
           "url": "https://docs.google.com/presentation/d/1XzOjFi2bikPjnbTZRPjMuH0ex42KQiucogD6XmJsDo0/edit#slide=id.p",
-          "name": "Meeting Slides"
+          "name": "Session Slide Deck"
         },
         {
           "url": "https://colab.research.google.com/drive/1BEEZgksOl7hc7TGIrWq3GB_4orV6zee6?usp=drive_open",
@@ -475,7 +475,12 @@
       "description": "Recent studies have found that RNNs trained to solve a navigational task naturally develop periodic spatial tuning similar to that of medial entorhinal cortex (MEC) grid cells, raising the exciting possibility that such in silico models could give insight into MEC function or suggest novel recording and manipulation experiments. However, as of now almost nothing is known about the precise circuit mechanisms responsible for grid firing or path integration in these networks, posing a challenge both to neuroscientists and those interested in deep network analysis. Here we study the \"neurophysiology\" of these RNNs, and show that despite their apparent complexity and biologically characteristic \"messiness\", they can be understood in terms of a small number of intuitive network mechanisms. This analysis shows how grid firing arises within trained RNNs. Time permitting, we will present a mathematical theory that explains why hexagonal grids emerge as the optimal patterns for the navigation task.",
       "location": "LKSC 209",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "name": "Session Slide Deck",
+          "url": "https://docs.google.com/presentation/d/1E4H1MxdJizO1wqrgIozycwUnLvh2tjGcP3xbT9Dei2E/edit?usp=sharing"
+        }
+      ]
     },
     {
       "date": "2019-12-11",
@@ -600,7 +605,7 @@
           "url": ""
         }
       ],
-      "title": "To be Announced",
+      "title": "Topic to be Announced",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -630,7 +635,7 @@
           "url": ""
         }
       ],
-      "title": "To be Announced",
+      "title": "Special Guest Session: Topic to be Announced",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
@@ -652,11 +657,11 @@
       "date": "2020-05-13",
       "speakers": [
         {
-          "name": "Your name here!",
+          "name": "Scottie Alexander",
           "url": ""
         }
       ],
-      "title": "TBD",
+      "title": "Special Guest Session: Topic to be Announced",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
