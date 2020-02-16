@@ -605,7 +605,9 @@
           "url": ""
         }
       ],
-      "title": "Topic to be Announced",
+      "title": "Pose Estimation for Behavioral Analysis",
+      "description": "Rich behavioral representations can aid in the investigation of neural dynamics and function. After an overview of a framework for behavioral analysis, I will review existing approaches in pose estimation. Pose estimation is a key analytical block for constructing these rich behavioral representations. I will discuss model-based and model-free approaches from human pose estimation literature and their applications in animal pose estimation. At the end, I will briefly propose a new approach that aims to strike a balance between the interpretability of model-based methods with the expressive power of model-free methods.",
+      "rsvp_link": "https://forms.gle/y7cj6NANpTCcPyrW6",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
