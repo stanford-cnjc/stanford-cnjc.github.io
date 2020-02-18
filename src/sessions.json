@@ -646,11 +646,13 @@
       "date": "2020-04-29",
       "speakers": [
         {
-          "name": "Your name here!",
-          "url": ""
+          "name": "Daniel Bear",
+          "url": "",
+          "handle": "dbear",
+          "domain": "stanford.edu"
         }
       ],
-      "title": "TBD",
+      "title": "The End of the Convolution Revolution",
       "location": "LKSC 209",
       "time": "6:00PM",
       "files": []
