@@ -23,6 +23,22 @@ import moment from 'moment';
 
 import './SessionsList.css';
 
+function convert_weekday(date) {
+  if (date == 'TBD') {
+    return 'TBD';
+  } else {
+    return moment(date).format('dddd');
+  }
+}
+
+function convert_date(date) {
+  if (date == 'TBD') {
+    return 'TBD';
+  } else {
+    return moment(date).format('MMMM Do YYYY');
+  }
+}
+
 class SessionsListGroup extends Component {
   renderEmail = speaker => {
     if (speaker.handle && speaker.domain) {
@@ -178,8 +194,13 @@ class SessionsListGroup extends Component {
         font_color = 'black';
       }
 
-      const day_of_week = moment(session.date).format('dddd');
-      const date_str = moment(session.date).format('MMMM Do YYYY');
+      var day_of_week = convert_weekday(session.date);
+      var date_str = convert_date(session.date);
+
+      if (day_of_week == 'Invalid date') {
+        day_of_week = session.date;
+        date_str = session.date;
+      }
 
       // add a badge if the current date is today and the session is upcoming
       let today_badge = null;
