@@ -17,10 +17,6 @@ import './SessionsList.css';
 import session_data from '../../sessions.json';
 import SessionListGroup from './SessionListGroup.js';
 
-function upcoming_sort(a, b) {
-  return moment(a.date).diff(moment(b.date));
-}
-
 function past_sort(a, b) {
   return -moment(a.date).diff(moment(b.date));
 }
@@ -91,7 +87,6 @@ class SessionsList extends Component {
 
     upcoming_sessions.sort((a, b) => tbd_upcoming_sort(a, b)); // ascending sort
     past_sessions.sort((a, b) => past_sort(a, b));
-    console.log(upcoming_sessions);
 
     const n_hidden_upcoming =
       upcoming_sessions.length - this.state.max_sessions_upcoming;
@@ -104,7 +99,7 @@ class SessionsList extends Component {
             <Button
               style={{ margin: 'auto' }}
               color="primary"
-              onClick={e => {
+              onClick={() => {
                 this.setState({
                   max_sessions_upcoming: this.state.max_sessions_upcoming + 5,
                 });
@@ -124,7 +119,7 @@ class SessionsList extends Component {
             <Button
               style={{ margin: 'auto' }}
               color="primary"
-              onClick={e => {
+              onClick={() => {
                 this.setState({
                   max_sessions_past: this.state.max_sessions_past + 5,
                 });
