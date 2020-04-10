@@ -17,6 +17,20 @@ import './SessionsList.css';
 import session_data from '../../sessions.json';
 import SessionListGroup from './SessionListGroup.js';
 
+function past_sort(a, b) {
+  return -moment(a.date).diff(moment(b.date));
+}
+
+function tbd_upcoming_sort(a, b) {
+  if (a.date === 'TBD') {
+    return 0;
+  } else if (b.date === 'TBD') {
+    return -1;
+  } else {
+    return moment(a.date).diff(moment(b.date));
+  }
+}
+
 class SessionsList extends Component {
   constructor(props) {
     super(props);
@@ -57,8 +71,9 @@ class SessionsList extends Component {
         sess.date + ' ' + sess.time,
         'YYYY-MM-DD h:mm a'
       );
-
       if (moment().isBefore(sess_time)) {
+        return true;
+      } else if (sess.date === 'TBD') {
         return true;
       } else {
         return false;
@@ -70,8 +85,8 @@ class SessionsList extends Component {
     );
     var past_sessions = this.state.sessions.filter((_, i) => !is_upcoming[i]);
 
-    upcoming_sessions.sort((a, b) => moment(a.date).diff(moment(b.date))); // ascending sort
-    past_sessions.sort((a, b) => -moment(a.date).diff(moment(b.date)));
+    upcoming_sessions.sort((a, b) => tbd_upcoming_sort(a, b)); // ascending sort
+    past_sessions.sort((a, b) => past_sort(a, b));
 
     const n_hidden_upcoming =
       upcoming_sessions.length - this.state.max_sessions_upcoming;
@@ -84,7 +99,7 @@ class SessionsList extends Component {
             <Button
               style={{ margin: 'auto' }}
               color="primary"
-              onClick={e => {
+              onClick={() => {
                 this.setState({
                   max_sessions_upcoming: this.state.max_sessions_upcoming + 5,
                 });
@@ -104,7 +119,7 @@ class SessionsList extends Component {
             <Button
               style={{ margin: 'auto' }}
               color="primary"
-              onClick={e => {
+              onClick={() => {
                 this.setState({
                   max_sessions_past: this.state.max_sessions_past + 5,
                 });

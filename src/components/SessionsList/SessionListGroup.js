@@ -23,6 +23,34 @@ import moment from 'moment';
 
 import './SessionsList.css';
 
+function render_date(day_of_week, date_str) {
+  if (day_of_week === 'TBD' || date_str === 'TBD') {
+    return 'TBD';
+  } else {
+    return (
+      <span>
+        {day_of_week}, {date_str}
+      </span>
+    );
+  }
+}
+
+function convert_weekday(date) {
+  if (date === 'TBD') {
+    return 'TBD';
+  } else {
+    return moment(date).format('dddd');
+  }
+}
+
+function convert_date(date) {
+  if (date === 'TBD') {
+    return 'TBD';
+  } else {
+    return moment(date).format('MMMM Do YYYY');
+  }
+}
+
 class SessionsListGroup extends Component {
   renderEmail = speaker => {
     if (speaker.handle && speaker.domain) {
@@ -178,26 +206,34 @@ class SessionsListGroup extends Component {
         font_color = 'black';
       }
 
-      const day_of_week = moment(session.date).format('dddd');
-      const date_str = moment(session.date).format('MMMM Do YYYY');
+      var day_of_week = convert_weekday(session.date);
+      var date_str = convert_date(session.date);
+
+      if (day_of_week === 'Invalid date') {
+        day_of_week = session.date;
+        date_str = session.date;
+      }
 
       // add a badge if the current date is today and the session is upcoming
       let today_badge = null;
-      const sess_time = moment(
-        session.date + ' ' + session.time,
-        'YYYY-MM-DD h:mm a'
-      );
-      const diff = sess_time.fromNow();
-      if (
-        moment(session.date).format('YYYY-MM-DD') ===
-          moment().format('YYYY-MM-DD') &&
-        diff.startsWith('in')
-      ) {
-        let color = 'danger';
-        if (diff.endsWith('hours')) {
-          color = 'warning';
+      let time_diff = null;
+      if (session.date !== 'TBD') {
+        const sess_time = moment(
+          session.date + ' ' + session.time,
+          'YYYY-MM-DD h:mm a'
+        );
+        time_diff = sess_time.fromNow();
+        if (
+          moment(session.date).format('YYYY-MM-DD') ===
+            moment().format('YYYY-MM-DD') &&
+          time_diff.startsWith('in')
+        ) {
+          let color = 'danger';
+          if (time_diff.endsWith('hours')) {
+            color = 'warning';
+          }
+          today_badge = <Reminder session_time={sess_time} color={color} />;
         }
-        today_badge = <Reminder session_time={sess_time} color={color} />;
       }
 
       let resource_header = null;
@@ -222,7 +258,7 @@ class SessionsListGroup extends Component {
 
       let food_signup = null;
       if (session.rsvp_link) {
-        if (diff.startsWith('in')) {
+        if (time_diff.startsWith('in')) {
           food_signup = (
             <span>
               <hr />
@@ -248,13 +284,13 @@ class SessionsListGroup extends Component {
       }
 
       return (
-        <span key={session.date}>
+        <span key={session.date + session.title}>
           <ListGroupItem>
             <div className={font_color}>
               <h4>
                 {session.title} {today_badge}
               </h4>
-              {day_of_week}, {date_str}
+              {render_date(day_of_week, date_str)}
               <hr />
               {session_description}
               {this.render_speakers(session.speakers)}
