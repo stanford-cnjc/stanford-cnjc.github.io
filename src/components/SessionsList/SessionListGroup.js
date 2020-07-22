@@ -250,7 +250,9 @@ class SessionsListGroup extends Component {
       if (session.description) {
         session_description = (
           <span>
-            <p>{session.description}</p>
+            <p>
+              <div dangerouslySetInnerHTML={{ __html: session.description }} />
+            </p>
             <hr />
           </span>
         );
