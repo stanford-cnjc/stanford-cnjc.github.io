@@ -635,16 +635,21 @@
       "speakers": [
         {
           "name": "Daniel Bear",
-          "url": "",
+          "url": "https://neuroscience.stanford.edu/people/daniel-bear",
           "handle": "dbear",
           "domain": "stanford.edu"
         }
       ],
-      "title": "The End of the Convolution Revolution",
-      "description": "",
-      "location": "Zoom (Link TBD)",
+      "title": "Learning Physical Graph Representations from Visual Scenes",
+      "description": "Human vision is object-centric: we partition scenes into discrete objects and attribute physical properties to them, including appearance, position, shape, material composition, and their relations to each other. This abstraction is important for higher cognition, as most of our behaviors and goals are specified in terms of entities and relations &mdash; not pixel-level detail. Despite this, most state-of-the-art computer vision algorithms are based on image-like internal representations; if \"objects\" are present at all, they are typically given only \"semantic\" properties, not the physical ones needed for useful interaction. To begin addressing this gap, we've developed a way to augment computer vision algorithms with object-centric representations. We call these representations \"Physical Scene Graphs\" (PSGs) because they have both a hierarchical graphical structure and an explicit encoding of physical properties of a scene's visual elements, such as their position, shape, texture, and so on. Algorithms that infer PSG representations from visual input &mdash; \"PSGNets\" &mdash; groups visual features into discrete, unsupervised entities (\"objects\") and predict their physical attributes as explicit components of associated vectors. The algorithm is recursive, hierarchically constructing a graph of high-level objects from their low-level parts. I'll talk about the architecture of PSGNets, our results using them to segment visual scenes into objects without supervision, and &mdash; if there's time &mdash; how we're hoping to connect them back to neural circuits in biological visual systems.",
+      "location": "Zoom (Link and Password in Email)",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://arxiv.org/abs/2006.12373",
+          "name": "arXiv Preprint"
+        }
+      ]
     },
     {
       "date": "TBD",
