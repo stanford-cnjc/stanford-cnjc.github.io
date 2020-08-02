@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import SessionListGroup from '../SessionsList/SessionListGroup.js';
-import session_data from '../../cnjcx.json';
 
 class CNJCx extends Component {
   render() {
+    const flyer = require('../../img/cnjcx_flyer.png');
     return (
       <Container>
         <Row className="vertical-align">
           <Col xs="12" lg="12">
             <br />
             <h3>CNJCx: Practical Python</h3>
-            <p>
-              Description of CNJCx: life changing, reverses hair loss, makes you
-              type 100 wpm faster, guaranteed glam journal publication.
-            </p>
-            <SessionListGroup
-              sessions={session_data.sessions}
-              max_sessions={1000}
-            />
+            <Container>
+              <Row>
+                <Col>
+                  <img
+                    style={{ maxWidth: '70%' }}
+                    src={flyer}
+                    alt="flyer advertising the CNJCx series"
+                  />
+                </Col>
+              </Row>
+            </Container>
           </Col>
         </Row>
       </Container>
