@@ -296,7 +296,7 @@ class SessionsListGroup extends Component {
               <hr />
               {session_description}
               {this.render_speakers(session.speakers)}
-              {session.location}, {session.time}
+              {session.location}, {session.time} (PT)
               <br />
               {resource_header}
               <ListGroup>{this.render_files(session.files)}</ListGroup>
