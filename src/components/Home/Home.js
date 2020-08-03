@@ -33,8 +33,8 @@ class Home extends Component {
               </ul>
               <hr />
               <p>
-                Sessions that are part of CNJCx will have a light blue
-                background
+                Use the search field below to sort for the upcoming CNJCx
+                sessions. CNJCx will have a light blue background.
               </p>
               <Link to="/CNJCx">
                 <Button>More info about CNJCx</Button>
