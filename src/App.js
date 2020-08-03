@@ -5,6 +5,8 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import MenuBar from './components/MenuBar/MenuBar';
 import PresentationSignup from './components/PresentationSignup/PresentationSignup';
+import CNJCx from './components/CNJCx/CNJCx';
+
 import Footer from './components/Footer/Footer';
 import Clipboard from 'clipboard';
 
@@ -25,6 +27,7 @@ class App extends Component {
             path="/PresentationSignup"
             component={PresentationSignup}
           />
+          <Route exact path="/CNJCx" component={CNJCx} />
           <Route path="/" component={Footer} />
         </div>
       </Router>

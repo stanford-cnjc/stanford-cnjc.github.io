@@ -20,6 +20,7 @@ import {
   UncontrolledTooltip,
 } from 'reactstrap';
 import moment from 'moment';
+import { seriesToColorClass } from '../utils.js';
 
 import './SessionsList.css';
 
@@ -250,9 +251,7 @@ class SessionsListGroup extends Component {
       if (session.description) {
         session_description = (
           <span>
-            <p>
-              <div dangerouslySetInnerHTML={{ __html: session.description }} />
-            </p>
+            <div dangerouslySetInnerHTML={{ __html: session.description }} />
             <hr />
           </span>
         );
@@ -285,9 +284,13 @@ class SessionsListGroup extends Component {
         }
       }
 
+      const bgClassName = session.series
+        ? seriesToColorClass(session.series)
+        : null;
+
       return (
         <span key={session.date + session.title}>
-          <ListGroupItem>
+          <ListGroupItem className={bgClassName}>
             <div className={font_color}>
               <h4>
                 {session.title} {today_badge}

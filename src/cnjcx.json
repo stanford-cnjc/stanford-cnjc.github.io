@@ -1,0 +1,48 @@
+{
+  "sessions": [
+    {
+      "date": "2020-08-04",
+      "speakers": [
+        {
+          "name": "Tucker Fisher",
+          "handle": "tgfisher",
+          "domain": "stanford.edu",
+          "url": ""
+        },
+        {
+          "name": "Eshed Margalit",
+          "handle": "eshedm",
+          "domain": "stanford.edu",
+          "url": "http://www.eshedmargalit.com"
+        },
+        {
+          "name": "Josh Melander",
+          "handle": "melander",
+          "domain": "stanford.edu",
+          "url": ""
+        }
+      ],
+      "title": "Week 1: ✨The Journey Begins✨",
+      "description": "Every journey has to start somewhere! Could be anywhere. In this case, it's here.",
+      "location": "Zoom",
+      "time": "5:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-08-11",
+      "speakers": [
+        {
+          "name": "John Doe",
+          "handle": "jdoe",
+          "domain": "hotmail.com",
+          "url": ""
+        }
+      ],
+      "title": "Week 2: 💻You, Your Command Line, and You💻",
+      "description": "Ever wondered how to command your line? Us too. We figured it out. You're welcome.",
+      "location": "Zoom",
+      "time": "5:00PM",
+      "files": []
+    }
+  ]
+}

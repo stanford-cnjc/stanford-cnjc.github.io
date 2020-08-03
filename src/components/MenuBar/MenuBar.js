@@ -42,6 +42,9 @@ class MenuBar extends Component {
               <LinkContainer to="/PresentationSignup">
                 <NavLink>Presentation Signup</NavLink>
               </LinkContainer>
+              <LinkContainer to="/CNJCx">
+                <NavLink>CNJCx: Practical Python</NavLink>
+              </LinkContainer>
               <NavLink
                 target="_blank"
                 rel="noopener noreferrer"
