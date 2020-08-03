@@ -143,7 +143,7 @@ class SessionsList extends Component {
                   type="text"
                   id="search_input"
                   onChange={e => this.handleSearch(`${e.target.value}`)}
-                  placeholder="e.g., t-SNE"
+                  placeholder="e.g., CNJCx"
                 />
               </FormGroup>
             </Form>
