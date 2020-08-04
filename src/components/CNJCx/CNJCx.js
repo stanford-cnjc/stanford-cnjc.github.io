@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Button, Row, Col, Card } from 'reactstrap';
+import WeekInfo from './WeekInfo.js';
 
 import cnjcx_data from '../../cnjcx.json';
 import './CNJCx.css';
@@ -34,7 +35,7 @@ class CNJCx extends Component {
   renderSpeakers = speakers => {
     const renderedSpeakers = speakers.map(speaker => {
       return (
-        <Col lg="4" sm="6" xs="12">
+        <Col lg="4" sm="6" xs="12" key={`${speaker.name}_image`}>
           {this.renderSpeaker(speaker)}
         </Col>
       );
@@ -42,8 +43,20 @@ class CNJCx extends Component {
     return <Row>{renderedSpeakers}</Row>;
   };
 
+  renderWeekInfo = sessions => {
+    const renderedWeeks = sessions.map(session => {
+      return (
+        <Col lg="6" sm="6" xs="12" key={session.title}>
+          <WeekInfo {...session} />
+        </Col>
+      );
+    });
+    return <Row>{renderedWeeks}</Row>;
+  };
+
   render() {
     const speakerProfiles = this.renderSpeakers(cnjcx_data.speakers);
+    const weekInfo = this.renderWeekInfo(cnjcx_data.sessions);
     const buttonDemo = (
       <Container>
         <Row>
@@ -95,10 +108,6 @@ class CNJCx extends Component {
         </Row>
         <hr />
         <Row>
-          <Col>{buttonDemo}</Col>
-        </Row>
-        <hr />
-        <Row>
           <Col>
             <h3>Lecturers and Guest Speakers</h3>
             <p>
@@ -107,6 +116,24 @@ class CNJCx extends Component {
               you! Speakers are listed here in order of appearance.
             </p>
             {speakerProfiles}
+          </Col>
+        </Row>
+        <hr />
+        <Row>
+          <Col>
+            <h3>CNJCx Materials</h3>
+            <p>
+              Materials from each session will be posted here following each
+              session. Check back often for new content!
+            </p>
+            {weekInfo}
+          </Col>
+        </Row>
+        <hr />
+        <Row>
+          <Col>
+            <h3> Buttons </h3>
+            {buttonDemo}
           </Col>
         </Row>
       </Container>
