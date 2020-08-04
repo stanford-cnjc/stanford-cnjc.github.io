@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Button, Row, Col, Card } from 'reactstrap';
-import { FaGlobeAmericas } from 'react-icons/fa';
 
 import cnjcx_data from '../../cnjcx.json';
 import './CNJCx.css';
