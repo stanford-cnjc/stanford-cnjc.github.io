@@ -46,7 +46,14 @@ class CNJCx extends Component {
   renderWeekInfo = sessions => {
     const renderedWeeks = sessions.map(session => {
       return (
-        <Col lg="6" sm="6" xs="12" key={session.title}>
+        <Col
+          style={{ marginBottom: '5px' }}
+          lg="6"
+          md="12"
+          sm="12"
+          xs="12"
+          key={session.title}
+        >
           <WeekInfo {...session} />
         </Col>
       );
@@ -55,6 +62,30 @@ class CNJCx extends Component {
   };
 
   render() {
+    const bashInstructions = (
+      <div>
+        <h2> How do I open a bash terminal on my machine? </h2>
+        <ul>
+          <li>
+            <a href="https://support.apple.com/en-gb/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac#:~:text=Open%20Terminal,%2C%20then%20double%2Dclick%20Terminal.">
+              For MacOS users
+            </a>
+          </li>
+          <li>
+            <a href="https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu">
+              For Ubuntu users
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">
+              For Windows users (this is more complicated, sorry! Let us know if
+              you need some help)
+            </a>
+          </li>
+        </ul>
+      </div>
+    );
+
     const speakerProfiles = this.renderSpeakers(cnjcx_data.speakers);
     const weekInfo = this.renderWeekInfo(cnjcx_data.sessions);
     const buttonDemo = (
@@ -105,6 +136,10 @@ class CNJCx extends Component {
               biosciences
             </p>
           </Col>
+        </Row>
+        <hr />
+        <Row>
+          <Col>{bashInstructions}</Col>
         </Row>
         <hr />
         <Row>
