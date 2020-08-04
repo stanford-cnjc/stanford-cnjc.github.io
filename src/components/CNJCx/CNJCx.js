@@ -1,13 +1,5 @@
-import React, { Fragment, Component } from 'react';
-import {
-  Container,
-  Button,
-  Row,
-  Col,
-  Card,
-  CardHeader,
-  CardBody,
-} from 'reactstrap';
+import React, { Component } from 'react';
+import { Container, Button, Row, Col, Card } from 'reactstrap';
 import { FaGlobeAmericas } from 'react-icons/fa';
 
 import cnjcx_data from '../../cnjcx.json';
@@ -23,35 +15,27 @@ class CNJCx extends Component {
       );
     }
 
-    const url = (
-      <Button color="link">
-        <a href={speaker.website}>
-          <FaGlobeAmericas />
-        </a>
-      </Button>
-    );
-
     return (
-      <Fragment>
+      <a href={speaker.website}>
         <Card className="speakerCard">
-          <CardHeader>
-            <strong>{speaker.name}</strong>
-            {` `}
-            {url}
-            <hr />
-            <small>{speaker.position}</small>
-          </CardHeader>
-          <CardBody>{img_render}</CardBody>
+          <div style={{ display: 'flex' }}>
+            <div style={{ marginRight: '10px' }}>{img_render}</div>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+              <div>
+                <strong>{speaker.name}</strong>
+              </div>
+              <small>{speaker.position}</small>
+            </div>
+          </div>
         </Card>
-        <br />
-      </Fragment>
+      </a>
     );
   };
 
   renderSpeakers = speakers => {
     const renderedSpeakers = speakers.map(speaker => {
       return (
-        <Col lg="3" xs="4">
+        <Col lg="4" sm="6" xs="12">
           {this.renderSpeaker(speaker)}
         </Col>
       );

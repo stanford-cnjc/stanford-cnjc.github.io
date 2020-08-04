@@ -5,11 +5,25 @@
 
 .circle {
   border-radius: 50%;
-  max-width: 96%;
-  margin-left: 2%;
+  border: 2px solid #222;
+  height: 60px;
+  width: 60px;
 }
 
 .speakerCard {
-  height: 380px;
+  margin: 5px;
+  padding: 5px;
+  height: 80px;
   overflow: scroll;
+  color: black;
+}
+
+.speakerCard:hover {
+  background-color: #eee;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
 }
