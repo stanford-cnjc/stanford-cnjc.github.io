@@ -1,0 +1,15 @@
+.cnjcx-btn {
+  background-color: #8c1515 !important;
+  width: 100% !important;
+}
+
+.circle {
+  border-radius: 50%;
+  max-width: 96%;
+  margin-left: 2%;
+}
+
+.speakerCard {
+  height: 380px;
+  overflow: scroll;
+}
