@@ -44,19 +44,19 @@ class Intro extends Component {
                   <Button color="secondary">Learn more</Button>
                 </Link>
                 {` `}
-                <Link to="/PresentationSignup">
-                  <Button color="primary">Sign up to present</Button>
-                </Link>
-                {` `}
                 <a
                   href="https://github.com/stanford-cnjc/cnjc-code"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Button color="primary">
+                  <Button color="secondary">
                     <FaGithub /> Code on GitHub
                   </Button>
                 </a>
+                {` `}
+                <Link to="/PresentationSignup">
+                  <Button color="primary">Sign up to present</Button>
+                </Link>
               </h5>
 
               <br />

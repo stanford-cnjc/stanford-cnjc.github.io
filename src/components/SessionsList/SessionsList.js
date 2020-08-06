@@ -149,7 +149,6 @@ class SessionsList extends Component {
             </Form>
           </Col>
         </Row>
-        <hr />
         <Row>
           <Col lg="12" xs="12">
             <Row className="vertical-align">

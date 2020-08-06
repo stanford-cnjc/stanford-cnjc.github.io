@@ -284,17 +284,22 @@ class SessionsListGroup extends Component {
         }
       }
 
-      const bgClassName = session.series
-        ? seriesToColorClass(session.series)
-        : null;
+      const seriesBadge = session.series ? (
+        <Badge className={seriesToColorClass(session.series)}>
+          {session.series}
+        </Badge>
+      ) : null;
 
       return (
         <span key={session.date + session.title}>
-          <ListGroupItem className={bgClassName}>
+          <ListGroupItem>
             <div className={font_color}>
-              <h4>
-                {session.title} {today_badge}
-              </h4>
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <h4>
+                  {session.title} {today_badge}
+                </h4>
+                <h4>{seriesBadge}</h4>
+              </div>
               {render_date(day_of_week, date_str)}
               <hr />
               {session_description}
