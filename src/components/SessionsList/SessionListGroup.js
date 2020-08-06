@@ -10,6 +10,7 @@ import {
   FaFilePdf,
   FaLink,
   FaGithub,
+  FaVideo,
 } from 'react-icons/fa';
 import { GoClippy } from 'react-icons/go';
 import {
@@ -170,6 +171,8 @@ class SessionsListGroup extends Component {
       icon = <FaImage size={size} />;
     } else if (url.startsWith('https://github')) {
       icon = <FaGithub size={size} />;
+    } else if (url.startsWith('https://stanford.zoom.us')) {
+      icon = <FaVideo size={size} />;
     } else if (url.startsWith('http')) {
       icon = <FaLink size={size} />;
     }
