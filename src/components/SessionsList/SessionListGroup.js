@@ -12,45 +12,10 @@ import {
   FaGithub,
 } from 'react-icons/fa';
 import { GoClippy } from 'react-icons/go';
-import {
-  ListGroup,
-  ListGroupItem,
-  Button,
-  Badge,
-  UncontrolledTooltip,
-} from 'reactstrap';
-import moment from 'moment';
-import { seriesToColorClass } from '../utils.js';
+import { ListGroup, Button, UncontrolledTooltip } from 'reactstrap';
+import Session from './Session';
 
 import './SessionsList.css';
-
-function render_date(day_of_week, date_str) {
-  if (day_of_week === 'TBD' || date_str === 'TBD') {
-    return 'TBD';
-  } else {
-    return (
-      <span>
-        {day_of_week}, {date_str}
-      </span>
-    );
-  }
-}
-
-function convert_weekday(date) {
-  if (date === 'TBD') {
-    return 'TBD';
-  } else {
-    return moment(date).format('dddd');
-  }
-}
-
-function convert_date(date) {
-  if (date === 'TBD') {
-    return 'TBD';
-  } else {
-    return moment(date).format('MMMM Do YYYY');
-  }
-}
 
 class SessionsListGroup extends Component {
   renderEmail = speaker => {
@@ -198,122 +163,9 @@ class SessionsListGroup extends Component {
     if (sessions.length === 0) {
       return <div>No sessions to display.</div>;
     }
+
     var session_render_list = sessions.map(session => {
-      session.speakers.date = session.date;
-      let font_color;
-      if (session.title === 'TBD') {
-        font_color = 'gray';
-      } else {
-        font_color = 'black';
-      }
-
-      var day_of_week = convert_weekday(session.date);
-      var date_str = convert_date(session.date);
-
-      if (day_of_week === 'Invalid date') {
-        day_of_week = session.date;
-        date_str = session.date;
-      }
-
-      // add a badge if the current date is today and the session is upcoming
-      let today_badge = null;
-      let time_diff = null;
-      if (session.date !== 'TBD') {
-        const sess_time = moment(
-          session.date + ' ' + session.time,
-          'YYYY-MM-DD h:mm a'
-        );
-        time_diff = sess_time.fromNow();
-        if (
-          moment(session.date).format('YYYY-MM-DD') ===
-            moment().format('YYYY-MM-DD') &&
-          time_diff.startsWith('in')
-        ) {
-          let color = 'danger';
-          if (time_diff.endsWith('hours')) {
-            color = 'warning';
-          }
-          today_badge = <Reminder session_time={sess_time} color={color} />;
-        }
-      }
-
-      let resource_header = null;
-      if (session.files.length > 0) {
-        resource_header = (
-          <span>
-            <br />
-            <h6> Session Resources </h6>
-          </span>
-        );
-      }
-
-      let session_description = null;
-      if (session.description) {
-        session_description = (
-          <span>
-            <div dangerouslySetInnerHTML={{ __html: session.description }} />
-            <hr />
-          </span>
-        );
-      }
-
-      let food_signup = null;
-      if (session.rsvp_link) {
-        if (time_diff.startsWith('in')) {
-          food_signup = (
-            <span>
-              <hr />
-              <a
-                href={session.rsvp_link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button color="primary" outline>
-                  Food sign-up link for this session
-                </Button>
-              </a>
-              <p>
-                <em>
-                  Due to the nature of our funding, food is limited to Stanford
-                  affiliates. Sorry! However, everyone is welcome to attend and
-                  participate!
-                </em>
-              </p>
-            </span>
-          );
-        }
-      }
-
-      const seriesBadge = session.series ? (
-        <Badge className={seriesToColorClass(session.series)}>
-          {session.series}
-        </Badge>
-      ) : null;
-
-      return (
-        <span key={session.date + session.title}>
-          <ListGroupItem>
-            <div className={font_color}>
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <h4>
-                  {session.title} {today_badge}
-                </h4>
-                <h4>{seriesBadge}</h4>
-              </div>
-              {render_date(day_of_week, date_str)}
-              <hr />
-              {session_description}
-              {this.render_speakers(session.speakers)}
-              {session.location}, {session.time} (PT)
-              <br />
-              {resource_header}
-              <ListGroup>{this.render_files(session.files)}</ListGroup>
-              {food_signup}
-            </div>
-          </ListGroupItem>
-          <br />
-        </span>
-      );
+      return <Session {...session} />;
     });
 
     const n_sessions = session_render_list.length;
@@ -330,36 +182,6 @@ class SessionsListGroup extends Component {
 
   render() {
     return <ListGroup>{this.render_sessions(this.props.sessions)}</ListGroup>;
-  }
-}
-
-class Reminder extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      time: moment(this.props.session_time, 'YYYY-MM-DD h:mm a').fromNow(),
-    };
-  }
-  componentDidMount() {
-    this.interval = setInterval(this.updateTime.bind(this), 30000); // every 30s
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
-
-  updateTime() {
-    this.setState({
-      time: moment(this.props.session_time, 'YYYY-MM-DD h:mm a').fromNow(),
-    });
-  }
-
-  render() {
-    return (
-      <Badge pill color={this.props.color}>
-        Happening {this.state.time}!
-      </Badge>
-    );
   }
 }
 
