@@ -9,8 +9,8 @@ import {
   FaFile,
   FaFilePdf,
   FaLink,
-  FaAngleDown,
-  FaAngleUp,
+  FaMinus,
+  FaPlus,
   FaGithub,
 } from 'react-icons/fa';
 import { GoClippy } from 'react-icons/go';
@@ -241,7 +241,7 @@ function Session({
   let description_render = null;
   if (description) {
     const button_text = collapsed ? 'Show More' : 'Show Less';
-    const button_icon = collapsed ? <FaAngleDown /> : <FaAngleUp />;
+    const button_icon = collapsed ? <FaPlus /> : <FaMinus />;
     description_render = (
       <div>
         <div>

@@ -1,6 +1,7 @@
 .expanded {
   overflow: scroll;
   max-height: 500px;
+  transition: 0.5s ease-in;
 }
 
 .collapsed {
@@ -8,4 +9,5 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   max-height: 30px;
+  transition: 0.5s ease-in;
 }
