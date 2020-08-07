@@ -244,16 +244,17 @@ function Session({
     const button_icon = collapsed ? <FaPlus /> : <FaMinus />;
     description_render = (
       <div>
-        <div>
+        <div style={{ display: 'flex' }}>
           <div
             className={collapsed ? 'collapsed' : 'expanded'}
             dangerouslySetInnerHTML={{ __html: description }}
           />
-          <div style={{ marginTop: '10px' }}>
+          <div>
             <Button
               color="info"
               size="sm"
               onClick={() => setCollapsed(!collapsed)}
+              style={{ width: '8em', marginLeft: '50px' }}
             >
               {button_text}
               {` `}
@@ -289,7 +290,7 @@ function Session({
     }
   }
 
-  const seriesBadge = series ? (
+  const series_badge = series ? (
     <Badge className={seriesToColorClass(series)}>{series}</Badge>
   ) : null;
 
@@ -300,24 +301,40 @@ function Session({
     </div>
   );
 
+  // build up the pieces
+  const top_part = (
+    <>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <h4>
+          {title} {today_badge}
+        </h4>
+        <h4>{series_badge}</h4>
+      </div>
+      {render_date(day_of_week, date_str)}
+    </>
+  );
+
+  const bottom_part = (
+    <>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div>{render_speakers(speakers)}</div>
+        <div>
+          {location}, {time} (PT)
+        </div>
+      </div>
+      {files_render}
+      {food_signup}
+    </>
+  );
+
   return (
     <span key={date + title}>
       <ListGroupItem>
         <div className={font_color}>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <h4>
-              {title} {today_badge}
-            </h4>
-            <h4>{seriesBadge}</h4>
-          </div>
-          {render_date(day_of_week, date_str)}
+          {top_part}
           <hr />
           {description_render}
-          {render_speakers(speakers)}
-          {location}, {time} (PT)
-          <br />
-          {files_render}
-          {food_signup}
+          {bottom_part}
         </div>
       </ListGroupItem>
       <br />

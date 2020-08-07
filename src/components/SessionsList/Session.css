@@ -8,6 +8,6 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-height: 30px;
+  max-height: 2em;
   transition: 0.5s ease-in;
 }
