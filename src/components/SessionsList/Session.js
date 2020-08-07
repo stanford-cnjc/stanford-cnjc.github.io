@@ -31,9 +31,9 @@ const render_date = (day_of_week, date_str) => {
     return 'TBD';
   } else {
     return (
-      <span>
+      <em>
         {day_of_week}, {date_str}
-      </span>
+      </em>
     );
   }
 };
@@ -332,7 +332,6 @@ function Session({
       <ListGroupItem>
         <div className={font_color}>
           {top_part}
-          <hr />
           {description_render}
           {bottom_part}
         </div>
