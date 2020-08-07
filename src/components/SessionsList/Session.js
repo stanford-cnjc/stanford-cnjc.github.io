@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment, useState } from 'react';
 
 import {
   FaImage,
@@ -9,6 +9,8 @@ import {
   FaFile,
   FaFilePdf,
   FaLink,
+  FaAngleDown,
+  FaAngleUp,
   FaGithub,
 } from 'react-icons/fa';
 import { GoClippy } from 'react-icons/go';
@@ -22,7 +24,7 @@ import {
 import moment from 'moment';
 import { seriesToColorClass } from '../utils.js';
 
-import './SessionsList.css';
+import './Session.css';
 
 const render_date = (day_of_week, date_str) => {
   if (day_of_week === 'TBD' || date_str === 'TBD') {
@@ -196,6 +198,8 @@ function Session({
   description,
   series,
 }) {
+  const [collapsed, setCollapsed] = useState(true);
+
   speakers.date = date;
   const font_color = title === 'TBD' ? 'gray' : 'black';
   let day_of_week = convert_weekday(date);
@@ -236,11 +240,29 @@ function Session({
 
   let description_render = null;
   if (description) {
+    const button_text = collapsed ? 'Show More' : 'Show Less';
+    const button_icon = collapsed ? <FaAngleDown /> : <FaAngleUp />;
     description_render = (
-      <span>
-        <div dangerouslySetInnerHTML={{ __html: description }} />
+      <div>
+        <div>
+          <div
+            className={collapsed ? 'collapsed' : 'expanded'}
+            dangerouslySetInnerHTML={{ __html: description }}
+          />
+          <div style={{ marginTop: '10px' }}>
+            <Button
+              color="info"
+              size="sm"
+              onClick={() => setCollapsed(!collapsed)}
+            >
+              {button_text}
+              {` `}
+              {button_icon}
+            </Button>
+          </div>
+        </div>
         <hr />
-      </span>
+      </div>
     );
   }
 
@@ -271,6 +293,13 @@ function Session({
     <Badge className={seriesToColorClass(series)}>{series}</Badge>
   ) : null;
 
+  const files_render = collapsed ? null : (
+    <div>
+      {resource_header}
+      <ListGroup>{render_files(files)}</ListGroup>
+    </div>
+  );
+
   return (
     <span key={date + title}>
       <ListGroupItem>
@@ -287,8 +316,7 @@ function Session({
           {render_speakers(speakers)}
           {location}, {time} (PT)
           <br />
-          {resource_header}
-          <ListGroup>{render_files(files)}</ListGroup>
+          {files_render}
           {food_signup}
         </div>
       </ListGroupItem>
