@@ -23,6 +23,7 @@ import {
 } from 'reactstrap';
 import moment from 'moment';
 import { seriesToColorClass } from '../utils.js';
+import Popover from 'react-tiny-popover';
 
 import './Session.css';
 
@@ -187,6 +188,25 @@ const render_files = files => {
   });
 };
 
+const TooltipBadge = ({ content, className, tooltipText }) => {
+  const [tooltipVisible, setTooltipVisible] = useState(false);
+
+  return (
+    <Popover
+      content={<div>{tooltipText}</div>}
+      position={'left'}
+      isOpen={tooltipVisible}
+    >
+      <div
+        onMouseEnter={() => setTooltipVisible(true)}
+        onMouseLeave={() => setTooltipVisible(false)}
+      >
+        <Badge className={className}>{content}</Badge>
+      </div>
+    </Popover>
+  );
+};
+
 function Session({
   title,
   speakers,
@@ -290,8 +310,13 @@ function Session({
     }
   }
 
+  const className = seriesToColorClass(series);
   const series_badge = series ? (
-    <Badge className={seriesToColorClass(series)}>{series}</Badge>
+    <TooltipBadge
+      content={series}
+      className={className}
+      tooltipText={`Part of the ${series} series`}
+    />
   ) : null;
 
   const files_render = collapsed ? null : (
