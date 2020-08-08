@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Button, Row, Col, Card } from 'reactstrap';
 import WeekInfo from './WeekInfo.js';
-import ReactMarkdown from 'react-markdown';
 
 import cnjcx_data from '../../cnjcx.json';
 import './CNJCx.css';
@@ -63,11 +62,9 @@ class CNJCx extends Component {
   };
 
   render() {
-    const mdSrc = '# sample header\n ### another header';
     const bashInstructions = (
       <div>
         <h2> How do I open a bash terminal on my machine? </h2>
-        <ReactMarkdown source={mdSrc} />
         <ul>
           <li>
             <a href="https://support.apple.com/en-gb/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac#:~:text=Open%20Terminal,%2C%20then%20double%2Dclick%20Terminal.">
@@ -80,10 +77,10 @@ class CNJCx extends Component {
             </a>
           </li>
           <li>
-            <a href="#">
+            <div>
               For Windows users (this is more complicated, sorry! Let us know if
               you need some help)
-            </a>
+            </div>
           </li>
         </ul>
       </div>
