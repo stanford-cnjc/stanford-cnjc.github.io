@@ -23,7 +23,7 @@ function past_sort(a, b) {
 
 function tbd_upcoming_sort(a, b) {
   if (a.date === 'TBD') {
-    return 0;
+    return 2; // if this is 0, chrome/firefox give diff results because the sort is unstable
   } else if (b.date === 'TBD') {
     return -1;
   } else {
@@ -149,7 +149,6 @@ class SessionsList extends Component {
             </Form>
           </Col>
         </Row>
-        <hr />
         <Row>
           <Col lg="12" xs="12">
             <Row className="vertical-align">

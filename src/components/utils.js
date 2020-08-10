@@ -1,5 +1,5 @@
 export function seriesToColorClass(seriesStr) {
-  switch (seriesStr) {
+  switch (seriesStr.toLowerCase()) {
     case 'cnjcx':
       return 'cnjcx-bg';
     default:
