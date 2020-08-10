@@ -14,7 +14,7 @@
   margin: 5px;
   padding: 5px;
   height: 80px;
-  overflow: scroll;
+  overflow: none;
   color: black;
 }
 
