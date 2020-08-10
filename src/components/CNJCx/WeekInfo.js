@@ -54,6 +54,7 @@ const renderLinks = links => {
       <Button
         disabled
         color="primary"
+        size="sm"
         style={{ marginRight: '5px', marginTop: '5px' }}
       >
         {icon}
