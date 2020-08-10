@@ -179,6 +179,7 @@ class CNJCx extends Component {
 
     const speakerProfiles = this.renderSpeakers(cnjcx_data.speakers);
     const weekInfo = this.renderWeekInfo(cnjcx_data.sessions);
+
     return (
       <Container>
         <Row className="vertical-align">

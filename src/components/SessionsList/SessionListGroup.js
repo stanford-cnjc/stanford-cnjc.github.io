@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import { ListGroup } from 'reactstrap';
 import Session from './Session';
 
