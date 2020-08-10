@@ -19,28 +19,16 @@
       "img_src": "img/josh.jpg"
     },
     {
-      "name": "Tyler Benster",
-      "position": "PhD Candidate, Stanford Neuroscience",
-      "website": "https://www.tylerbenster.com/",
-      "img_src": "img/tyler.jpg"
-    },
-    {
       "name": "Russell Poldrack",
       "position": "Professor of Psychology, Stanford",
       "website": "https://poldracklab.stanford.edu/",
       "img_src": "img/russ.jpg"
     },
     {
-      "name": "Olga Botvinnik",
-      "position": "Bioinformatics Data Scientist",
-      "website": "https://olgabotvinnik.com/",
-      "img_src": "img/olga.jpg"
-    },
-    {
-      "name": "Julia Wang",
-      "position": "Graduate Student, CSHL",
-      "website": "https://www.linkedin.com/in/julia-wang-888b53126",
-      "img_src": "img/josh.jpg"
+      "name": "Tyler Benster",
+      "position": "PhD Candidate, Stanford Neuroscience",
+      "website": "https://www.tylerbenster.com/",
+      "img_src": "img/tyler.jpg"
     },
     {
       "name": "Toby Alden",
@@ -84,40 +72,160 @@
       ],
       "links": [
         {
-          "title": "Session Recording",
+          "title": "Session Recording (Posted After Session)",
           "type": "video",
-          "url": "https://www.youtube.com/watch?v=JZDt-PRq0uo"
+          "url": ""
         },
         {
-          "title": "Live Discussion",
+          "title": "Live Discussion (Check back during the session!)",
           "type": "google_doc",
-          "url": "https://support.google.com/docs/answer/7068618?co=GENIE.Platform%3DDesktop&hl=en"
-        },
-        {
-          "title": "Banana Bread Recipe",
-          "type": "misc",
-          "url": "https://thesaltymarshmallow.com/best-banana-bread-recipe/"
+          "url": ""
         }
       ]
     },
     {
-      "title": "Week 2: Woah, this is kind of cool haha",
+      "title": "Week 2: Working on Remote Machines",
+      "speakers": [
+        {
+          "name": "Tucker G. Fisher",
+          "position": "PhD Candidate, Stanford Neuroscience",
+          "website": "https://tgfisher.github.io",
+          "img_src": "img/tucker.png"
+        }
+      ],
+      "topics": [
+        "SSH, Vim, and Tmux",
+        "Dotfiles to replicate workflows on new machines"
+      ],
+      "links": [
+        {
+          "title": "Session Recording (Posted After Session)",
+          "type": "video",
+          "url": ""
+        },
+        {
+          "title": "Live Discussion (Check back during the session!)",
+          "type": "google_doc",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Week 3: Python Installation and Environments",
+      "speakers": [
+        {
+          "name": "Eshed Margalit",
+          "position": "PhD Candidate, Stanford Neuroscience",
+          "website": "https://www.eshedmargalit.com",
+          "img_src": "img/eshed.png"
+        }
+      ],
+      "topics": [
+        "Juggling Python versions and installations",
+        "Package managers (e.g., conda, pip) and virtual environments",
+        "Jupyter Notebooks"
+      ],
+      "links": [
+        {
+          "title": "Session Recording (Posted After Session)",
+          "type": "video",
+          "url": ""
+        },
+        {
+          "title": "Live Discussion (Check back during the session!)",
+          "type": "google_doc",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Week 4: Writing and Sharing Code",
+      "speakers": [
+        {
+          "name": "Russell Poldrack",
+          "position": "Professor of Psychology, Stanford",
+          "website": "https://poldracklab.stanford.edu/",
+          "img_src": "img/russ.jpg"
+        }
+      ],
+      "topics": [
+        "Git and Github",
+        "Writing clean code",
+        "Sharing code and open science"
+      ],
+      "links": [
+        {
+          "title": "Session Recording (Posted After Session)",
+          "type": "video",
+          "url": ""
+        },
+        {
+          "title": "Live Discussion (Check back during the session!)",
+          "type": "google_doc",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Week 5: Practical Python",
       "speakers": [
         {
           "name": "Tyler Benster",
           "position": "PhD Candidate, Stanford Neuroscience",
           "website": "https://www.tylerbenster.com/",
           "img_src": "img/tyler.jpg"
-        },
-        {
-          "name": "Olga Botvinnik",
-          "position": "Bioinformatics Data Scientist",
-          "website": "https://olgabotvinnik.com/",
-          "img_src": "img/olga.jpg"
         }
       ],
-      "topics": [],
-      "links": []
+      "topics": [
+        "Python for data analysis",
+        "Popular libraries for scientific computing",
+        "Practical tips and tricks"
+      ],
+      "links": [
+        {
+          "title": "Session Recording (Posted After Session)",
+          "type": "video",
+          "url": ""
+        },
+        {
+          "title": "Live Discussion (Check back during the session!)",
+          "type": "google_doc",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Week 6: Invited Guest Lectures",
+      "speakers": [
+        {
+          "name": "Toby Alden",
+          "position": "Programmer and Musician",
+          "website": "https://tobyalden.com/",
+          "img_src": "img/toby.png"
+        },
+        {
+          "name": "William Casarin",
+          "position": "Developer",
+          "website": "https://jb55.com/",
+          "img_src": "img/will.jpg"
+        }
+      ],
+      "topics": [
+        "Toby Alden: The Philosophy of Refactoring",
+        "William Casarin: Functional vs Object-Oriented Programming for Scientific Analysis"
+      ],
+      "links": [
+        {
+          "title": "Session Recording (Posted After Session)",
+          "type": "video",
+          "url": ""
+        },
+        {
+          "title": "Live Discussion (Check back during the session!)",
+          "type": "google_doc",
+          "url": ""
+        }
+      ]
     }
   ]
 }

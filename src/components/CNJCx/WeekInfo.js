@@ -6,7 +6,6 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
 } from 'reactstrap';
 
 import { FaGoogle, FaLink, FaYoutube } from 'react-icons/fa';
@@ -51,7 +50,17 @@ const renderLinks = links => {
         icon = <FaLink size={iconSize} />;
     }
 
-    return (
+    return link.url === '' ? (
+      <Button
+        disabled
+        color="primary"
+        style={{ marginRight: '5px', marginTop: '5px' }}
+      >
+        {icon}
+        {` `}
+        {link.title}
+      </Button>
+    ) : (
       <a href={link.url} key={link.url}>
         <Button
           color="primary"
@@ -75,7 +84,7 @@ const renderLinks = links => {
 
 function WeekInfo({ title, speakers, topics, links }) {
   return (
-    <Card style={{ height: '500px', overflow: 'scroll' }}>
+    <Card style={{ height: '530px', overflow: 'scroll' }}>
       <CardHeader>
         <h5>{title}</h5>
       </CardHeader>
@@ -87,11 +96,10 @@ function WeekInfo({ title, speakers, topics, links }) {
           </div>
           <div>{renderLinks(links)}</div>
         </div>
-      </CardBody>
-      <CardFooter>
+        <hr />
         <h6>Session Leaders</h6>
         {renderSpeakers(speakers)}
-      </CardFooter>
+      </CardBody>
     </Card>
   );
 }

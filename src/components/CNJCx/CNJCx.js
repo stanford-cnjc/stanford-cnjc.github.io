@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { Container, Button, Row, Col, Card } from 'reactstrap';
+import { Nav, NavItem, Container, Button, Row, Col, Card } from 'reactstrap';
+
 import WeekInfo from './WeekInfo.js';
+import { FaVideo, FaUsers, FaLaptopCode } from 'react-icons/fa';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import cnjcx_data from '../../cnjcx.json';
 import './CNJCx.css';
@@ -16,7 +19,7 @@ class CNJCx extends Component {
     }
 
     return (
-      <a href={speaker.website}>
+      <a href={speaker.website} target="_blank" rel="noopener noreferrer">
         <Card className="speakerCard">
           <div style={{ display: 'flex' }}>
             <div style={{ marginRight: '10px' }}>{img_render}</div>
@@ -62,66 +65,120 @@ class CNJCx extends Component {
   };
 
   render() {
-    const bashInstructions = (
+    const tableOfContents = (
       <div>
-        <h2> How do I open a bash terminal on my machine? </h2>
-        <ul>
+        <h6>Table of Contents</h6>
+        <Nav>
+          <NavItem>
+            <Link to="CNJCx#bashInstructions">
+              <Button color="primary">
+                <FaLaptopCode />
+                {` `}Opening a Bash Terminal
+              </Button>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link to="#speakers">
+              <Button color="primary">
+                <FaUsers />
+                {` `}CNJCx Speakers
+              </Button>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link to="#materials">
+              <Button color="primary">
+                <FaVideo />
+                {` `}Session Materials
+              </Button>
+            </Link>
+          </NavItem>
+        </Nav>
+      </div>
+    );
+
+    const bashInstructions = (
+      <div id="bashInstructions">
+        <h2> How do I open a Bash terminal on my machine? </h2>
+        <p>
+          We've compiled resources to open a terminal on MacOS, Ubuntu, and
+          Windows. Prior to the first session, you should be able to open a
+          terminal with the instructions below. Feel free to type{' '}
+          <code>echo $SHELL</code> at the command prompt and hit enter to see
+          the shell you're using. It should say either <code>/bin/bash</code>{' '}
+          (if you're using Bash) or <code>/bin/zsh</code> (if you're using Zsh).
+          Both will work for CNJCx: Practical Python.
+        </p>
+        <h4>For MacOS users</h4>
+        <ol>
           <li>
-            <a href="https://support.apple.com/en-gb/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac#:~:text=Open%20Terminal,%2C%20then%20double%2Dclick%20Terminal.">
-              For MacOS users
+            We recommend you{' '}
+            <a
+              href="https://www.iterm2.com/downloads.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              download iTerm2
             </a>
+            {` `}
+            prior to the first session, it's a superior alternative to the
+            built-in Terminal app on MacOS.
           </li>
           <li>
-            <a href="https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu">
-              For Ubuntu users
-            </a>
+            To open a terminal, open Spotlight Search (with ⌘ + Space or by
+            clicking the magnifying glass icon in your top bar) and search
+            "iTerm" (or "Terminal" if you'd prefer to use the default
+            application)
           </li>
-          <li>
-            <div>
-              For Windows users (this is more complicated, sorry! Let us know if
-              you need some help)
-            </div>
-          </li>
-        </ul>
+        </ol>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu"
+        >
+          <h4>For Ubuntu users</h4>
+        </a>
+        <ol>
+          <li>Ctrl + Alt + t</li>
+          <li>Alternatively, search "terminal" in the Dash</li>
+        </ol>
+        <div>
+          <h4>For Windows users</h4>
+          <p>
+            We recommend enabling the Windows Subsystem for Linux (WSL). This is
+            a little more complicated than the previous instructions, so please
+            reach out to us if you get stuck!
+          </p>
+          <ol>
+            <li>Right Click the Start Menu</li>
+            <li>Click "Settings"</li>
+            <li>Search "Turn Windows features on and off"</li>
+            <li>Click the checkbox for "Windows Subsytem for Linux"</li>
+            <li>
+              <a
+                href="https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot%3aoverviewtab"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download "Ubuntu 18.04" from the Windows Store
+              </a>
+            </li>
+            <li>Click the Ubuntu Icon to launch a Bash terminal</li>
+            <li>
+              The first time you log in, you may be prompted for a username and
+              password. These will be your credentials for the Ubuntu subsystem
+              on your machine, i.e., <code>[username]</code> will determine the
+              path to your home directory (<code>/home/[username]</code>) and
+              the password you'll use to perform actions as root (more about
+              that in Week 1).
+            </li>
+          </ol>
+        </div>
       </div>
     );
 
     const speakerProfiles = this.renderSpeakers(cnjcx_data.speakers);
     const weekInfo = this.renderWeekInfo(cnjcx_data.sessions);
-    const buttonDemo = (
-      <Container>
-        <Row>
-          <Col lg="4" sm="4">
-            <Button className="cnjcx-btn"> Button 1 </Button>
-          </Col>
-          <Col lg="8" sm="8">
-            <Button className="cnjcx-btn"> Button 2 </Button>
-          </Col>
-        </Row>
-        <Row>
-          <Col lg="4" sm="4">
-            <Button className="cnjcx-btn"> Button 3 </Button>
-          </Col>
-          <Col lg="4" sm="4">
-            <Button className="cnjcx-btn"> Button 4 </Button>
-          </Col>
-          <Col lg="4" sm="4">
-            <Button className="cnjcx-btn"> Button 5 </Button>
-          </Col>
-        </Row>
-        <Row>
-          <Col lg="3" sm="3">
-            <Button className="cnjcx-btn"> Button 6 </Button>
-          </Col>
-          <Col lg="3" sm="3">
-            <Button className="cnjcx-btn"> Button 7 </Button>
-          </Col>
-          <Col lg="6" sm="6">
-            <Button className="cnjcx-btn"> Button 8 </Button>
-          </Col>
-        </Row>
-      </Container>
-    );
     return (
       <Container>
         <Row className="vertical-align">
@@ -137,12 +194,15 @@ class CNJCx extends Component {
             </p>
           </Col>
         </Row>
+        <Row>
+          <Col>{tableOfContents}</Col>
+        </Row>
         <hr />
         <Row>
           <Col>{bashInstructions}</Col>
         </Row>
         <hr />
-        <Row>
+        <Row id="speakers">
           <Col>
             <h3>Lecturers and Guest Speakers</h3>
             <p>
@@ -154,7 +214,7 @@ class CNJCx extends Component {
           </Col>
         </Row>
         <hr />
-        <Row>
+        <Row id="materials">
           <Col>
             <h3>CNJCx Materials</h3>
             <p>
@@ -162,13 +222,6 @@ class CNJCx extends Component {
               session. Check back often for new content!
             </p>
             {weekInfo}
-          </Col>
-        </Row>
-        <hr />
-        <Row>
-          <Col>
-            <h3> Buttons </h3>
-            {buttonDemo}
           </Col>
         </Row>
       </Container>
