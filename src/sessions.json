@@ -2,6 +2,7 @@
   "sessions": [
     {
       "date": "2018-12-06",
+      "series": "",
       "speakers": [
         {
           "name": "Tucker Fisher",
@@ -28,6 +29,7 @@
     },
     {
       "date": "2019-01-23",
+      "series": "",
       "speakers": [
         {
           "name": "Eshed Margalit",
@@ -75,6 +77,7 @@
     },
     {
       "date": "2019-02-06",
+      "series": "",
       "speakers": [
         {
           "name": "Blue Sheffer",
@@ -127,6 +130,7 @@
     },
     {
       "date": "2019-02-20",
+      "series": "",
       "speakers": [
         {
           "name": "Arielle Keller",
@@ -155,6 +159,7 @@
     },
     {
       "date": "2019-03-20",
+      "series": "",
       "speakers": [
         {
           "name": "",
@@ -169,6 +174,7 @@
     },
     {
       "date": "2019-04-03",
+      "series": "",
       "speakers": [
         {
           "name": "Max Kanwal",
@@ -216,6 +222,7 @@
     },
     {
       "date": "2019-04-17",
+      "series": "",
       "speakers": [
         {
           "name": "Aran Nayebi",
@@ -251,6 +258,7 @@
     },
     {
       "date": "2019-05-01",
+      "series": "",
       "speakers": [
         {
           "name": "Isabel Low",
@@ -283,6 +291,7 @@
     },
     {
       "date": "2019-05-22",
+      "series": "",
       "speakers": [
         {
           "name": "MBCT Program",
@@ -297,6 +306,7 @@
     },
     {
       "date": "2019-06-12",
+      "series": "",
       "speakers": [
         {
           "name": "Eshed Margalit",
@@ -334,6 +344,7 @@
     },
     {
       "date": "2019-07-10",
+      "series": "",
       "speakers": [
         {
           "name": "Tyler Benster",
@@ -363,6 +374,7 @@
     },
     {
       "date": "2019-09-04",
+      "series": "",
       "speakers": [
         {
           "name": "Eshed Margalit",
@@ -394,6 +406,7 @@
     },
     {
       "date": "2019-10-02",
+      "series": "",
       "speakers": [
         {
           "name": "John Kochalka",
@@ -436,6 +449,7 @@
     },
     {
       "date": "2019-10-16",
+      "series": "",
       "speakers": [
         {
           "name": "Tucker Fisher",
@@ -457,6 +471,7 @@
     },
     {
       "date": "2019-11-13",
+      "series": "",
       "speakers": [
         {
           "name": "Gabriel Mel",
@@ -484,6 +499,7 @@
     },
     {
       "date": "2019-12-11",
+      "series": "",
       "speakers": [
         {
           "name": "Jay Bhasin",
@@ -507,6 +523,7 @@
     },
     {
       "date": "2020-01-08",
+      "series": "",
       "speakers": [
         {
           "name": "Minseung Choi",
@@ -544,6 +561,7 @@
     },
     {
       "date": "2020-01-22",
+      "series": "",
       "speakers": [
         {
           "name": "Mark Plitt",
@@ -567,6 +585,7 @@
     },
     {
       "date": "2020-02-05",
+      "series": "",
       "speakers": [
         {
           "name": "Dawn Finzi",
@@ -599,6 +618,7 @@
     },
     {
       "date": "2020-02-19",
+      "series": "",
       "speakers": [
         {
           "name": "Libby Zhang",
@@ -614,6 +634,7 @@
     },
     {
       "date": "2020-08-19",
+      "series": "",
       "speakers": [
         {
           "name": "Anna Gillespie",
@@ -632,22 +653,33 @@
     },
     {
       "date": "2020-08-05",
+      "series": "",
       "speakers": [
         {
           "name": "Daniel Bear",
-          "url": "",
+          "url": "https://neuroscience.stanford.edu/people/daniel-bear",
           "handle": "dbear",
           "domain": "stanford.edu"
         }
       ],
-      "title": "The End of the Convolution Revolution",
-      "description": "",
-      "location": "Zoom (Link TBD)",
+      "title": "Learning Physical Graph Representations from Visual Scenes",
+      "description": "Human vision is object-centric: we partition scenes into discrete objects and attribute physical properties to them, including appearance, position, shape, material composition, and their relations to each other. This abstraction is important for higher cognition, as most of our behaviors and goals are specified in terms of entities and relations &mdash; not pixel-level detail. Despite this, most state-of-the-art computer vision algorithms are based on image-like internal representations; if \"objects\" are present at all, they are typically given only \"semantic\" properties, not the physical ones needed for useful interaction. To begin addressing this gap, we've developed a way to augment computer vision algorithms with object-centric representations. We call these representations \"Physical Scene Graphs\" (PSGs) because they have both a hierarchical graphical structure and an explicit encoding of physical properties of a scene's visual elements, such as their position, shape, texture, and so on. Algorithms that infer PSG representations from visual input &mdash; \"PSGNets\" &mdash; groups visual features into discrete, unsupervised entities (\"objects\") and predict their physical attributes as explicit components of associated vectors. The algorithm is recursive, hierarchically constructing a graph of high-level objects from their low-level parts. I'll talk about the architecture of PSGNets, our results using them to segment visual scenes into objects without supervision, and &mdash; if there's time &mdash; how we're hoping to connect them back to neural circuits in biological visual systems.",
+      "location": "Zoom (Link and Password in Email)",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://arxiv.org/abs/2006.12373",
+          "name": "arXiv Preprint"
+        },
+        {
+          "url": "https://stanford.zoom.us/rec/share/3NV2N7bp9m5IeLf29kbUHfMALL66eaa82ndPrPIIxRkymsCpVmpdKADGagpSQBHT",
+          "name": "Stream the Recorded Zoom Session"
+        }
+      ]
     },
     {
       "date": "TBD",
+      "series": "",
       "speakers": [
         {
           "name": "Scottie Alexander",
@@ -660,7 +692,100 @@
       "files": []
     },
     {
+      "date": "2020-08-13",
+      "series": "CNJCx",
+      "speakers": [
+        {
+          "name": "Tucker Fisher",
+          "handle": "tgfisher",
+          "domain": "stanford.edu",
+          "url": "https://tgfisher.github.io/#/"
+        },
+        {
+          "name": "Eshed Margalit",
+          "handle": "eshedm",
+          "domain": "stanford.edu",
+          "url": "http://www.eshedmargalit.com"
+        },
+        {
+          "name": "Josh Melander",
+          "handle": "melander",
+          "domain": "stanford.edu",
+          "url": ""
+        }
+      ],
+      "title": "CNJCx: Practical Python Week 1",
+      "description": "Having a comfortable, modern, and efficient development setup is the first step toward learning the tools and skills needed in the rest of the series. In this session, we'll introduce the CNJCx series, install common tools in computing and programming, discuss open source software, and go over basic navigation in the terminal. Attendees should be prepared to follow along at home (no experience required!) by making sure they can open a terminal (bash or zsh) on their computer ahead of time. If you need a few pointers to open the terminal on your operating system, please check out the <a href=\"https://stanford-cnjc.github.io/#/CNJCx\">CNJCx page</a> for instructions!",
+      "location": "Zoom",
+      "time": "5:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-08-20",
+      "series": "CNJCx",
+      "speakers": [],
+      "title": "CNJCx: Practical Python Week 2",
+      "description": "The second session in the CNJCx series will cover working on a remote server: a common setup for many labs or individuals using services such as <a href=\"https://www.sherlock.stanford.edu/\">Sherlock, Stanford's High-Performance Computing Cluster</a>. We will also discuss tools that make working on remote machines more productive and painless, including Vim (a popular terminal-based text editor), and tmux: a tool to manage terminal sessions and keep them running even when you log out. These tools can also improve productivity on your local machine, i.e. your laptop or home computer. Other topics include file transfer, customizing your text editor, and SSH keys for secure remote login.",
+      "location": "Zoom",
+      "time": "5:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-08-27",
+      "series": "CNJCx",
+      "speakers": [],
+      "title": "CNJCx: Practical Python Week 3",
+      "description": "In this session of CNJCx: Practical Python, we'll talk about the various ways to install and use Python, including a discussion of pip, conda, different versions of Python, virtual environments, and switching between Python versions. We'll also talk about popular alternatives to writing Python scripts, like Jupyter notebooks and Jupyter lab. Finally, we'll compare Python to MATLAB and describe some of the differences in how they're installed and used.",
+      "location": "Zoom",
+      "time": "5:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-09-03",
+      "series": "CNJCx",
+      "speakers": [],
+      "title": "CNJCx: Practical Python Week 4",
+      "description": "Week 4 of the series focuses on project management at a higher level, a core skill that researchers need to develop. This includes writing clean code, version control with <code>git</code> using Github, synchronizing work across machines, formatting and linting code, and more!",
+      "location": "Zoom",
+      "time": "5:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-09-10",
+      "series": "CNJCx",
+      "speakers": [],
+      "title": "CNJCx: Practical Python Week 5",
+      "description": "In week 5, we'll use the skills built up in previous sessions to look at many of the ways Python is being used for research in the biosciences. Topics include data analysis pipelines, figure-making, statistical testing, and using modern machine learning frameworks, e.g., scikit-learn and PyTorch.",
+      "location": "Zoom",
+      "time": "5:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-09-17",
+      "series": "CNJCx",
+      "speakers": [
+        {
+          "name": "Toby Alden",
+          "handle": "",
+          "domain": "",
+          "url": ""
+        },
+        {
+          "name": "William Casarin",
+          "handle": "",
+          "domain": "",
+          "url": ""
+        }
+      ],
+      "title": "CNJCx: Practical Python Week 6",
+      "description": "Week 6 will see two industry professionals share their perspective on project structure, code management, and best practices for scientific code. Following the guest lectures, we'll conclude the series by collecting feedback and sharing accumulated course materials.",
+      "location": "Zoom",
+      "time": "5:00PM",
+      "files": []
+    },
+    {
       "date": "2018-06-26",
+      "series": "",
       "speakers": [
         {
           "name": "Jay Bhasin",
@@ -674,6 +799,7 @@
     },
     {
       "date": "2018-05-23",
+      "series": "",
       "speakers": [
         {
           "name": "Kevin Feigelis",

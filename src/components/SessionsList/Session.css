@@ -1,0 +1,12 @@
+.expanded {
+  overflow: scroll;
+  max-height: 500px;
+  transition: 1s ease-in-out;
+}
+
+.collapsed {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-height: 2em;
+}
