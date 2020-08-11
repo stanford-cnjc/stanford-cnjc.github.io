@@ -32,15 +32,15 @@
     },
     {
       "name": "Toby Alden",
-      "position": "Programmer and Musician",
+      "position": "Indie Game Developer",
       "website": "https://tobyalden.com/",
       "img_src": "img/toby.png"
     },
     {
-      "name": "William Casarin",
-      "position": "Developer",
-      "website": "https://jb55.com/",
-      "img_src": "img/will.jpg"
+      "name": "Julia Wang",
+      "position": "PhD Student, Computational Neuroscience, CSHL",
+      "website": "https://www.linkedin.com/in/julia-wang-888b53126",
+      "img_src": "img/julia.png"
     }
   ],
   "sessions": [
@@ -118,6 +118,12 @@
           "position": "PhD Candidate, Stanford Neuroscience",
           "website": "https://www.eshedmargalit.com",
           "img_src": "img/eshed.png"
+        },
+        {
+          "name": "Julia Wang",
+          "position": "PhD Student, Computational Neuroscience, CSHL",
+          "website": "https://www.linkedin.com/in/julia-wang-888b53126",
+          "img_src": "img/julia.png"
         }
       ],
       "topics": [
@@ -199,21 +205,12 @@
       "speakers": [
         {
           "name": "Toby Alden",
-          "position": "Programmer and Musician",
+          "position": "Indie Game Developer",
           "website": "https://tobyalden.com/",
           "img_src": "img/toby.png"
-        },
-        {
-          "name": "William Casarin",
-          "position": "Developer",
-          "website": "https://jb55.com/",
-          "img_src": "img/will.jpg"
         }
       ],
-      "topics": [
-        "Toby Alden: The Philosophy of Refactoring",
-        "William Casarin: Functional vs Object-Oriented Programming for Scientific Analysis"
-      ],
+      "topics": ["Toby Alden: The Philosophy of Refactoring"],
       "links": [
         {
           "title": "Session Recording (Posted After Session)",
