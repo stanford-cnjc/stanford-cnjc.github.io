@@ -83,11 +83,12 @@ const renderLinks = links => {
   );
 };
 
-function WeekInfo({ title, speakers, topics, links }) {
+function WeekInfo({ title, date, speakers, topics, links }) {
   return (
     <Card style={{ height: '530px', overflow: 'scroll' }}>
       <CardHeader>
         <h5>{title}</h5>
+        <small>{date}</small>
       </CardHeader>
       <CardBody>
         <div style={{ display: 'flex', flexDirection: 'column' }}>

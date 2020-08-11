@@ -53,6 +53,7 @@
   "sessions": [
     {
       "title": "Week 1: Developing a Development Environment",
+      "date": "Thursday, August 13 - 5:00PM (PT)",
       "speakers": [
         {
           "name": "Eshed Margalit",
@@ -92,6 +93,7 @@
     },
     {
       "title": "Week 2: Working on Remote Machines",
+      "date": "Thursday, August 20 - 5:00PM (PT)",
       "speakers": [
         {
           "name": "Tucker G. Fisher",
@@ -119,6 +121,7 @@
     },
     {
       "title": "Week 3: Python Installation and Environments",
+      "date": "Thursday, August 27 - 5:00PM (PT)",
       "speakers": [
         {
           "name": "Eshed Margalit",
@@ -153,6 +156,7 @@
     },
     {
       "title": "Week 4: Writing and Sharing Code",
+      "date": "Thursday, September 3 - 5:00PM (PT)",
       "speakers": [
         {
           "name": "Russell Poldrack",
@@ -181,6 +185,7 @@
     },
     {
       "title": "Week 5: Practical Python",
+      "date": "Thursday, September 10 - 5:00PM (PT)",
       "speakers": [
         {
           "name": "Tyler Benster",
@@ -209,6 +214,7 @@
     },
     {
       "title": "Week 6: Invited Guest Lectures",
+      "date": "Thursday, September 17 - 5:00PM (PT)",
       "speakers": [
         {
           "name": "Toby Alden",
