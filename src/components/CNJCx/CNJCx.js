@@ -25,9 +25,10 @@ class CNJCx extends Component {
             <div style={{ marginRight: '10px' }}>{img_render}</div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <div>
-                <strong>{speaker.name}</strong>
+                <strong>{speaker.name} </strong>{' '}
+                <small>({speaker.pronouns})</small>
               </div>
-              <small>{speaker.position}</small>
+              <small>{speaker.position} </small>
             </div>
           </div>
         </Card>
@@ -38,7 +39,7 @@ class CNJCx extends Component {
   renderSpeakers = speakers => {
     const renderedSpeakers = speakers.map(speaker => {
       return (
-        <Col lg="4" sm="6" xs="12" key={`${speaker.name}_image`}>
+        <Col lg="6" md="6" sm="12" xs="12" key={`${speaker.name}_image`}>
           {this.renderSpeaker(speaker)}
         </Col>
       );

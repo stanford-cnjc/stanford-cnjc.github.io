@@ -2,42 +2,49 @@
   "speakers": [
     {
       "name": "Eshed Margalit",
+      "pronouns": "he/him/his",
       "position": "PhD Candidate, Stanford Neuroscience",
       "website": "https://www.eshedmargalit.com",
       "img_src": "img/eshed.png"
     },
     {
       "name": "Tucker G. Fisher",
+      "pronouns": "he/him/his",
       "position": "PhD Candidate, Stanford Neuroscience",
       "website": "https://tgfisher.github.io",
       "img_src": "img/tucker.png"
     },
     {
       "name": "Josh B. Melander",
+      "pronouns": "he/him/his",
       "position": "PhD Candidate, Stanford Neuroscience",
       "website": "https://github.com/jbmelander",
       "img_src": "img/josh.jpg"
     },
     {
       "name": "Russell Poldrack",
+      "pronouns": "he/him/his",
       "position": "Professor of Psychology, Stanford",
       "website": "https://poldracklab.stanford.edu/",
       "img_src": "img/russ.jpg"
     },
     {
       "name": "Tyler Benster",
+      "pronouns": "he/him/his",
       "position": "PhD Candidate, Stanford Neuroscience",
       "website": "https://www.tylerbenster.com/",
       "img_src": "img/tyler.jpg"
     },
     {
       "name": "Toby Alden",
-      "position": "Indie Game Developer",
+      "pronouns": "they/them/theirs",
+      "position": "Game Developer",
       "website": "https://tobyalden.com/",
-      "img_src": "img/toby.png"
+      "img_src": "img/toby.jpg"
     },
     {
       "name": "Julia Wang",
+      "pronouns": "she/her/hers",
       "position": "PhD Student, Computational Neuroscience, CSHL",
       "website": "https://www.linkedin.com/in/julia-wang-888b53126",
       "img_src": "img/julia.png"
@@ -205,9 +212,9 @@
       "speakers": [
         {
           "name": "Toby Alden",
-          "position": "Indie Game Developer",
+          "position": "Game Developer",
           "website": "https://tobyalden.com/",
-          "img_src": "img/toby.png"
+          "img_src": "img/toby.jpg"
         }
       ],
       "topics": ["Toby Alden: The Philosophy of Refactoring"],
