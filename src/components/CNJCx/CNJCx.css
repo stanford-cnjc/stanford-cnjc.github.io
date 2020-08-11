@@ -32,7 +32,3 @@ a:hover {
   margin-right: 5px;
   margin-bottom: 5px;
 }
-
-.btn.disabled {
-  cursor: not-allowed !important;
-}
