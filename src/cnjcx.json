@@ -1,6 +1,13 @@
 {
   "speakers": [
     {
+      "name": "Josh B. Melander",
+      "pronouns": "he/him/his",
+      "position": "PhD Candidate, Stanford Neuroscience",
+      "website": "https://github.com/jbmelander",
+      "img_src": "img/josh.jpg"
+    },
+    {
       "name": "Eshed Margalit",
       "pronouns": "he/him/his",
       "position": "PhD Candidate, Stanford Neuroscience",
@@ -15,11 +22,11 @@
       "img_src": "img/tucker.png"
     },
     {
-      "name": "Josh B. Melander",
-      "pronouns": "he/him/his",
-      "position": "PhD Candidate, Stanford Neuroscience",
-      "website": "https://github.com/jbmelander",
-      "img_src": "img/josh.jpg"
+      "name": "Julia Wang",
+      "pronouns": "she/her/hers",
+      "position": "PhD Student, Computational Neuroscience, CSHL",
+      "website": "https://www.linkedin.com/in/julia-wang-888b53126",
+      "img_src": "img/julia.png"
     },
     {
       "name": "Russell Poldrack",
@@ -41,13 +48,6 @@
       "position": "Game Developer",
       "website": "https://tobyalden.com/",
       "img_src": "img/toby.jpg"
-    },
-    {
-      "name": "Julia Wang",
-      "pronouns": "she/her/hers",
-      "position": "PhD Student, Computational Neuroscience, CSHL",
-      "website": "https://www.linkedin.com/in/julia-wang-888b53126",
-      "img_src": "img/julia.png"
     }
   ],
   "sessions": [
@@ -56,10 +56,10 @@
       "date": "Thursday, August 13 - 5:00PM (PT)",
       "speakers": [
         {
-          "name": "Eshed Margalit",
+          "name": "Josh B. Melander",
           "position": "PhD Candidate, Stanford Neuroscience",
-          "website": "https://www.eshedmargalit.com",
-          "img_src": "img/eshed.png"
+          "website": "https://github.com/jbmelander",
+          "img_src": "img/josh.jpg"
         },
         {
           "name": "Tucker G. Fisher",
@@ -68,10 +68,10 @@
           "img_src": "img/tucker.png"
         },
         {
-          "name": "Josh B. Melander",
+          "name": "Eshed Margalit",
           "position": "PhD Candidate, Stanford Neuroscience",
-          "website": "https://github.com/jbmelander",
-          "img_src": "img/josh.jpg"
+          "website": "https://www.eshedmargalit.com",
+          "img_src": "img/eshed.png"
         }
       ],
       "topics": [
