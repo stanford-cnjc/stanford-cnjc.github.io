@@ -192,7 +192,7 @@ class CNJCx extends Component {
               computing skills, like how to work on a remote machine, version
               control for code, command line basics, managing Python package
               dependencies with environments, and Python best practices for
-              biosciences
+              biosciences.
             </p>
           </Col>
         </Row>
