@@ -62,9 +62,15 @@ const renderLinks = links => {
         {link.title}
       </Button>
     ) : (
-      <a href={link.url} key={link.url}>
+      <a
+        href={link.url}
+        key={link.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Button
           color="primary"
+          size="sm"
           style={{ marginRight: '5px', marginTop: '5px' }}
         >
           {icon}
