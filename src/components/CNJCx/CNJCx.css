@@ -32,3 +32,15 @@ a:hover {
   margin-right: 5px;
   margin-bottom: 5px;
 }
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

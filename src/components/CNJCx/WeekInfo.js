@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Button,
+  Collapse,
   ListGroup,
   ListGroupItem,
   Card,
   CardHeader,
   CardBody,
+  Row,
+  Col,
 } from 'reactstrap';
 
-import { FaGoogle, FaLink, FaYoutube } from 'react-icons/fa';
+import {
+  FaGoogle,
+  FaLink,
+  FaLaptop,
+  FaLaptopCode,
+  FaYoutube,
+  FaPlus,
+  FaMinus,
+} from 'react-icons/fa';
+import './CNJCx.css';
 
 const renderSpeakers = speakers => {
   const imgs = speakers.map(speaker => {
@@ -46,21 +58,29 @@ const renderLinks = links => {
       case 'google_doc':
         icon = <FaGoogle size={iconSize} />;
         break;
+      case 'slides':
+        icon = <FaLaptop size={iconSize} />;
+        break;
+      case 'markdown':
+        icon = <FaLaptopCode size={iconSize} />;
+        break;
       default:
         icon = <FaLink size={iconSize} />;
     }
 
     return link.url === '' ? (
-      <Button
-        disabled
-        color="primary"
-        size="sm"
-        style={{ marginRight: '5px', marginTop: '5px' }}
-      >
-        {icon}
-        {` `}
-        {link.title}
-      </Button>
+      <div>
+        <Button
+          disabled
+          color="primary"
+          size="sm"
+          style={{ marginRight: '5px', marginTop: '5px' }}
+        >
+          {icon}
+          {` `}
+          {link.title}
+        </Button>
+      </div>
     ) : (
       <a
         href={link.url}
@@ -84,30 +104,51 @@ const renderLinks = links => {
   return (
     <>
       <h6>Links</h6>
-      <div>{renderedLinks}</div>
+      <div className="flexcol">{renderedLinks}</div>
     </>
   );
 };
 
 function WeekInfo({ title, date, speakers, topics, links }) {
+  const [collapsed, setCollapsed] = useState(false);
+  const toggleCollapsed = () => setCollapsed(!collapsed);
+
+  const button_text = collapsed ? 'Show More' : 'Show Less';
+  const button_icon = collapsed ? <FaPlus /> : <FaMinus />;
+  const collapseButton = (
+    <Button color="info" size="sm" onClick={toggleCollapsed}>
+      {button_icon}
+      {` `}
+      {button_text}
+    </Button>
+  );
+
   return (
-    <Card style={{ height: '530px', overflow: 'scroll' }}>
+    <Card>
       <CardHeader>
-        <h5>{title}</h5>
-        <small>{date}</small>
-      </CardHeader>
-      <CardBody>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div className="flexrow">
           <div>
-            {renderTopics(topics)}
-            <hr />
+            <h5>{title}</h5>
+            <small>{date}</small>
           </div>
-          <div>{renderLinks(links)}</div>
+          <div>{collapseButton}</div>
         </div>
-        <hr />
-        <h6>Session Leaders</h6>
-        {renderSpeakers(speakers)}
-      </CardBody>
+      </CardHeader>
+      <Collapse isOpen={!collapsed}>
+        <CardBody>
+          <Row>
+            <Col lg="8" sm="12">
+              {renderTopics(topics)}
+            </Col>
+            <Col lg="4" sm="12">
+              {renderLinks(links)}
+            </Col>
+          </Row>
+          <hr />
+          <h6>Session Leaders</h6>
+          {renderSpeakers(speakers)}
+        </CardBody>
+      </Collapse>
     </Card>
   );
 }

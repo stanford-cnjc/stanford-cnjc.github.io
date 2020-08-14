@@ -54,6 +54,7 @@
     {
       "title": "Week 1: Developing a Development Environment",
       "date": "Thursday, August 13 - 5:00PM (PT)",
+      "htmlAnchor": "week1",
       "speakers": [
         {
           "name": "Josh B. Melander",
@@ -76,24 +77,37 @@
       ],
       "topics": [
         "Introduction to CNJCx: Practical Python",
-        "Opening a Bash Terminal, basic commands, and shell scripting"
+        "History of computing and operating systems",
+        "Relative and absolute paths",
+        "Opening a terminal, basic commands, and shell scripting"
       ],
       "links": [
         {
-          "title": "Session Recording (Posted After Session)",
+          "title": "Session Recording",
           "type": "video",
           "url": "https://stanford.zoom.us/rec/share/xOxLF47X0CBOc7Pt6RvSQqwNGpz_X6a8gSgb-_QEy0kSRxYdGx982kXq_Kr25Wlm?startTime=1597363466000"
         },
         {
-          "title": "Live Discussion (Check back during the session!)",
+          "title": "Live Discussion (Archived)",
           "type": "google_doc",
           "url": "https://docs.google.com/document/d/1cIQDevBEP9EPB5xdjmSdhkFMlscY2YUmkFaOj2NqcCE/edit?usp=sharing"
+        },
+        {
+          "title": "Slide Deck",
+          "type": "slides",
+          "url": "https://docs.google.com/presentation/d/1rcqEJfP3mozdBb4Eg1NUxhaoWN8_TOKAL-aRteAB9XU/edit?usp=sharing"
+        },
+        {
+          "title": "Polished Session Content",
+          "type": "markdown",
+          "url": ""
         }
       ]
     },
     {
       "title": "Week 2: Working on Remote Machines",
       "date": "Thursday, August 20 - 5:00PM (PT)",
+      "htmlAnchor": "week2",
       "speakers": [
         {
           "name": "Tucker G. Fisher",
@@ -113,7 +127,7 @@
           "url": ""
         },
         {
-          "title": "Live Discussion (Check back during the session!)",
+          "title": "Live Discussion",
           "type": "google_doc",
           "url": ""
         }
@@ -148,7 +162,7 @@
           "url": ""
         },
         {
-          "title": "Live Discussion (Check back during the session!)",
+          "title": "Live Discussion",
           "type": "google_doc",
           "url": ""
         }
@@ -177,7 +191,7 @@
           "url": ""
         },
         {
-          "title": "Live Discussion (Check back during the session!)",
+          "title": "Live Discussion",
           "type": "google_doc",
           "url": ""
         }
@@ -206,7 +220,7 @@
           "url": ""
         },
         {
-          "title": "Live Discussion (Check back during the session!)",
+          "title": "Live Discussion",
           "type": "google_doc",
           "url": ""
         }
@@ -231,7 +245,7 @@
           "url": ""
         },
         {
-          "title": "Live Discussion (Check back during the session!)",
+          "title": "Live Discussion",
           "type": "google_doc",
           "url": ""
         }
