@@ -14,7 +14,13 @@ import {
 } from 'reactstrap';
 
 import WeekInfo from './WeekInfo.js';
-import { FaVideo, FaUsers, FaLaptopCode, FaCalendarPlus } from 'react-icons/fa';
+import {
+  FaExclamationCircle,
+  FaVideo,
+  FaUsers,
+  FaLaptopCode,
+  FaCalendarPlus,
+} from 'react-icons/fa';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import cnjcx_data from '../../cnjcx.json';
@@ -165,6 +171,16 @@ function CNJCx() {
         <Button color="success">
           <FaCalendarPlus />
           {` `}RSVP for CNJCx Week 2
+        </Button>
+      </a>
+      <a
+        href="https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week1_commandline/cnjcx_week1_recap.md#nextsesh"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button color="secondary">
+          <FaExclamationCircle />
+          {` `}Week 2 Prerequisites
         </Button>
       </a>
     </div>
