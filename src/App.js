@@ -24,9 +24,10 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          // render the MenuBar on all pages (/*)
+          {/* render the MenuBar on all pages (/*) */}
           <Route path="/" component={MenuBar} />
-          // render the Home component if nothing after "/" in URL
+
+          {/* render the Home component if nothing after "/" in URL */}
           <Route exact path="/" component={Home} />
           <Route exact path="/About" component={About} />
           <Route
@@ -35,7 +36,8 @@ class App extends Component {
             component={PresentationSignup}
           />
           <Route exact path="/CNJCx" component={CNJCx} />
-          // always render the footer last
+
+          {/* always render the footer last, on all pages */}
           <Route path="/" component={Footer} />
         </div>
       </Router>
