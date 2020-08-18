@@ -13,9 +13,11 @@ import {
 } from 'reactstrap';
 import { AvField, AvForm } from 'availity-reactstrap-validation';
 import { Link } from 'react-router-dom';
-import sessions_file from '../../data/sessions.json';
+import sessionData from '../../data/sessions.json';
 import moment from 'moment';
 
+// note: this component is not being updated to a functional component with hooks
+// because the availity-reacstrap docs still use class components
 class PresentationSignup extends Component {
   constructor(props) {
     super(props);
@@ -69,25 +71,25 @@ class PresentationSignup extends Component {
     this.setState({ email: values.email, error: true });
   }
 
-  render_valid_dates() {
-    const sessions = sessions_file.sessions;
+  renderValidDates() {
+    const sessions = sessionData.sessions;
     return sessions
       .filter(session => session.title === 'TBD')
       .map(session => {
-        const day_of_week = moment(session.date).format('dddd');
-        const date_str = moment(session.date).format('MMMM Do YYYY');
+        const dayOfWeek = moment(session.date).format('dddd');
+        const dateStr = moment(session.date).format('MMMM Do YYYY');
         return (
           <option key={session.date}>
-            {day_of_week}, {date_str}
+            {dayOfWeek}, {dateStr}
           </option>
         );
       });
   }
 
-  render_form() {
-    let modal_render;
+  renderForm() {
+    let modalRender;
     if (!this.state.error) {
-      modal_render = (
+      modalRender = (
         <Modal
           isOpen={this.state.valuesSubmitted !== false}
           toggle={this.closeModal}
@@ -104,7 +106,7 @@ class PresentationSignup extends Component {
         </Modal>
       );
     } else {
-      modal_render = null;
+      modalRender = null;
     }
     return (
       <div>
@@ -167,7 +169,7 @@ class PresentationSignup extends Component {
                 required
                 multiple
               >
-                {this.render_valid_dates()}
+                {this.renderValidDates()}
               </AvField>
             </Col>
           </Row>
@@ -182,7 +184,7 @@ class PresentationSignup extends Component {
           </Row>
           <Button>Submit Sign-up Request</Button>
         </AvForm>
-        {modal_render}
+        {modalRender}
       </div>
     );
   }
@@ -194,7 +196,7 @@ class PresentationSignup extends Component {
             <br />
             <h2>Signing up to present</h2>
             <Card>
-              <CardBody>{this.render_form()}</CardBody>
+              <CardBody>{this.renderForm()}</CardBody>
             </Card>
           </Col>
         </Row>

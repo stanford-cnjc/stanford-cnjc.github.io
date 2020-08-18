@@ -5,6 +5,8 @@ import { AvField, AvForm } from 'availity-reactstrap-validation';
 import { FaCheck } from 'react-icons/fa';
 import { RingLoader } from 'react-spinners';
 
+// note: this component is not being updated to a functional component with hooks
+// because the availity-reacstrap docs still use class components
 class ListservSignup extends Component {
   constructor(props) {
     super(props);
@@ -14,9 +16,9 @@ class ListservSignup extends Component {
     this.state = {
       email: false,
       valuesSubmitted: false,
-      button_content: 'Submit',
-      button_color: 'primary',
-      button_disable: false,
+      buttonContent: 'Submit',
+      buttonColor: 'primary',
+      buttonDisable: false,
     };
   }
   handleValidEmail(event, values) {
@@ -27,9 +29,9 @@ class ListservSignup extends Component {
     const url = base + '&entry.899316489=' + values.newListservEmail;
 
     this.setState({
-      button_content: <RingLoader size={25} color={'purple'} />,
-      button_color: 'secondary',
-      button_disable: true,
+      buttonContent: <RingLoader size={25} color={'purple'} />,
+      buttonColor: 'secondary',
+      buttonDisable: true,
     });
     fetch(url, {
       method: 'POST',
@@ -39,9 +41,9 @@ class ListservSignup extends Component {
       console.log(data);
       this.setState({
         valuesSubmitted: true,
-        button_color: 'success',
-        button_disable: true,
-        button_content: <FaCheck />,
+        buttonColor: 'success',
+        buttonDisable: true,
+        buttonContent: <FaCheck />,
       });
     });
   }
@@ -50,7 +52,7 @@ class ListservSignup extends Component {
     this.setState({ email: values.email, error: true });
   }
 
-  render_ListserveField() {
+  renderListserveField() {
     return (
       <div>
         <AvForm
@@ -84,10 +86,10 @@ class ListservSignup extends Component {
             <Col>
               <Button
                 type="submit"
-                color={this.state.button_color}
-                disabled={this.state.button_disable}
+                color={this.state.buttonColor}
+                disabled={this.state.buttonDisable}
               >
-                {this.state.button_content}
+                {this.state.buttonContent}
               </Button>
             </Col>
           </Row>
@@ -102,7 +104,7 @@ class ListservSignup extends Component {
         <Row className="vertical-align">
           <Col id="listserv_signup_nopad" xs="12" lg="6">
             <br />
-            {this.render_ListserveField()}
+            {this.renderListserveField()}
           </Col>
         </Row>
       </Container>
