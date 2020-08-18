@@ -34,10 +34,10 @@ export default function Footer() {
   const content = (
     <>
       <hr />
-      <p>
+      <div>
         Questions? Comments? Ideas?{` `}
         {emailPopup}
-      </p>
+      </div>
     </>
   );
 
