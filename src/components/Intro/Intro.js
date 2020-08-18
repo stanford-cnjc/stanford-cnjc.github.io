@@ -56,26 +56,35 @@ export default function Intro() {
   const mbcLogo = require('../../img/mbct-logo.png');
   const wtnLogo = require('../../img/wt_400x400.jpg');
 
+  const paragraphColumn = (
+    <Col xs="12" lg="6">
+      <div>
+        <h1>CNJC</h1>
+        <h6>Stanford Computational Neuroscience Journal Club</h6>
+        {introParagraph}
+        <br />
+        {buttons}
+        <br />
+      </div>
+    </Col>
+  );
+
+  const logoColumns = (
+    <>
+      <Col xs="6" lg="3">
+        <img className="logo" src={mbcLogo} alt="MBCT Logo" />
+      </Col>
+      <Col xs="6" lg="3">
+        <img className="logo" src={wtnLogo} alt="Wu Tsai Neuro Logo" />
+      </Col>
+    </>
+  );
+
   return (
     <Container>
       <Row className="vertical-align">
-        <Col xs="12" lg="6">
-          <div>
-            <h1>CNJC</h1>
-            <h6>Stanford Computational Neuroscience Journal Club</h6>
-            {introParagraph}
-            <br />
-            {buttons}
-            <br />
-          </div>
-        </Col>
-
-        <Col xs="6" lg="3">
-          <img className="logo" src={mbcLogo} alt="MBCT Logo" />
-        </Col>
-        <Col xs="6" lg="3">
-          <img className="logo" src={wtnLogo} alt="Wu Tsai Neuro Logo" />
-        </Col>
+        {paragraphColumn}
+        {logoColumns}
       </Row>
     </Container>
   );
