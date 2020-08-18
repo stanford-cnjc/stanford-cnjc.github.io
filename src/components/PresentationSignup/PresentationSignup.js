@@ -193,7 +193,6 @@ class PresentationSignup extends Component {
       <Container>
         <Row className="vertical-align">
           <Col xs="12" lg="12">
-            <br />
             <h2>Signing up to present</h2>
             <Card>
               <CardBody>{this.renderForm()}</CardBody>

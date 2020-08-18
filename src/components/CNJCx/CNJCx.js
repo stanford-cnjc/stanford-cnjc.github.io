@@ -272,7 +272,6 @@ function CNJCx() {
     <Container>
       <Row>
         <Col>
-          <br />
           <h3>CNJCx: Practical Python</h3>
           <p>
             A 6-week mini-series designed to introduce broadly-applicable
