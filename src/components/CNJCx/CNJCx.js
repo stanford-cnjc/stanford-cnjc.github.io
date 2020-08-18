@@ -23,14 +23,14 @@ import {
 } from 'react-icons/fa';
 import { HashLink as Link } from 'react-router-hash-link';
 
-import cnjcx_data from '../../data/cnjcx.json';
+import cnjcxData from '../../data/cnjcx.json';
 import './CNJCx.css';
 
 const renderSpeaker = speaker => {
-  let img_render = null;
+  let imgRender = null;
   if (speaker.img_src) {
     const speaker_img_src = require(`../../${speaker.img_src}`);
-    img_render = (
+    imgRender = (
       <img className="circle" alt={speaker.img_alt} src={speaker_img_src} />
     );
   }
@@ -39,7 +39,7 @@ const renderSpeaker = speaker => {
     <a href={speaker.website} target="_blank" rel="noopener noreferrer">
       <Card className="speakerCard">
         <div style={{ display: 'flex' }}>
-          <div style={{ marginRight: '10px' }}>{img_render}</div>
+          <div style={{ marginRight: '10px' }}>{imgRender}</div>
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <div>
               <strong>{speaker.name} </strong>{' '}
@@ -265,13 +265,13 @@ function CNJCx() {
     </div>
   );
 
-  const speakerProfiles = renderSpeakers(cnjcx_data.speakers);
-  const weekInfo = renderWeekInfo(cnjcx_data.sessions);
+  const speakerProfiles = renderSpeakers(cnjcxData.speakers);
+  const weekInfo = renderWeekInfo(cnjcxData.sessions);
 
   return (
     <Container>
-      <Row className="vertical-align">
-        <Col xs="12" lg="12">
+      <Row>
+        <Col>
           <br />
           <h3>CNJCx: Practical Python</h3>
           <p>
