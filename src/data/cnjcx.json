@@ -5,49 +5,56 @@
       "pronouns": "he/him/his",
       "position": "PhD Candidate, Stanford Neuroscience",
       "website": "https://github.com/jbmelander",
-      "img_src": "img/josh.jpg"
+      "imgSrc": "img/josh.jpg",
+      "imgAlt": "Headshot of Josh B. Melander"
     },
     {
       "name": "Eshed Margalit",
       "pronouns": "he/him/his",
       "position": "PhD Candidate, Stanford Neuroscience",
       "website": "https://www.eshedmargalit.com",
-      "img_src": "img/eshed.png"
+      "imgSrc": "img/eshed.png",
+      "imgAlt": "Headshot of Eshed Margalit"
     },
     {
       "name": "Tucker G. Fisher",
       "pronouns": "he/him/his",
       "position": "PhD Candidate, Stanford Neuroscience",
       "website": "https://tgfisher.github.io",
-      "img_src": "img/tucker.png"
+      "imgSrc": "img/tucker.png",
+      "imgAlt": "Headshot of Tucker G. Fisher"
     },
     {
       "name": "Julia Wang",
       "pronouns": "she/her/hers",
       "position": "PhD Student, Computational Neuroscience, CSHL",
       "website": "https://www.linkedin.com/in/julia-wang-888b53126",
-      "img_src": "img/julia.png"
+      "imgSrc": "img/julia.png",
+      "imgAlt": "Headshot of Julia Wang"
     },
     {
       "name": "Russell Poldrack",
       "pronouns": "he/him/his",
       "position": "Professor of Psychology, Stanford",
       "website": "https://poldracklab.stanford.edu/",
-      "img_src": "img/russ.jpg"
+      "imgSrc": "img/russ.jpg",
+      "imgAlt": "Headshot of Russell Poldrack"
     },
     {
       "name": "Tyler Benster",
       "pronouns": "he/him/his",
       "position": "PhD Candidate, Stanford Neuroscience",
       "website": "https://www.tylerbenster.com/",
-      "img_src": "img/tyler.jpg"
+      "imgSrc": "img/tyler.jpg",
+      "imgAlt": "Headshot of Tyler Benster"
     },
     {
       "name": "Toby Alden",
       "pronouns": "they/them/theirs",
       "position": "Game Developer",
       "website": "https://tobyalden.com/",
-      "img_src": "img/toby.jpg"
+      "imgSrc": "img/toby.jpg",
+      "imgAlt": "Headshot of Toby Alden"
     }
   ],
   "sessions": [
@@ -60,19 +67,22 @@
           "name": "Josh B. Melander",
           "position": "PhD Candidate, Stanford Neuroscience",
           "website": "https://github.com/jbmelander",
-          "img_src": "img/josh.jpg"
+          "imgSrc": "img/josh.jpg",
+          "imgAlt": "Headshot of Josh B. Melander"
         },
         {
           "name": "Tucker G. Fisher",
           "position": "PhD Candidate, Stanford Neuroscience",
           "website": "https://tgfisher.github.io",
-          "img_src": "img/tucker.png"
+          "imgSrc": "img/tucker.png",
+          "imgAlt": "Headshot of Tucker G. Fisher"
         },
         {
           "name": "Eshed Margalit",
           "position": "PhD Candidate, Stanford Neuroscience",
           "website": "https://www.eshedmargalit.com",
-          "img_src": "img/eshed.png"
+          "imgSrc": "img/eshed.png",
+          "imgAlt": "Headshot of Eshed Margalit"
         }
       ],
       "topics": [
@@ -113,7 +123,8 @@
           "name": "Tucker G. Fisher",
           "position": "PhD Candidate, Stanford Neuroscience",
           "website": "https://tgfisher.github.io",
-          "img_src": "img/tucker.png"
+          "imgSrc": "img/tucker.png",
+          "imgAlt": "Headshot of Tucker G. Fisher"
         }
       ],
       "topics": [
@@ -141,13 +152,15 @@
           "name": "Eshed Margalit",
           "position": "PhD Candidate, Stanford Neuroscience",
           "website": "https://www.eshedmargalit.com",
-          "img_src": "img/eshed.png"
+          "imgSrc": "img/eshed.png",
+          "imgAlt": "Headshot of Eshed Margalit"
         },
         {
           "name": "Julia Wang",
           "position": "PhD Student, Computational Neuroscience, CSHL",
           "website": "https://www.linkedin.com/in/julia-wang-888b53126",
-          "img_src": "img/julia.png"
+          "imgSrc": "img/julia.png",
+          "imgAlt": "Headshot of Julia Wang"
         }
       ],
       "topics": [
@@ -176,7 +189,8 @@
           "name": "Russell Poldrack",
           "position": "Professor of Psychology, Stanford",
           "website": "https://poldracklab.stanford.edu/",
-          "img_src": "img/russ.jpg"
+          "imgSrc": "img/russ.jpg",
+          "imgAlt": "Headshot of Russell Poldrack"
         }
       ],
       "topics": [
@@ -205,7 +219,8 @@
           "name": "Tyler Benster",
           "position": "PhD Candidate, Stanford Neuroscience",
           "website": "https://www.tylerbenster.com/",
-          "img_src": "img/tyler.jpg"
+          "imgSrc": "img/tyler.jpg",
+          "imgAlt": "Headshot of Tyler Benster"
         }
       ],
       "topics": [
@@ -234,7 +249,8 @@
           "name": "Toby Alden",
           "position": "Game Developer",
           "website": "https://tobyalden.com/",
-          "img_src": "img/toby.jpg"
+          "imgSrc": "img/toby.jpg",
+          "imgAlt": "Headshot of Toby Alden"
         }
       ],
       "topics": ["Toby Alden: The Philosophy of Refactoring"],

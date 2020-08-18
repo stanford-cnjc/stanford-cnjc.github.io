@@ -24,10 +24,10 @@ import './CNJCx.css';
 
 const renderSpeakers = speakers => {
   const imgs = speakers.map(speaker => {
-    const speaker_img_src = require(`../../${speaker.img_src}`);
+    const speakerImgSrc = require(`../../${speaker.imgSrc}`);
     return (
       <div style={{ marginRight: '5px' }} key={`${speaker.name}_footer_img`}>
-        <img className="circle" alt={speaker.img_alt} src={speaker_img_src} />
+        <img className="circle" alt={speaker.img_alt} src={speakerImgSrc} />
       </div>
     );
   });

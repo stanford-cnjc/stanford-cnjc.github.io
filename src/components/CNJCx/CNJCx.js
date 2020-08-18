@@ -28,10 +28,10 @@ import './CNJCx.css';
 
 const renderSpeaker = speaker => {
   let imgRender = null;
-  if (speaker.img_src) {
-    const speaker_img_src = require(`../../${speaker.img_src}`);
+  if (speaker.imgSrc) {
+    const speakerImgSrc = require(`../../${speaker.imgSrc}`);
     imgRender = (
-      <img className="circle" alt={speaker.img_alt} src={speaker_img_src} />
+      <img className="circle" alt={speaker.imgAlt} src={speakerImgSrc} />
     );
   }
 
