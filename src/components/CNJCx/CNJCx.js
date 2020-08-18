@@ -23,7 +23,7 @@ import {
 } from 'react-icons/fa';
 import { HashLink as Link } from 'react-router-hash-link';
 
-import cnjcx_data from '../../cnjcx.json';
+import cnjcx_data from '../../data/cnjcx.json';
 import './CNJCx.css';
 
 const renderSpeaker = speaker => {

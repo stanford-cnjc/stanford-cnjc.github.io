@@ -14,7 +14,7 @@ import moment from 'moment';
 import Fuse from 'fuse.js';
 import './SessionsList.css';
 
-import session_data from '../../sessions.json';
+import session_data from '../../data/sessions.json';
 import SessionListGroup from './SessionListGroup.js';
 
 function past_sort(a, b) {

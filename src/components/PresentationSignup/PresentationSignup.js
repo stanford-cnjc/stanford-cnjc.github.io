@@ -13,7 +13,7 @@ import {
 } from 'reactstrap';
 import { AvField, AvForm } from 'availity-reactstrap-validation';
 import { Link } from 'react-router-dom';
-import sessions_file from '../../sessions.json';
+import sessions_file from '../../data/sessions.json';
 import moment from 'moment';
 
 class PresentationSignup extends Component {
