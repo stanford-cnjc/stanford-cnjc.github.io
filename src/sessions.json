@@ -683,7 +683,7 @@
       ]
     },
     {
-      "date": "TBD",
+      "date": "2020-08-26",
       "series": "",
       "speakers": [
         {
@@ -691,8 +691,9 @@
           "url": ""
         }
       ],
-      "title": "(Postponed) Special Guest Session: Topic to be Announced",
-      "location": "LKSC 209",
+      "title": "Special Guest Session: Topic to be Announced",
+      "description": "For decades, computational scientists have faced an inescapable trade off between performance and usability in programming languages. While high level languages (like Matlab and Python+NumPy) have made tremendous contributions by making high performance mathematical routines easily accessible, the computational sciences increasingly rely on novel, complex algorithms that cannot be efficiently expressed using existing optimized libraries, forcing users to often resort to \"performance languages\" like C when efficiency is paramount. The Julia programming language, first released in 2012, aims to solve this problem by creating a syntax that \"reads like python\", but code that \"runs like C\". In this talk I will introduce Julia, provide a semi-technical overview of how it achieves such high performance, and explain why the language is uniquely suited to meet the ever growing needs of computational scientists.",
+      "location": "Zoom",
       "time": "6:00PM",
       "files": []
     },
