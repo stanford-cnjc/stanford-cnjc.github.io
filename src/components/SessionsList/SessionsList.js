@@ -47,13 +47,8 @@ export default function SessionsList() {
   };
 
   const isUpcoming = sessions.map(sess => {
-    if (
-      sess.title ===
-      'Special Guest Session: Characterizing hippocampal replay using switching point process state space models'
-    ) {
-    }
     const sess_time = moment.tz(
-      sess.date + ' ' + sess.time,
+      `${sess.date}  ${sess.time}`,
       'YYYY-MM-DD h:mm a',
       'America/Los_Angeles'
     );
