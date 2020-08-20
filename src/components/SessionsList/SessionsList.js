@@ -9,7 +9,7 @@ import {
   Label,
   Input,
 } from 'reactstrap';
-import moment from 'moment';
+import moment from 'moment-timezone';
 
 import Fuse from 'fuse.js';
 import './SessionsList.css';
@@ -47,7 +47,16 @@ export default function SessionsList() {
   };
 
   const isUpcoming = sessions.map(sess => {
-    const sess_time = moment(sess.date + ' ' + sess.time, 'YYYY-MM-DD h:mm a');
+    if (
+      sess.title ===
+      'Special Guest Session: Characterizing hippocampal replay using switching point process state space models'
+    ) {
+    }
+    const sess_time = moment.tz(
+      sess.date + ' ' + sess.time,
+      'YYYY-MM-DD h:mm a',
+      'America/Los_Angeles'
+    );
     if (moment().isBefore(sess_time)) {
       return true;
     } else if (sess.date === 'TBD') {
