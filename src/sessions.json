@@ -731,7 +731,7 @@
       "series": "CNJCx",
       "speakers": [],
       "title": "CNJCx: Practical Python Week 2",
-      "description": "The second session in the CNJCx series will cover working on a remote server: a common setup for many labs or individuals using services such as <a href=\"https://www.sherlock.stanford.edu/\">Sherlock, Stanford's High-Performance Computing Cluster</a>. We will also discuss tools that make working on remote machines more productive and painless, including Vim (a popular terminal-based text editor), and tmux: a tool to manage terminal sessions and keep them running even when you log out. These tools can also improve productivity on your local machine, i.e. your laptop or home computer. Other topics include file transfer, customizing your text editor, and SSH keys for secure remote login.",
+      "description": "The second session in the CNJCx series will cover working on a remote server: a common setup for many labs or individuals using services such as <a href=\"https://www.sherlock.stanford.edu/\">Sherlock, Stanford's High-Performance Computing Cluster</a>. We will also discuss tools that make working on remote machines more productive and painless, including Vim (a popular terminal-based text editor), and tmux: a tool to manage terminal sessions and keep them running even when you log out. These tools can also improve productivity on your local machine, i.e. your laptop or home computer.",
       "location": "Zoom",
       "time": "5:00PM",
       "files": []
