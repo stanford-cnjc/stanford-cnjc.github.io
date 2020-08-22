@@ -1,6 +1,291 @@
 {
   "sessions": [
     {
+      "date": "2020-09-02",
+      "series": "",
+      "speakers": [
+        {
+          "name": "Scottie Alexander",
+          "url": ""
+        }
+      ],
+      "title": "Julia: a modern programming language designed for computational science",
+      "description": "For decades, computational scientists have faced an inescapable trade off between performance and usability in programming languages. While high level languages (like Matlab and Python+NumPy) have made tremendous contributions by making high performance mathematical routines easily accessible, the computational sciences increasingly rely on novel, complex algorithms that cannot be efficiently expressed using existing optimized libraries, forcing users to often resort to \"performance languages\" like C when efficiency is paramount. The Julia programming language, first released in 2012, aims to solve this problem by creating a syntax that \"reads like python\", but code that \"runs like C\". In this talk I will introduce Julia, provide a semi-technical overview of how it achieves such high performance, and explain why the language is uniquely suited to meet the ever growing needs of computational scientists.",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-09-16",
+      "series": "",
+      "speakers": [
+        {
+          "name": "Sarah Divel",
+          "url": ""
+        }
+      ],
+      "title": "Topic TBA",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-10-14",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-10-28",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-11-18",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-12-02",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-01-06",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-01-20",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-02-03",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-02-17",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-03-03",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-03-31",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-04-14",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-04-28",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-05-12",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-05-26",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-06-23",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-07-14",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-08-04",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
       "date": "2018-12-06",
       "series": "",
       "speakers": [
@@ -681,291 +966,6 @@
           "name": "Stream the Recorded Zoom Session"
         }
       ]
-    },
-    {
-      "date": "2020-09-02",
-      "series": "",
-      "speakers": [
-        {
-          "name": "Scottie Alexander",
-          "url": ""
-        }
-      ],
-      "title": "Special Guest Session: Topic to be Announced",
-      "description": "For decades, computational scientists have faced an inescapable trade off between performance and usability in programming languages. While high level languages (like Matlab and Python+NumPy) have made tremendous contributions by making high performance mathematical routines easily accessible, the computational sciences increasingly rely on novel, complex algorithms that cannot be efficiently expressed using existing optimized libraries, forcing users to often resort to \"performance languages\" like C when efficiency is paramount. The Julia programming language, first released in 2012, aims to solve this problem by creating a syntax that \"reads like python\", but code that \"runs like C\". In this talk I will introduce Julia, provide a semi-technical overview of how it achieves such high performance, and explain why the language is uniquely suited to meet the ever growing needs of computational scientists.",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2020-09-16",
-      "series": "",
-      "speakers": [
-        {
-          "name": "Sarah Divel",
-          "url": ""
-        }
-      ],
-      "title": "Topic TBA",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2020-10-14",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2020-10-28",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2020-11-18",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2020-12-02",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-01-06",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-01-20",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-02-03",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-02-17",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-03-03",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-03-31",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-04-14",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-04-28",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-05-12",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-05-26",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-06-23",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-07-14",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
-    },
-    {
-      "date": "2021-08-04",
-      "series": "",
-      "speakers": [
-        {
-          "name": "",
-          "url": ""
-        }
-      ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
     },
     {
       "date": "2020-08-13",
