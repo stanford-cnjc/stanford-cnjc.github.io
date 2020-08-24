@@ -130,6 +130,16 @@
           "title": "Live Discussion",
           "type": "google_doc",
           "url": "https://docs.google.com/document/d/1saZURma5qRJGsEceX9Pgi8BoQPexsJaXJc2wX5TG14Y/edit?usp=sharing"
+        },
+        {
+          "title": "Slide Deck",
+          "type": "slides",
+          "url": "https://docs.google.com/presentation/d/1P3PU51mJmLslg6SASgfyU4BZqdyyxxZ0SLczjljqGr4/edit?usp=sharing"
+        },
+        {
+          "title": "Polished Session Content",
+          "type": "markdown",
+          "url": "https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week2_tmux_vim/cnjcx_week2_recap.md"
         }
       ]
     },
