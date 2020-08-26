@@ -10,7 +10,6 @@ class About extends Component {
       <Container>
         <Row className="vertical-align">
           <Col xs="12" lg="12">
-            <br />
             <h3>What is CNJC?</h3>
             <p>
               CNJC is a <strong>community</strong> of students and postdocs with

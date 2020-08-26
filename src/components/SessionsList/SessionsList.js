@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import {
   Button,
   Container,
@@ -9,186 +9,151 @@ import {
   Label,
   Input,
 } from 'reactstrap';
-import moment from 'moment';
+import moment from 'moment-timezone';
 
 import Fuse from 'fuse.js';
 import './SessionsList.css';
 
-import session_data from '../../sessions.json';
+import sessionData from '../../data/sessions.json';
 import SessionListGroup from './SessionListGroup.js';
 
-function past_sort(a, b) {
-  return -moment(a.date).diff(moment(b.date));
-}
+import { pastSort, tbdUpcomingSort } from '../utils';
 
-function tbd_upcoming_sort(a, b) {
-  if (a.date === 'TBD') {
-    return 2; // if this is 0, chrome/firefox give diff results because the sort is unstable
-  } else if (b.date === 'TBD') {
-    return -1;
-  } else {
-    return moment(a.date).diff(moment(b.date));
-  }
-}
-
-class SessionsList extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      sessions: session_data.sessions,
-      max_sessions_upcoming: 3,
-      max_sessions_past: 10,
-    };
+const trimSessions = searchTerm => {
+  if (searchTerm === '') {
+    return sessionData.sessions;
   }
 
-  handleSearch = search_term => {
-    this.setState({
-      sessions: this.trim_sessions(search_term),
-    });
+  const options = {
+    shouldSort: true,
+    threshold: 0.2,
+    location: 0,
+    distance: 5000,
+    maxPatternLength: 32,
+    minMatchCharLength: 2,
+    keys: ['title', 'location', 'date', 'speakers.name', 'files.name'],
+  };
+  const fuse = new Fuse(sessionData.sessions, options);
+  return fuse.search(searchTerm);
+};
+
+export default function SessionsList() {
+  const [sessions, setSessions] = useState(sessionData.sessions);
+  const [maxSessionsUpcoming, setMaxSessionsUpcoming] = useState(3);
+  const [maxSessionsPast, setMaxSessionsPast] = useState(10);
+
+  const handleSearch = searchTerm => {
+    setSessions(trimSessions(searchTerm));
   };
 
-  trim_sessions(search_term) {
-    if (search_term === '') {
-      return session_data.sessions;
+  const isUpcoming = sessions.map(sess => {
+    const sess_time = moment.tz(
+      `${sess.date}  ${sess.time}`,
+      'YYYY-MM-DD h:mm a',
+      'America/Los_Angeles'
+    );
+    if (moment().isBefore(sess_time)) {
+      return true;
+    } else if (sess.date === 'TBD') {
+      return true;
+    } else {
+      return false;
     }
-    var options = {
-      shouldSort: true,
-      threshold: 0.2,
-      location: 0,
-      distance: 5000,
-      maxPatternLength: 32,
-      minMatchCharLength: 2,
-      keys: ['title', 'location', 'date', 'speakers.name', 'files.name'],
-    };
-    var fuse = new Fuse(session_data.sessions, options);
-    return fuse.search(search_term);
-  }
+  });
 
-  render_SessionGroups() {
-    // sort sessions
-    var is_upcoming = this.state.sessions.map(sess => {
-      const sess_time = moment(
-        sess.date + ' ' + sess.time,
-        'YYYY-MM-DD h:mm a'
-      );
-      if (moment().isBefore(sess_time)) {
-        return true;
-      } else if (sess.date === 'TBD') {
-        return true;
-      } else {
-        return false;
-      }
-    });
+  let upcomingSessions = sessions.filter((_, i) => isUpcoming[i]);
+  let pastSessions = sessions.filter((_, i) => !isUpcoming[i]);
 
-    var upcoming_sessions = this.state.sessions.filter(
-      (_, i) => is_upcoming[i]
-    );
-    var past_sessions = this.state.sessions.filter((_, i) => !is_upcoming[i]);
+  upcomingSessions.sort((a, b) => tbdUpcomingSort(a, b)); // ascending sort
+  pastSessions.sort((a, b) => pastSort(a, b));
 
-    upcoming_sessions.sort((a, b) => tbd_upcoming_sort(a, b)); // ascending sort
-    past_sessions.sort((a, b) => past_sort(a, b));
+  const nHiddenUpcoming = upcomingSessions.length - maxSessionsUpcoming;
+  const nHiddenPast = pastSessions.length - maxSessionsPast;
 
-    const n_hidden_upcoming =
-      upcoming_sessions.length - this.state.max_sessions_upcoming;
-    const n_hidden_past = past_sessions.length - this.state.max_sessions_past;
+  const upcomingMoreButton =
+    nHiddenUpcoming > 0 ? (
+      <Row>
+        <Col>
+          <Button
+            color="primary"
+            onClick={() => {
+              setMaxSessionsUpcoming(maxSessionsUpcoming + 5);
+            }}
+          >
+            {' '}
+            Show More Upcoming Sessions ({nHiddenUpcoming} Hidden){' '}
+          </Button>
+        </Col>
+      </Row>
+    ) : null;
 
-    let upcoming_more_button =
-      n_hidden_upcoming > 0 ? (
-        <Row>
-          <Col style={{ textAlign: 'center' }}>
-            <Button
-              style={{ margin: 'auto' }}
-              color="primary"
-              onClick={() => {
-                this.setState({
-                  max_sessions_upcoming: this.state.max_sessions_upcoming + 5,
-                });
-              }}
-            >
-              {' '}
-              Show More Upcoming Sessions ({n_hidden_upcoming} Hidden){' '}
-            </Button>
-          </Col>
-        </Row>
-      ) : null;
+  const pastMoreButton =
+    nHiddenPast > 0 ? (
+      <Row>
+        <Col>
+          <Button
+            color="primary"
+            onClick={() => {
+              setMaxSessionsPast(maxSessionsPast + 5);
+            }}
+          >
+            {' '}
+            Show More Past Sessions ({nHiddenPast} Hidden){' '}
+          </Button>
+        </Col>
+      </Row>
+    ) : null;
 
-    let past_more_button =
-      n_hidden_past > 0 ? (
-        <Row>
-          <Col style={{ textAlign: 'center' }}>
-            <Button
-              style={{ margin: 'auto' }}
-              color="primary"
-              onClick={() => {
-                this.setState({
-                  max_sessions_past: this.state.max_sessions_past + 5,
-                });
-              }}
-            >
-              {' '}
-              Show More Past Sessions ({n_hidden_past} Hidden){' '}
-            </Button>
-          </Col>
-        </Row>
-      ) : null;
-
-    return (
-      <Container>
-        <Row>
-          <Col lg="6" xs="12">
-            <Form>
-              <FormGroup>
-                <Label for="search_input">Search meetings by keyword:</Label>
-                <Input
-                  type="text"
-                  id="search_input"
-                  onChange={e => this.handleSearch(`${e.target.value}`)}
-                  placeholder="e.g., CNJCx"
+  return (
+    <Container>
+      <Row>
+        <Col lg="6" xs="12">
+          <Form>
+            <FormGroup>
+              <Label for="search_input">Search meetings by keyword:</Label>
+              <Input
+                type="text"
+                id="search_input"
+                onChange={e => handleSearch(`${e.target.value}`)}
+                placeholder="e.g., CNJCx"
+              />
+            </FormGroup>
+          </Form>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Row>
+            <Col>
+              <div>
+                <h1>Upcoming Meetings</h1>
+                <SessionListGroup
+                  sessions={upcomingSessions}
+                  maxSessions={maxSessionsUpcoming}
                 />
-              </FormGroup>
-            </Form>
-          </Col>
-        </Row>
-        <Row>
-          <Col lg="12" xs="12">
-            <Row className="vertical-align">
-              <Col xs="12" lg="12">
-                <div>
-                  <h2 className="center-align">Upcoming Meetings</h2>
-                  <SessionListGroup
-                    sessions={upcoming_sessions}
-                    max_sessions={this.state.max_sessions_upcoming}
-                  />
-                </div>
-              </Col>
-            </Row>
-            {upcoming_more_button}
-          </Col>
-        </Row>
-        <br />
-        <Row>
-          <Col lg="12" xs="12">
-            <Row className="vertical-align">
-              <Col xs="12" lg="12">
-                <div>
-                  <h2 className="center-align">Past Meetings</h2>
-                  <SessionListGroup
-                    sessions={past_sessions}
-                    max_sessions={this.state.max_sessions_past}
-                  />
-                </div>
-              </Col>
-            </Row>
-            {past_more_button}
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
-
-  render() {
-    return <div>{this.render_SessionGroups()}</div>;
-  }
+              </div>
+            </Col>
+          </Row>
+          {upcomingMoreButton}
+        </Col>
+      </Row>
+      <br />
+      <Row>
+        <Col>
+          <Row>
+            <Col>
+              <div>
+                <h1>Past Meetings</h1>
+                <SessionListGroup
+                  sessions={pastSessions}
+                  maxSessions={maxSessionsPast}
+                />
+              </div>
+            </Col>
+          </Row>
+          {pastMoreButton}
+        </Col>
+      </Row>
+    </Container>
+  );
 }
-
-export default SessionsList;
