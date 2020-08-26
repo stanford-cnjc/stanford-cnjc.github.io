@@ -160,27 +160,28 @@ function CNJCx() {
   const rsvpLink = (
     <div>
       <h6> RSVP for CNJCx: Practical Python Week 2</h6>
-      Whether you were able to attend <Link to="#week1">Week 1</Link> or not,
-      please let us know if you're planning to join for Week 2.
+      Whether you were able to attend <Link to="#week1">Week 1</Link> or{' '}
+      <Link to="#week2">Week 2</Link> or not, please let us know if you're
+      planning to join for Week 2.
       <br />
       <a
-        href="https://forms.gle/pBsgwRT6cgJ9uKB29"
+        href="https://forms.gle/hQazHmjo6ykrwMyT8"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button color="success">
           <FaCalendarPlus />
-          {` `}RSVP for CNJCx Week 2
+          {` `}RSVP for CNJCx Week 3
         </Button>
       </a>
       <a
-        href="https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week1_commandline/cnjcx_week1_recap.md#nextsesh"
+        href="https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week2_tmux_vim/cnjcx_week2_recap.md#preparation-for-next-session-python-part-i"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button color="secondary">
           <FaExclamationCircle />
-          {` `}Week 2 Prerequisites
+          {` `}Week 3 Prerequisites
         </Button>
       </a>
     </div>

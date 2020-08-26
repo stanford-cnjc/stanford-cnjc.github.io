@@ -1,6 +1,291 @@
 {
   "sessions": [
     {
+      "date": "2020-09-02",
+      "series": "",
+      "speakers": [
+        {
+          "name": "Scottie Alexander",
+          "url": ""
+        }
+      ],
+      "title": "Julia: a modern programming language designed for computational science",
+      "description": "For decades, computational scientists have faced an inescapable trade off between performance and usability in programming languages. While high level languages (like Matlab and Python+NumPy) have made tremendous contributions by making high performance mathematical routines easily accessible, the computational sciences increasingly rely on novel, complex algorithms that cannot be efficiently expressed using existing optimized libraries, forcing users to often resort to \"performance languages\" like C when efficiency is paramount. The Julia programming language, first released in 2012, aims to solve this problem by creating a syntax that \"reads like python\", but code that \"runs like C\". In this talk I will introduce Julia, provide a semi-technical overview of how it achieves such high performance, and explain why the language is uniquely suited to meet the ever growing needs of computational scientists.",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-09-16",
+      "series": "",
+      "speakers": [
+        {
+          "name": "Sarah Divel",
+          "url": ""
+        }
+      ],
+      "title": "Topic TBA",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-10-14",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-10-28",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-11-18",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2020-12-02",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-01-06",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-01-20",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-02-03",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-02-17",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-03-03",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-03-31",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-04-14",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-04-28",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-05-12",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-05-26",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-06-23",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-07-14",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
+      "date": "2021-08-04",
+      "series": "",
+      "speakers": [
+        {
+          "name": "",
+          "url": ""
+        }
+      ],
+      "title": "TBD",
+      "description": "",
+      "location": "Zoom",
+      "time": "6:00PM",
+      "files": []
+    },
+    {
       "date": "2018-12-06",
       "series": "",
       "speakers": [
@@ -649,7 +934,12 @@
       "description": "In the hippocampus, replay sequences are temporally compressed patterns of neural spiking that resemble patterns that occur when the animal is moving through the environment. Because replay sequences typically occur when the animal is at rest, replay is hypothesized to be part of an internal cognitive process that enables the retrieval of past spatial memories and the planning of future movement. Traditionally, replay sequences have been discovered by identifying sharp wave ripples (SWRs)—high frequency oscillations that occur in association with replay—and then looking within SWRs for spatially continuous patterns of neural spiking. This does not fully account for the content or timing of replay sequences, however. Replay sequences do not always co-occur with sharp wave ripples, have more complex dynamics than spatially continuous movement, have different temporal ordering than during movement, and may change based on task. <br /><br />In this talk, we will introduce a switching state space framework to describe the richness of replay sequences. We show how defining discrete latent states associated with continuous latent movement dynamics and point process observations allows us to identify when non-local replay sequences occur, categorize the type of sequence based on latent movement dynamics, and decode the spatial trajectory. We will then show how this can be applied to a complex operant conditioning task.",
       "location": "Zoom (Link and Password in Email)",
       "time": "6:00PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://stanford.zoom.us/rec/share/xPIvN6_X-l9OHK_BtxraR4d9Aru-eaa8gXMarPQNy0puL0MtiYl7rKZKZAE8eEfh",
+          "name": "Stream the Recorded Zoom Session"
+        }
+      ]
     },
     {
       "date": "2020-08-05",
@@ -676,20 +966,6 @@
           "name": "Stream the Recorded Zoom Session"
         }
       ]
-    },
-    {
-      "date": "TBD",
-      "series": "",
-      "speakers": [
-        {
-          "name": "Scottie Alexander",
-          "url": ""
-        }
-      ],
-      "title": "(Postponed) Special Guest Session: Topic to be Announced",
-      "location": "LKSC 209",
-      "time": "6:00PM",
-      "files": []
     },
     {
       "date": "2020-08-13",
@@ -725,7 +1001,7 @@
       "series": "CNJCx",
       "speakers": [],
       "title": "CNJCx: Practical Python Week 2",
-      "description": "The second session in the CNJCx series will cover working on a remote server: a common setup for many labs or individuals using services such as <a href=\"https://www.sherlock.stanford.edu/\">Sherlock, Stanford's High-Performance Computing Cluster</a>. We will also discuss tools that make working on remote machines more productive and painless, including Vim (a popular terminal-based text editor), and tmux: a tool to manage terminal sessions and keep them running even when you log out. These tools can also improve productivity on your local machine, i.e. your laptop or home computer. Other topics include file transfer, customizing your text editor, and SSH keys for secure remote login.",
+      "description": "The second session in the CNJCx series will cover working on a remote server: a common setup for many labs or individuals using services such as <a href=\"https://www.sherlock.stanford.edu/\">Sherlock, Stanford's High-Performance Computing Cluster</a>. We will also discuss tools that make working on remote machines more productive and painless, including Vim (a popular terminal-based text editor), and tmux: a tool to manage terminal sessions and keep them running even when you log out. These tools can also improve productivity on your local machine, i.e. your laptop or home computer.",
       "location": "Zoom",
       "time": "5:00PM",
       "files": []
