@@ -175,19 +175,30 @@
       ],
       "topics": [
         "Juggling Python versions and installations",
-        "Package managers (e.g., conda, pip) and virtual environments",
-        "Jupyter Notebooks"
+        "Package managers and virtual environments",
+        "Jupyter Notebooks",
+        "Python workflows"
       ],
       "links": [
         {
-          "title": "Session Recording (Posted After Session)",
+          "title": "Session Recording",
           "type": "video",
-          "url": ""
+          "url": "https://stanford.zoom.us/rec/share/38hsAomvqDlLYpWXt1j-RrULHY_jaaa82nUeqfRZyRrgjSMr7gkOnobzBhHcAIzH"
         },
         {
-          "title": "Live Discussion",
-          "type": "google_doc",
-          "url": ""
+          "title": "Slide Deck (First Half: Installations and Virtual Environments)",
+          "type": "slides",
+          "url": "https://docs.google.com/presentation/d/1qVUVSAaDkvHupeIkPhr0Dzp-MwtM1wa5fpYIiSPSVAQ/edit?usp=sharing"
+        },
+        {
+          "title": "Slide Deck (Second Half: Jupyter Notebooks and Workflows)",
+          "type": "slides",
+          "url": "https://docs.google.com/presentation/d/10-prnwyhaFbGer_anIqLAqNwf0C9eCEYPgjaOeUFqJo/edit?usp=sharing"
+        },
+        {
+          "title": "Polished Session Content",
+          "type": "markdown",
+          "url": "https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week3_python/README.md"
         }
       ]
     },

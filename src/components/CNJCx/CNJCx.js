@@ -159,29 +159,25 @@ const TableOfContents = () => {
 function CNJCx() {
   const rsvpLink = (
     <div>
-      <h6> RSVP for CNJCx: Practical Python Week 2</h6>
-      Whether you were able to attend <Link to="#week1">Week 1</Link> or{' '}
-      <Link to="#week2">Week 2</Link> or not, please let us know if you're
-      planning to join for Week 2.
-      <br />
+      <h6> RSVP for CNJCx: Practical Python Week 4</h6>
       <a
-        href="https://forms.gle/hQazHmjo6ykrwMyT8"
+        href="https://forms.gle/qMFv6cETxBXd4LAa9"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button color="success">
           <FaCalendarPlus />
-          {` `}RSVP for CNJCx Week 3
+          {` `}RSVP for CNJCx Week 4
         </Button>
       </a>
       <a
-        href="https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week2_tmux_vim/cnjcx_week2_recap.md#preparation-for-next-session-python-part-i"
+        href="https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week3_python/cnjcx_week3_recap.md#week4-prep"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button color="secondary">
           <FaExclamationCircle />
-          {` `}Week 3 Prerequisites
+          {` `}Week 4 Prerequisites
         </Button>
       </a>
     </div>
