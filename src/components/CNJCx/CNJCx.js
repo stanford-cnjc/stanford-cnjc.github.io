@@ -157,27 +157,26 @@ const TableOfContents = () => {
 };
 
 function CNJCx() {
+  const prereqButton = (
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <Button color="secondary">
+        <FaExclamationCircle />
+        {` `}Week 5 Prerequisites
+      </Button>
+    </a>
+  );
+
   const rsvpLink = (
     <div>
-      <h6> RSVP for CNJCx: Practical Python Week 4</h6>
+      <h6> RSVP for CNJCx: Practical Python Week 5</h6>
       <a
-        href="https://forms.gle/qMFv6cETxBXd4LAa9"
+        href="https://forms.gle/dvMTJn1oj34ZWBANA"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button color="success">
           <FaCalendarPlus />
-          {` `}RSVP for CNJCx Week 4
-        </Button>
-      </a>
-      <a
-        href="https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week3_python/cnjcx_week3_recap.md#week4-prep"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button color="secondary">
-          <FaExclamationCircle />
-          {` `}Week 4 Prerequisites
+          {` `}RSVP for CNJCx Week 5
         </Button>
       </a>
     </div>

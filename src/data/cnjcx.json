@@ -212,6 +212,20 @@
           "website": "https://poldracklab.stanford.edu/",
           "imgSrc": "img/russ.jpg",
           "imgAlt": "Headshot of Russell Poldrack"
+        },
+        {
+          "name": "Tucker G. Fisher",
+          "position": "PhD Candidate, Stanford Neuroscience",
+          "website": "https://tgfisher.github.io",
+          "imgSrc": "img/tucker.png",
+          "imgAlt": "Headshot of Tucker G. Fisher"
+        },
+        {
+          "name": "Eshed Margalit",
+          "position": "PhD Candidate, Stanford Neuroscience",
+          "website": "https://www.eshedmargalit.com",
+          "imgSrc": "img/eshed.png",
+          "imgAlt": "Headshot of Eshed Margalit"
         }
       ],
       "topics": [
@@ -221,14 +235,34 @@
       ],
       "links": [
         {
-          "title": "Session Recording (Posted After Session)",
+          "title": "Session Recording",
           "type": "video",
-          "url": ""
+          "url": "https://stanford.zoom.us/rec/share/PttFoS9eR9kC1reiRqaqCc--wDSFmIPed5SOUwK3oojsgVtA_Umndkwn0U26AqAL.NXMGwq0-RliowjDA?startTime=1599177796000"
         },
         {
-          "title": "Live Discussion",
-          "type": "google_doc",
-          "url": ""
+          "title": "git/Github Slide Deck (Fisher/Margalit)",
+          "type": "slides",
+          "url": "https://docs.google.com/presentation/d/1BW-jk22vbFATFv-bXxycd0wM5dsx9_abdrBi7yZ4UgA/edit#slide=id.g8fa0645513_1_98"
+        },
+        {
+          "title": "Clean coding and computational reproducibility (Poldrack)",
+          "type": "slides",
+          "url": "https://www.dropbox.com/s/8ofe2p7ncpw6bge/CleanCoding_CNJCx2020.pdf?dl=0"
+        },
+        {
+          "title": "Sharing research objects: Code, data, and platforms (Poldrack)",
+          "type": "slides",
+          "url": "https://www.dropbox.com/s/dbdwze3pxcd9hce/SharingResearchObjects_CNJCx.pdf?dl=0"
+        },
+        {
+          "title": "Clean Coding Github Repo",
+          "type": "github",
+          "url": "https://github.com/poldrack/clean_coding"
+        },
+        {
+          "title": "Pytest (unit testing) tutorial",
+          "type": "github",
+          "url": "https://github.com/poldrack/pytest_tutorial"
         }
       ]
     },

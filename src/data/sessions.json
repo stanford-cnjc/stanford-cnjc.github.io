@@ -994,32 +994,82 @@
       "description": "Having a comfortable, modern, and efficient development setup is the first step toward learning the tools and skills needed in the rest of the series. In this session, we'll introduce the CNJCx series, install common tools in computing and programming, discuss open source software, and go over basic navigation in the terminal. Attendees should be prepared to follow along at home (no experience required!) by making sure they can open a terminal (bash or zsh) on their computer ahead of time. If you need a few pointers to open the terminal on your operating system, please check out the <a href=\"https://stanford-cnjc.github.io/#/CNJCx\">CNJCx page</a> for instructions!",
       "location": "Zoom",
       "time": "5:00PM",
-      "files": []
+      "files": [
+        {
+          "name": "Week 1 Materials",
+          "url": "https://github.com/stanford-cnjc/cnjcx-course-materials/tree/master/week1_commandline"
+        }
+      ]
     },
     {
       "date": "2020-08-20",
       "series": "CNJCx",
-      "speakers": [],
+      "speakers": [
+        {
+          "name": "Tucker Fisher",
+          "handle": "tgfisher",
+          "domain": "stanford.edu",
+          "url": "https://tgfisher.github.io/#/"
+        }
+      ],
       "title": "CNJCx: Practical Python Week 2",
       "description": "The second session in the CNJCx series will cover working on a remote server: a common setup for many labs or individuals using services such as <a href=\"https://www.sherlock.stanford.edu/\">Sherlock, Stanford's High-Performance Computing Cluster</a>. We will also discuss tools that make working on remote machines more productive and painless, including Vim (a popular terminal-based text editor), and tmux: a tool to manage terminal sessions and keep them running even when you log out. These tools can also improve productivity on your local machine, i.e. your laptop or home computer.",
       "location": "Zoom",
       "time": "5:00PM",
-      "files": []
+      "files": [
+        {
+          "name": "Week 2 Materials",
+          "url": "https://github.com/stanford-cnjc/cnjcx-course-materials/tree/master/week2_tmux_vim"
+        }
+      ]
     },
     {
       "date": "2020-08-27",
       "series": "CNJCx",
-      "speakers": [],
+      "speakers": [
+        {
+          "name": "Eshed Margalit",
+          "handle": "eshedm",
+          "domain": "stanford.edu",
+          "url": "http://www.eshedmargalit.com"
+        },
+        {
+          "name": "Julia Wang",
+          "url": "https://www.linkedin.com/in/julia-wang-888b53126"
+        }
+      ],
       "title": "CNJCx: Practical Python Week 3",
-      "description": "In this session of CNJCx: Practical Python, we'll talk about the various ways to install and use Python, including a discussion of pip, conda, different versions of Python, virtual environments, and switching between Python versions. We'll also talk about popular alternatives to writing Python scripts, like Jupyter notebooks and Jupyter lab. Finally, we'll compare Python to MATLAB and describe some of the differences in how they're installed and used.",
+      "description": "In this session of CNJCx: Practical Python, we'll talk about the various ways to install and use Python, including a discussion of pip, conda, different versions of Python, virtual environments, and switching between Python versions. We'll also talk about popular alternatives to writing Python scripts, like Jupyter notebooks.",
       "location": "Zoom",
       "time": "5:00PM",
-      "files": []
+      "files": [
+        {
+          "name": "Week 3 Materials",
+          "url": "https://github.com/stanford-cnjc/cnjcx-course-materials/tree/master/week3_python"
+        }
+      ]
     },
     {
       "date": "2020-09-03",
       "series": "CNJCx",
-      "speakers": [],
+      "speakers": [
+        {
+          "name": "Prof. Russ Poldrack",
+          "url": "https://poldracklab.stanford.edu/"
+        },
+        {
+          "name": "Tucker Fisher",
+          "handle": "tgfisher",
+          "domain": "stanford.edu",
+          "url": "https://tgfisher.github.io/#/"
+        },
+        {
+          "name": "Eshed Margalit",
+          "handle": "eshedm",
+          "domain": "stanford.edu",
+          "url": "http://www.eshedmargalit.com"
+        }
+      ],
       "title": "CNJCx: Practical Python Week 4",
       "description": "Week 4 of the series focuses on project management at a higher level, a core skill that researchers need to develop. This includes writing clean code, version control with <code>git</code> using Github, synchronizing work across machines, formatting and linting code, and more!",
       "location": "Zoom",
@@ -1045,16 +1095,10 @@
           "handle": "",
           "domain": "",
           "url": ""
-        },
-        {
-          "name": "William Casarin",
-          "handle": "",
-          "domain": "",
-          "url": ""
         }
       ],
       "title": "CNJCx: Practical Python Week 6",
-      "description": "Week 6 will see two industry professionals share their perspective on project structure, code management, and best practices for scientific code. Following the guest lectures, we'll conclude the series by collecting feedback and sharing accumulated course materials.",
+      "description": "Week 6 features a guest lecture on refactoring code. Following the guest lecture, we'll conclude the series by collecting feedback and sharing accumulated course materials.",
       "location": "Zoom",
       "time": "5:00PM",
       "files": []
