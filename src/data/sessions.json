@@ -24,8 +24,8 @@
           "url": ""
         }
       ],
-      "title": "Topic TBA",
-      "description": "",
+      "title": "The Validation and Optimization of CT Perfusion for Stroke Assessment",
+      "description": "Each year, approximately 800,000 people in the United States have a stroke. Early diagnosis and tailored treatment are critical for optimal patient outcome. Physicians utilize cerebral perfusion maps (e.g., cerebral blood flow, cerebral blood volume, transit time) derived from dynamic Magnetic Resonance (MR) or Computed Tomography (CT) scans of the brain to prescribe the optimal plan of care for stroke patients. However, noise and variability in scanning techniques and post-processing software can result in differences between these perfusion maps. To determine which techniques are acceptable for clinical care, it is important to validate the accuracy and reproducibility of the perfusion maps. Validation using clinical data is challenging due to the lack of a gold standard to assess cerebral perfusion and the impracticality of scanning patients multiple times with different scanning techniques. In contrast, simulated data from a realistic digital phantom of the cerebral perfusion in acute stroke patients would enable studies to optimize and validate the scanning and post-processing techniques. In this talk, I will present contributions from our framework to simulate and evaluate CT perfusion studies for stroke assessment. We show that this framework provides realistic test data with the underlying ground truth that enables a robust assessment of CT perfusion techniques and post-processing methods for stroke assessment. Ultimately, this has the potential to improve diagnostic tools for stroke patients and increase physicians’ ability to prescribe a plan of care driven by quantitative data.",
       "location": "Zoom",
       "time": "6:00PM",
       "files": []
