@@ -157,31 +157,28 @@ const TableOfContents = () => {
 };
 
 function CNJCx() {
+  //eslint-disable-next-line
+  const prereqButton = (
+    //eslint-disable-next-line
+    <a href="" target="_blank" rel="noopener noreferrer">
+      <Button color="secondary">
+        <FaExclamationCircle />
+        {` `}Week 5 Prerequisites
+      </Button>
+    </a>
+  );
+
   const rsvpLink = (
     <div>
-      <h6> RSVP for CNJCx: Practical Python Week 2</h6>
-      Whether you were able to attend <Link to="#week1">Week 1</Link> or{' '}
-      <Link to="#week2">Week 2</Link> or not, please let us know if you're
-      planning to join for Week 2.
-      <br />
+      <h6> RSVP for CNJCx: Practical Python Week 5</h6>
       <a
-        href="https://forms.gle/hQazHmjo6ykrwMyT8"
+        href="https://forms.gle/dvMTJn1oj34ZWBANA"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button color="success">
           <FaCalendarPlus />
-          {` `}RSVP for CNJCx Week 3
-        </Button>
-      </a>
-      <a
-        href="https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week2_tmux_vim/cnjcx_week2_recap.md#preparation-for-next-session-python-part-i"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button color="secondary">
-          <FaExclamationCircle />
-          {` `}Week 3 Prerequisites
+          {` `}RSVP for CNJCx Week 5
         </Button>
       </a>
     </div>

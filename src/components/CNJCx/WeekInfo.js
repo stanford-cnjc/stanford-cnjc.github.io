@@ -16,6 +16,7 @@ import {
   FaLink,
   FaLaptop,
   FaLaptopCode,
+  FaGithub,
   FaYoutube,
   FaPlus,
   FaMinus,
@@ -63,6 +64,9 @@ const renderLinks = links => {
         break;
       case 'markdown':
         icon = <FaLaptopCode size={iconSize} />;
+        break;
+      case 'github':
+        icon = <FaGithub size={iconSize} />;
         break;
       default:
         icon = <FaLink size={iconSize} />;
