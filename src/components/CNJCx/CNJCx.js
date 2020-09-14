@@ -14,13 +14,7 @@ import {
 } from 'reactstrap';
 
 import WeekInfo from './WeekInfo.js';
-import {
-  FaExclamationCircle,
-  FaVideo,
-  FaUsers,
-  FaLaptopCode,
-  FaCalendarPlus,
-} from 'react-icons/fa';
+import { FaVideo, FaUsers, FaCalendarPlus, FaGithub } from 'react-icons/fa';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import cnjcxData from '../../data/cnjcx.json';
@@ -135,14 +129,6 @@ const TableOfContents = () => {
       <h6>Table of Contents</h6>
       <Nav>
         <NavItem>
-          <Link to="#bashInstructions">
-            <Button color="secondary">
-              <FaLaptopCode />
-              {` `}Opening a Bash Terminal
-            </Button>
-          </Link>
-        </NavItem>
-        <NavItem>
           <Link to="#speakers">
             <Button color="secondary">
               <FaUsers />
@@ -157,28 +143,17 @@ const TableOfContents = () => {
 };
 
 function CNJCx() {
-  //eslint-disable-next-line
-  const prereqButton = (
-    //eslint-disable-next-line
-    <a href="" target="_blank" rel="noopener noreferrer">
-      <Button color="secondary">
-        <FaExclamationCircle />
-        {` `}Week 5 Prerequisites
-      </Button>
-    </a>
-  );
-
   const rsvpLink = (
     <div>
-      <h6> RSVP for CNJCx: Practical Python Week 5</h6>
+      <h6> RSVP for CNJCx: Practical Python Week 6</h6>
       <a
-        href="https://forms.gle/dvMTJn1oj34ZWBANA"
+        href="https://forms.gle/wJ5nJDvxD9CJ7VoJ9"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button color="success">
           <FaCalendarPlus />
-          {` `}RSVP for CNJCx Week 5
+          {` `}RSVP for CNJCx Week 6
         </Button>
       </a>
     </div>
@@ -186,80 +161,17 @@ function CNJCx() {
 
   const bashInstructions = (
     <div id="bashInstructions">
-      <h2> How do I open a Bash terminal on my machine? </h2>
+      <h6> How do I open a Bash terminal on my machine? </h6>
       <p>
-        We've compiled resources to open a terminal on MacOS, Ubuntu, and
-        Windows. Prior to the first session, you should be able to open a
-        terminal with the instructions below. Feel free to type{' '}
-        <code>echo $SHELL</code> at the command prompt and hit enter to see the
-        shell you're using. It should say either <code>/bin/bash</code> (if
-        you're using Bash) or <code>/bin/zsh</code> (if you're using Zsh). Both
-        will work for CNJCx: Practical Python.
+        Please follow{' '}
+        <a
+          href="https://github.com/stanford-cnjc/cnjcx-course-materials/blob/master/week1_commandline/cnjcx_week1_recap.md#prerequisites"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          our guide for Linux, macOS, and Windows users.
+        </a>
       </p>
-      <h4>For MacOS users</h4>
-      <ol>
-        <li>
-          We recommend you{' '}
-          <a
-            href="https://www.iterm2.com/downloads.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            download iTerm2
-          </a>
-          {` `}
-          prior to the first session, it's a superior alternative to the
-          built-in Terminal app on MacOS.
-        </li>
-        <li>
-          To open a terminal, open Spotlight Search (with ⌘ + Space or by
-          clicking the magnifying glass icon in your top bar) and search "iTerm"
-          (or "Terminal" if you'd prefer to use the default application)
-        </li>
-      </ol>
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.wikihow.com/Open-a-Terminal-Window-in-Ubuntu"
-      >
-        <h4>For Ubuntu users</h4>
-      </a>
-      <ol>
-        <li>Ctrl + Alt + t</li>
-        <li>Alternatively, search "terminal" in the Dash</li>
-      </ol>
-      <div>
-        <h4>For Windows users</h4>
-        <p>
-          We recommend enabling the Windows Subsystem for Linux (WSL). This is a
-          little more complicated than the previous instructions, so please
-          reach out to us if you get stuck!
-        </p>
-        <ol>
-          <li>Right Click the Start Menu</li>
-          <li>Click "Settings"</li>
-          <li>Search "Turn Windows features on and off"</li>
-          <li>Click the checkbox for "Windows Subsytem for Linux"</li>
-          <li>
-            <a
-              href="https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot%3aoverviewtab"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Download "Ubuntu 18.04" from the Windows Store
-            </a>
-          </li>
-          <li>Click the Ubuntu Icon to launch a Bash terminal</li>
-          <li>
-            The first time you log in, you may be prompted for a username and
-            password. These will be your credentials for the Ubuntu subsystem on
-            your machine, i.e., <code>[username]</code> will determine the path
-            to your home directory (<code>/home/[username]</code>) and the
-            password you'll use to perform actions as root (more about that in
-            Week 1).
-          </li>
-        </ol>
-      </div>
     </div>
   );
 
@@ -270,7 +182,7 @@ function CNJCx() {
     <Container>
       <Row>
         <Col>
-          <h3>CNJCx: Practical Python</h3>
+          <h1>CNJCx: Practical Python</h1>
           <p>
             A 6-week mini-series designed to introduce broadly-applicable
             computing skills, like how to work on a remote machine, version
@@ -282,19 +194,13 @@ function CNJCx() {
       </Row>
       <Row>
         <Col>{rsvpLink}</Col>
-      </Row>
-      <hr />
-      <Row>
         <Col>{<TableOfContents />}</Col>
-      </Row>
-      <hr />
-      <Row>
         <Col>{bashInstructions}</Col>
       </Row>
       <hr />
       <Row id="speakers">
         <Col>
-          <h3>Lecturers and Guest Speakers</h3>
+          <h2>Lecturers and Guest Speakers</h2>
           <p>
             We are incredibly grateful to the speakers who volunteered their
             time and expertise to teach and contribute content to CNJCx. Thank
@@ -306,11 +212,20 @@ function CNJCx() {
       <hr />
       <Row id="materials">
         <Col>
-          <h3>CNJCx Materials</h3>
+          <h2>CNJCx Materials</h2>
           <p>
             Materials from each session will be posted here following each
             session. Check back often for new content!
           </p>
+          <a
+            href="https://github.com/stanford-cnjc/cnjcx-course-materials"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button size="lg" color="primary">
+              <FaGithub /> Browse all CNJCx: Practical Python content on Github
+            </Button>
+          </a>
           {weekInfo}
         </Col>
       </Row>
