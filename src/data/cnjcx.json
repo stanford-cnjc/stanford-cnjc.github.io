@@ -293,6 +293,11 @@
           "title": "Session Recording",
           "type": "video",
           "url": "https://stanford.zoom.us/rec/share/g8qozCdzEX4KHTfOfKNg-T-29n6V00oyUZ1e-CGFzy-FGX_C5kmPXB9L4o04DfBI.VGHn5L6guol8XhqF?startTime=1599782682000"
+        },
+        {
+          "title": "Polished Session Content",
+          "type": "markdown",
+          "url": "https://github.com/stanford-cnjc/cnjcx-course-materials/tree/master/week5_practical"
         }
       ]
     },
