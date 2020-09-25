@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4658335e1d78f05c1457825278c2cfff",
+    "revision": "c4bca3a4a31a5283ffa4386a19c4d06c",
     "url": "/index.html"
   },
   {
-    "revision": "82f1d84d221e7120c765",
+    "revision": "6bed179184a3a61e56cc",
     "url": "/static/css/2.afc36f9d.chunk.css"
   },
   {
-    "revision": "50ebefe816f395a7b767",
+    "revision": "cb59c9bc1346b9167ec9",
     "url": "/static/css/main.f176ed06.chunk.css"
   },
   {
-    "revision": "82f1d84d221e7120c765",
-    "url": "/static/js/2.c81e77aa.chunk.js"
+    "revision": "6bed179184a3a61e56cc",
+    "url": "/static/js/2.98f067ee.chunk.js"
   },
   {
-    "revision": "50ebefe816f395a7b767",
-    "url": "/static/js/main.288dc783.chunk.js"
+    "revision": "cb59c9bc1346b9167ec9",
+    "url": "/static/js/main.36e1b728.chunk.js"
   },
   {
     "revision": "1731cf98f3872b4548f5",
     "url": "/static/js/runtime~main.ef63c5b0.js"
+  },
+  {
+    "revision": "4e6235cb257064538f04ad9cef435ccc",
+    "url": "/static/media/WhatsApp Image 2020-09-17 at 3.09.28 PM copy.4e6235cb.jpg"
   },
   {
     "revision": "5d52cf2859b780e9686ee6bd2d1263ab",
