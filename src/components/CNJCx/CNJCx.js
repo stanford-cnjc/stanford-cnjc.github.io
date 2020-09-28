@@ -193,7 +193,6 @@ function CNJCx() {
         </Col>
       </Row>
       <Row>
-        <Col>{rsvpLink}</Col>
         <Col>{<TableOfContents />}</Col>
         <Col>{bashInstructions}</Col>
       </Row>
