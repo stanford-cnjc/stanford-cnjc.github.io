@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Button, Jumbotron } from 'reactstrap';
 
 import Intro from '../Intro/Intro';
@@ -10,30 +9,35 @@ import { wrapInContainer } from '../utils';
 import './Home.css';
 
 export default function Home() {
-  const cnjcAnnouncement = (
-    <Jumbotron className="cnjcx-bg">
-      <h1>CNJCx: Practical Python</h1>
+  const vcnAnnouncement = (
+    <Jumbotron>
+      <h1>Virtual Computational Neuroscience (VCN)</h1>
       <p className="lead">
-        From August 13 - September 17, we'll be running our first mini-series!
+        In light of the many changes we are all navigating during COVID-19,
+        Stanford CNJC is temporarily merging with other institutions to provide
+        an exciting online talk series:{' '}
+        <a
+          href="https://virtualcompneurojc.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Virtual Computational Neuroscience (VCN)
+        </a>
+        !
       </p>
-      <p>Participants will learn computing and programming skills including:</p>
-      <ul>
-        <li>Setting up a development workflow</li>
-        <li>Managing Python environments</li>
-        <li>Working on remote servers</li>
-        <li>
-          Using <code>git</code> for version control
-        </li>
-        <li>Python best practices</li>
-      </ul>
-      <hr />
       <p>
-        Use the search field below to sort for the upcoming CNJCx sessions.
-        CNJCx will have a light blue tag.
+        VCN is a partnership between computational neuroscience groups at
+        Stanford, Princeton, Harvard, and MIT. New talks will be posted on the
+        VCN website and will not be cross-listed here, so please bookmark the
+        VCN website to stay up to date:
       </p>
-      <Link to="/CNJCx">
-        <Button>More info about CNJCx</Button>
-      </Link>
+      <a
+        href="https://virtualcompneurojc.github.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button>Visit the VCN Website</Button>
+      </a>
     </Jumbotron>
   );
 
@@ -41,7 +45,7 @@ export default function Home() {
     <>
       <Intro />
       <br />
-      {wrapInContainer(cnjcAnnouncement)}
+      {wrapInContainer(vcnAnnouncement)}
       <br />
       <SessionsList />
     </>

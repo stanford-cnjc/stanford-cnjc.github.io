@@ -14,7 +14,7 @@ import {
 } from 'reactstrap';
 
 import WeekInfo from './WeekInfo.js';
-import { FaVideo, FaUsers, FaCalendarPlus, FaGithub } from 'react-icons/fa';
+import { FaVideo, FaUsers, FaGithub } from 'react-icons/fa';
 import { HashLink as Link } from 'react-router-hash-link';
 
 import cnjcxData from '../../data/cnjcx.json';
@@ -143,22 +143,6 @@ const TableOfContents = () => {
 };
 
 function CNJCx() {
-  const rsvpLink = (
-    <div>
-      <h6> RSVP for CNJCx: Practical Python Week 6</h6>
-      <a
-        href="https://forms.gle/wJ5nJDvxD9CJ7VoJ9"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Button color="success">
-          <FaCalendarPlus />
-          {` `}RSVP for CNJCx Week 6
-        </Button>
-      </a>
-    </div>
-  );
-
   const bashInstructions = (
     <div id="bashInstructions">
       <h6> How do I open a Bash terminal on my machine? </h6>
