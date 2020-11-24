@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aa06d092a22d27b45d0fa93e0fc53443",
+    "revision": "3d69252e23d40eeb94f087e5b03e4221",
     "url": "/index.html"
   },
   {
-    "revision": "6bed179184a3a61e56cc",
+    "revision": "2f777afbb6a4780682be",
     "url": "/static/css/2.afc36f9d.chunk.css"
   },
   {
-    "revision": "7477236c3d96d6a0ea80",
+    "revision": "c6b0cf0a6e10f91b7d7e",
     "url": "/static/css/main.f176ed06.chunk.css"
   },
   {
-    "revision": "6bed179184a3a61e56cc",
-    "url": "/static/js/2.98f067ee.chunk.js"
+    "revision": "2f777afbb6a4780682be",
+    "url": "/static/js/2.4b1785e4.chunk.js"
   },
   {
-    "revision": "7477236c3d96d6a0ea80",
-    "url": "/static/js/main.88f3c7c6.chunk.js"
+    "revision": "c6b0cf0a6e10f91b7d7e",
+    "url": "/static/js/main.8ed786d6.chunk.js"
   },
   {
     "revision": "1731cf98f3872b4548f5",
     "url": "/static/js/runtime~main.ef63c5b0.js"
-  },
-  {
-    "revision": "4e6235cb257064538f04ad9cef435ccc",
-    "url": "/static/media/WhatsApp Image 2020-09-17 at 3.09.28 PM copy.4e6235cb.jpg"
   },
   {
     "revision": "5d52cf2859b780e9686ee6bd2d1263ab",
