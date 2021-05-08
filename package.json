@@ -10,7 +10,7 @@
     "clipboard": "^2.0.4",
     "fuse.js": "^3.3.0",
     "gh-pages": "^2.1.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "moment": "^2.22.2",
     "moment-timezone": "^0.5.31",
     "prettier": "^1.15.1",
