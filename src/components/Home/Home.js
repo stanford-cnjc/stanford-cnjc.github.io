@@ -11,7 +11,7 @@ import './Home.css';
 export default function Home() {
   const vcnAnnouncement = (
     <Jumbotron>
-      <h1>Virtual Computational Neuroscience (VCN)</h1>
+      <h1>Virtual Computational Neuroscience is defunct!(VCN)</h1>
       <p className="lead">
         In light of the many changes we are all navigating during COVID-19,
         Stanford CNJC is temporarily merging with other institutions to provide
