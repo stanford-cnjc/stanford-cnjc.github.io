@@ -67,7 +67,12 @@
       "description": "The Drosophila mushroom body exhibits dopamine dependent synaptic plasticity that underlies the acquisition of associative memories. Recordings of dopamine neurons in this system have identified signals related to external reinforcement such as reward and punishment. However, other factors including locomotion, novelty, reward expectation, and internal state have also recently been shown to modulate dopamine neurons. This heterogeneity is at odds with typical modeling approaches in which these neurons are assumed to encode a global, scalar error signal. How is dopamine dependent plasticity coordinated in the presence of such heterogeneity? We develop a modeling approach that infers a pattern of dopamine activity sufficient to solve defined behavioral tasks, given architectural constraints informed by knowledge of mushroom body circuitry. Model dopamine neurons exhibit diverse tuning to task parameters while nonetheless producing coherent learned behaviors. Notably, reward prediction error emerges as a mode of population activity distributed across these neurons. Our results provide a mechanistic framework that accounts for the heterogeneity of dopamine activity during learning and behavior.",
       "location": "LK308, or Zoom (link/password in email)",
       "time": "6:30PM",
-      "files": []
+      "files": [
+        {
+          "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009205",
+          "name": "Models of heterogeneous dopamine signaling in an insect learning and memory center"
+        }
+      ]
     },
     {
       "date": "2021-10-20",
@@ -125,8 +130,8 @@
       ],
       "title": "TBD",
       "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
+      "location": "LK308, or Zoom (link/password in email)",
+      "time": "6:30PM",
       "files": []
     },
     {
