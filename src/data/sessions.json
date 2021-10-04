@@ -35,29 +35,38 @@
       "series": "",
       "speakers": [
         {
-          "name": "",
+          "name": "Grace Huckins",
           "url": ""
         }
       ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
-      "files": []
+      "title": "Explanatory Models in Neuroscience",
+      "description": "In our first in-person session since February 2020, Grace Huckins will discuss the following two papers on explanatory models in neuroscience from Rosa Cao and Dan Yamins.",
+      "location": "LK308 or Zoom (link/password in email)",
+      "time": "6:30PM",
+      "files": [
+        {
+          "url": "https://arxiv.org/abs/2104.01490",
+          "name": "Explanatory models in neuroscience: Part 1 -- taking mechanistic abstraction seriously"
+        },
+        {
+          "url": "https://arxiv.org/abs/2104.01489",
+          "name": "Explanatory models in neuroscience: Part 2 -- constraint-based intelligibility"
+        }
+      ]
     },
     {
       "date": "2021-10-6",
       "series": "",
       "speakers": [
         {
-          "name": "",
+          "name": "Linnie Jiang",
           "url": ""
         }
       ],
-      "title": "TBD",
-      "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
+      "title": "Models of heterogenous dopamine signaling in an insect learning and memory center",
+      "description": "The Drosophila mushroom body exhibits dopamine dependent synaptic plasticity that underlies the acquisition of associative memories. Recordings of dopamine neurons in this system have identified signals related to external reinforcement such as reward and punishment. However, other factors including locomotion, novelty, reward expectation, and internal state have also recently been shown to modulate dopamine neurons. This heterogeneity is at odds with typical modeling approaches in which these neurons are assumed to encode a global, scalar error signal. How is dopamine dependent plasticity coordinated in the presence of such heterogeneity? We develop a modeling approach that infers a pattern of dopamine activity sufficient to solve defined behavioral tasks, given architectural constraints informed by knowledge of mushroom body circuitry. Model dopamine neurons exhibit diverse tuning to task parameters while nonetheless producing coherent learned behaviors. Notably, reward prediction error emerges as a mode of population activity distributed across these neurons. Our results provide a mechanistic framework that accounts for the heterogeneity of dopamine activity during learning and behavior.",
+      "location": "LK308, or Zoom (link/password in email)",
+      "time": "6:30PM",
       "files": []
     },
     {
@@ -65,14 +74,14 @@
       "series": "",
       "speakers": [
         {
-          "name": "",
+          "name": "Fatih Dinc",
           "url": ""
         }
       ],
       "title": "TBD",
       "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
+      "location": "LK308, or Zoom (link/password in email)",
+      "time": "6:30PM",
       "files": []
     },
     {
@@ -86,8 +95,8 @@
       ],
       "title": "TBD",
       "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
+      "location": "LK308, or Zoom (link/password in email)",
+      "time": "6:30PM",
       "files": []
     },
     {
@@ -95,14 +104,14 @@
       "series": "",
       "speakers": [
         {
-          "name": "",
-          "url": ""
+          "name": "Aran Nayebi",
+          "url": "https://anayebi.github.io/"
         }
       ],
-      "title": "TBD",
+      "title": "Explaining heterogeneity in medial entorhinal cortex with task-driven neural networks",
       "description": "",
-      "location": "Zoom",
-      "time": "6:00PM",
+      "location": "LK308, or Zoom (link/password in email)",
+      "time": "6:30PM",
       "files": []
     },
     {
