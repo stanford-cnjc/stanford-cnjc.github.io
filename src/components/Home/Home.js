@@ -45,8 +45,6 @@ export default function Home() {
     <>
       <Intro />
       <br />
-//       {wrapInContainer(vcnAnnouncement)}
-      <br />
       <SessionsList />
     </>
   );
