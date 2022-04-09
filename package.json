@@ -11,7 +11,7 @@
     "fuse.js": "^3.3.0",
     "gh-pages": "^2.1.1",
     "lodash": "^4.17.15",
-    "moment": "^2.22.2",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.31",
     "prettier": "^1.15.1",
     "prettierrc": "^0.0.0-5",
